@@ -1,17 +1,10 @@
 {
-  "blockers": [
-    "git_memory_not_pushed_or_confirmed",
-    "remote_git_memory_not_ready",
-    "working_repo_placeholder",
-    "working_repo_not_accessible:placeholder_repo",
-    "working_branch_not_accessible:working_repo_unavailable",
-    "remote_olympe_index_not_accessible:branch_unavailable"
-  ],
+  "blockers": [],
   "branch": "olympe/g46-adorable-run-001",
-  "branch_commit_sha": null,
-  "created_at": "2026-06-23T12:00:00Z",
-  "git_memory_apply_ref": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.dry-run-approved-report.json",
-  "git_memory_apply_status": "dry_run_approval_valid_plan_blocked",
+  "branch_commit_sha": "7add5af0e7978bda9bf58e1b5ea72721e46a7b2a",
+  "created_at": "2026-06-23T20:28:57Z",
+  "git_memory_apply_ref": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.live-approved-report.json",
+  "git_memory_apply_status": "executed",
   "github_memory_primary": true,
   "github_mutations_executed_by_evidence": false,
   "production_actions_executed_by_evidence": false,
@@ -21,33 +14,34 @@
   "read_only_probe": true,
   "remote_git_memory_probe_ref": {
     "path": ".olympe/runs/g46-adorable-run-001/git-memory/remote-git-memory-probe.json",
-    "sha256": "050511bccaf27d997c7d02ff5fea904c99460981cd704af6012b7595d3f7c4ab"
+    "sha256": "e4dc122badc4e258db212d355a9c19f329a8bdf57088f2b96d1e1a35d6183264"
   },
   "remote_index_ref": {
     "path": ".olympe/index.json",
-    "sha": null,
-    "size": null,
-    "type": null
+    "sha": "a6ec3d22f0b8864878d296c25fcf7f4c3d69cf17",
+    "size": 7282,
+    "type": "file"
   },
-  "remote_memory_confirmed": false,
+  "remote_memory_confirmed": true,
   "run_id": "g46-adorable-run-001",
   "schema": "olympe-github-memory-evidence/v1",
   "source_of_truth": "github-working-repo",
   "source_repo": "freestyle-sh/adorable",
   "source_repo_mutation_allowed": false,
-  "status": "blocked_github_memory_evidence",
+  "status": "ready_github_memory_evidence",
   "working_repo": {
-    "configured_by_operator": false,
+    "configured_by_operator": true,
     "create_live": false,
-    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "full_name": "bacoco/adorable",
     "kind": "fork",
     "mutation_allowed": false,
-    "placeholder": true,
-    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
     "source_repo": "freestyle-sh/adorable",
     "source_repo_mutation_allowed": false,
-    "target_owner": "operator-or-olympe-workspace",
-    "target_repo_name": "adorable-olympe-work"
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
   },
-  "working_repo_name": "operator-or-olympe-workspace/adorable-olympe-work"
+  "working_repo_name": "bacoco/adorable"
 }
