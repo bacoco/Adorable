@@ -1,0 +1,181 @@
+{
+  "blockers": [
+    "command_returncode_nonzero",
+    "expected_mutation_failed:create_issue",
+    "expected_mutation_failed:create_working_pr",
+    "expected_mutation_failed:ensure_label",
+    "publication_apply_not_executed:executed_with_failures",
+    "publication_prerequisites_not_ready:blocked_publication_prerequisites"
+  ],
+  "command_result_source": "publication_apply_report",
+  "command_result_summary": [
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "ensure_label_1",
+      "mutation": "ensure_label",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "ensure_label_2",
+      "mutation": "ensure_label",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "ensure_label_3",
+      "mutation": "ensure_label",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "create_milestone_1",
+      "mutation": "create_milestone",
+      "returncode": 0,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "create_issue_1",
+      "mutation": "create_issue",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "create_issue_2",
+      "mutation": "create_issue",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blocker_count": 0,
+      "id": "create_working_pr",
+      "mutation": "create_working_pr",
+      "returncode": 1,
+      "stderr_stored": false,
+      "stdout_stored": false,
+      "target_is_source_repo": false,
+      "target_repo": "bacoco/adorable"
+    }
+  ],
+  "created_at": "2026-06-23T20:29:41Z",
+  "expected_mutations": [
+    "create_issue",
+    "create_milestone",
+    "create_working_pr",
+    "ensure_label"
+  ],
+  "github_memory_primary": true,
+  "github_mutations_executed_by_evidence": false,
+  "mutation_counts": {
+    "create_issue": {
+      "blocked": 0,
+      "eligible": 2,
+      "executed": 2,
+      "failed": 2,
+      "planned": 2,
+      "succeeded": 0
+    },
+    "create_milestone": {
+      "blocked": 0,
+      "eligible": 1,
+      "executed": 1,
+      "failed": 0,
+      "planned": 1,
+      "succeeded": 1
+    },
+    "create_working_pr": {
+      "blocked": 0,
+      "eligible": 1,
+      "executed": 1,
+      "failed": 1,
+      "planned": 1,
+      "succeeded": 0
+    },
+    "ensure_label": {
+      "blocked": 0,
+      "eligible": 3,
+      "executed": 3,
+      "failed": 3,
+      "planned": 3,
+      "succeeded": 0
+    }
+  },
+  "production_actions_executed_by_evidence": false,
+  "publication_apply_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/apply-github-publication.live-approved-report.json",
+    "sha256": "e9bcc221aa1a06a1ad3d0cdfbbfd7380b84f6290728679c1560133ba8a663109"
+  },
+  "publication_apply_status": "executed_with_failures",
+  "publication_plan_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+    "sha256": "6541cf927de56d0c4dbf6ccc18d789583bf414c53e185533e247bcb16567ab41"
+  },
+  "publication_prerequisites_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/publication-prerequisites-probe.json",
+    "sha256": "194c0eac412ef097f62a8e762cd61eea74647a326ee3731a49488a9bd2591978"
+  },
+  "publication_prerequisites_status": "blocked_publication_prerequisites",
+  "raw_command_output_stored": false,
+  "raw_github_response_body_stored": false,
+  "raw_issue_bodies_stored_in_evidence": false,
+  "raw_pr_body_stored_in_evidence": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-github-publication-evidence/v1",
+  "source_of_truth": "github-working-repo",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_github_publication_evidence",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "working_repo_name": "bacoco/adorable",
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

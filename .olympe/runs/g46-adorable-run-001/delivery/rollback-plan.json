@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-23T12:00:00Z",
+  "created_at": "2026-06-23T20:31:20Z",
   "raw_production_logs_required": false,
   "requires_human_approval": true,
   "rollback_allowed": false,
@@ -7,7 +7,7 @@
   "schema": "olympe-rollback-plan/v1",
   "source_release_plan": {
     "path": ".olympe/runs/g46-adorable-run-001/delivery/release-plan.json",
-    "sha256": "80dc93d9e77c83f69c89f277810e8b3b00cd9e1bd6d8d9f28cadd3d14c48ae4c"
+    "sha256": "a4fc1d0656a510c004350660badd3c4b6ae18740c76a33990bcbbfb90e4f03e1"
   },
   "status": "ready_for_human_review_blocked_for_execution",
   "steps": [

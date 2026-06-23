@@ -2,7 +2,7 @@
 
 Run: `g46-adorable-run-001`
 Source repo: `freestyle-sh/adorable` (read-only)
-Working repo: `operator-or-olympe-workspace/adorable-olympe-work`
+Working repo: `bacoco/adorable`
 Branch: `olympe/g46-adorable-run-001`
 
 ## Summary

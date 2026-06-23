@@ -20,16 +20,17 @@
   "status": "awaiting_human_approval",
   "working_pr_body_ref": ".olympe/runs/g46-adorable-run-001/publication/pr-body.md",
   "working_repo": {
-    "configured_by_operator": false,
+    "configured_by_operator": true,
     "create_live": false,
-    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "full_name": "bacoco/adorable",
     "kind": "fork",
     "mutation_allowed": false,
-    "placeholder": true,
-    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
     "source_repo": "freestyle-sh/adorable",
     "source_repo_mutation_allowed": false,
-    "target_owner": "operator-or-olympe-workspace",
-    "target_repo_name": "adorable-olympe-work"
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
   }
 }

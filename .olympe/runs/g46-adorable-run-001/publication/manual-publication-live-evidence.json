@@ -1,0 +1,53 @@
+{
+  "schema": "olympe-manual-github-publication-evidence/v1",
+  "run_id": "g46-adorable-run-001",
+  "created_at": "2026-06-23T20:34:00Z",
+  "status": "manual_publication_executed_after_adapter_failure",
+  "reason": "Olympe apply-github-publication used gh label create, unavailable in installed gh; fork issues were disabled by default. Operator enabled issues and used gh api/gh issue/gh pr compatible commands.",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "working_repo": "bacoco/Adorable",
+  "branch": "olympe/g46-adorable-run-001",
+  "remote_branch_head": "4cd3f09b7c835346d1f0d968d58e1de15d98655e",
+  "github_mutations_executed": true,
+  "production_actions_executed": false,
+  "merge_executed": false,
+  "upstream_pr_created": false,
+  "fork_settings_changed": [
+    {
+      "setting": "has_issues",
+      "value": true,
+      "scope": "working_repo_only"
+    }
+  ],
+  "labels": [
+    "olympe",
+    "cadrage",
+    "human-gate"
+  ],
+  "milestone_url": "https://github.com/bacoco/Adorable/milestone/1",
+  "issue_urls": [
+    "https://github.com/bacoco/Adorable/issues/1",
+    "https://github.com/bacoco/Adorable/issues/2"
+  ],
+  "working_pr_url": "https://github.com/bacoco/Adorable/pull/3",
+  "blocked_or_failed_live_subsystems": [
+    {
+      "subsystem": "hermes-room-runtime",
+      "status": "executed_with_failures",
+      "blocker": "No inference provider configured; no OPENAI/OPENROUTER/etc. key in Hermes."
+    },
+    {
+      "subsystem": "openhands-dev-runner",
+      "status": "executed_with_runner_blockers",
+      "blocker": "live-openhands-missing-llm-api-key"
+    },
+    {
+      "subsystem": "apply-github-publication-adapter",
+      "status": "executed_with_failures",
+      "blocker": "installed gh has no label subcommand; fork issues initially disabled; PR plan base placeholder required manual base=main"
+    }
+  ],
+  "raw_command_output_stored": false,
+  "raw_secret_values_stored": false
+}

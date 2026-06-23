@@ -19,7 +19,7 @@
     "production_deploy"
   ],
   "branch": "olympe/g46-adorable-run-001",
-  "created_at": "2026-06-23T12:00:00Z",
+  "created_at": "2026-06-23T20:29:27Z",
   "exact_pr_source": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
   "exact_pr_title": "Update README.md through Olympe dev-chain",
   "github_repo": "freestyle-sh/adorable",
@@ -36,17 +36,18 @@
   "source_repo": "freestyle-sh/adorable",
   "source_repo_mutation_allowed": false,
   "working_repo": {
-    "configured_by_operator": false,
+    "configured_by_operator": true,
     "create_live": false,
-    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "full_name": "bacoco/adorable",
     "kind": "fork",
     "mutation_allowed": false,
-    "placeholder": true,
-    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
     "source_repo": "freestyle-sh/adorable",
     "source_repo_mutation_allowed": false,
-    "target_owner": "operator-or-olympe-workspace",
-    "target_repo_name": "adorable-olympe-work"
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
   },
   "write_scope": "working_repo_only_until_human_upstream_approval"
 }
