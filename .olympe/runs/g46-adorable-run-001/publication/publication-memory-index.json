@@ -1,0 +1,368 @@
+{
+  "created_at": "2026-06-23T20:29:27Z",
+  "dev_chain": {
+    "code_review": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json",
+      "sha256": "9f45c47f9b93247776bb34a90d1d729a907a7fc85f7a35351cf6d98225c5050f"
+    },
+    "pr_pack": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+      "sha256": "612a007a7fa2100777aabed101d2c55a1b00a57f5b249e5ad145665d723329ba"
+    },
+    "qa_verdict": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+      "sha256": "887377d1af0597458ef97d01b2ba3c68757651b95dd246cd3d87947186c7a7f1"
+    }
+  },
+  "github_mutations_executed_by_index": false,
+  "output_draft_count": 15,
+  "output_drafts": [
+    {
+      "output_id": "fiche-besoin",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/fiche-besoin.md",
+      "room_id": "intake-room",
+      "sha256": "8f274456b98e9cd96bc0c315e1771a1c1c78c7f0cdbb0613f272fbf04a0dd7df",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "pdd-projet",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md",
+      "room_id": "intake-room",
+      "sha256": "4aa8de7aa84dc04d3b2e6712c65af254ce03f459638de7e8523fcfe18748067f",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "decision-intake",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/decision-intake.md",
+      "room_id": "intake-room",
+      "sha256": "04a9a0b33f3bec6b279a0b995d88e5eed08f4350498e4c4a4f8f80582d027655",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "carte-contexte",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/carte-contexte.md",
+      "room_id": "discovery-room",
+      "sha256": "4797d92089f2142ae9d842f5c9f36b1ced763bf8771a7f26ceb26a9792f85111",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "questions-ouvertes",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/questions-ouvertes.md",
+      "room_id": "discovery-room",
+      "sha256": "65a40464d1baf2cdf14a2629461fc125456432bb26e08bb8cfa66ace3698a728",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "rooms-recommandees",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/rooms-recommandees.md",
+      "room_id": "discovery-room",
+      "sha256": "0f4e6731248fa5df43f755991894f04c496d083d51b816a8eb2a1c36e9c5148c",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "note-architecture",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/note-architecture.md",
+      "room_id": "architecture-room",
+      "sha256": "71897a3a7c016836328906d5419c65191994ddab922477ea829f446eacd3309c",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "decoupage-taches",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decoupage-taches.md",
+      "room_id": "architecture-room",
+      "sha256": "8282e9a7d94e9c6159d119b513125d7da0c0a672058aec9fff3415a3d73975d4",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "decision-architecture",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decision-architecture.md",
+      "room_id": "architecture-room",
+      "sha256": "153ef7f48de7824a6c8b29941adc9f9b2f494747f4b678b5cb9fcaa5f0ceac3d",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "stories",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/stories.md",
+      "room_id": "story-room",
+      "sha256": "e82358590ab24315be0dedae360fadd0f9d871c422e6800c8f84a79d42d0a871",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "dependances",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/dependances.md",
+      "room_id": "story-room",
+      "sha256": "27f94158ee6f48fab4075d9da44745f333b716ef00b249264cbc3aa37df704c0",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "criteres-acceptation",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/criteres-acceptation.md",
+      "room_id": "story-room",
+      "sha256": "8fdc69d04b5a636f457b50b9da62f959256c93a286c44701249bfd7f4abcf689",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "acceptance-mapping",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/acceptance-mapping.md",
+      "room_id": "qa-room",
+      "sha256": "8453ea455331d9b3ac3b8a19fdf7cb8fc9c09c32a228a392552c5afe18774697",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "rapport-non-regression",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/rapport-non-regression.md",
+      "room_id": "qa-room",
+      "sha256": "1c3f4299d3cace45e67e608f804a467b055feaba15042565d8d2c75c2a90610c",
+      "status": "deterministic_draft"
+    },
+    {
+      "output_id": "verdict-qualite",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/verdict-qualite.md",
+      "room_id": "qa-room",
+      "sha256": "35b0b727bb160c1fe3191a5c423d9678c1c9f97dec4f7aed663065a6fb9da6b1",
+      "status": "deterministic_draft"
+    }
+  ],
+  "pdd_draft": {
+    "output_id": "pdd-projet",
+    "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md",
+    "room_id": "intake-room",
+    "sha256": "4aa8de7aa84dc04d3b2e6712c65af254ce03f459638de7e8523fcfe18748067f",
+    "status": "deterministic_draft"
+  },
+  "prompt_pack_manifest": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-sessions/prompt-pack-manifest.json",
+    "sha256": "a680d4462c1c4cfcb9c90a70f44a41cdc6ac03f1a6ca3b19a7c710579161d323"
+  },
+  "publication_policy": {
+    "issue_and_pr_bodies_reference_memory_index": true,
+    "raw_body_stored_in_plan": false,
+    "working_repo_only_until_human_upstream_approval": true
+  },
+  "raw_file_contents_stored": false,
+  "raw_secret_values_loaded": false,
+  "room_decisions": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-sessions/room-decisions.json",
+    "sha256": "a7287164de3ec95d015ed97ea643bd469237803e0823f33389dfef8f74b19e30"
+  },
+  "room_session_run": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-sessions/room-session-run.json",
+    "sha256": "a8b35548860cf1442c766146fa027790f0aa533cf13af7ef60571efac6a2c05b"
+  },
+  "rooms": [
+    {
+      "execution_contract": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/intake-room.json",
+        "sha256": "740438171b4962c52aa8a4dbcd3c1cc6efab0f2e9b964d99dc0ea9e6feac8d67"
+      },
+      "handoff": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/intake-room.json",
+        "sha256": "24be40ffab8c7975a14d2170c2b1e6e66e0aa17953e76208523dfc4cca60ffcd"
+      },
+      "output_drafts": [
+        {
+          "output_id": "fiche-besoin",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/fiche-besoin.md",
+          "room_id": "intake-room",
+          "sha256": "8f274456b98e9cd96bc0c315e1771a1c1c78c7f0cdbb0613f272fbf04a0dd7df",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "pdd-projet",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md",
+          "room_id": "intake-room",
+          "sha256": "4aa8de7aa84dc04d3b2e6712c65af254ce03f459638de7e8523fcfe18748067f",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "decision-intake",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/decision-intake.md",
+          "room_id": "intake-room",
+          "sha256": "04a9a0b33f3bec6b279a0b995d88e5eed08f4350498e4c4a4f8f80582d027655",
+          "status": "deterministic_draft"
+        }
+      ],
+      "report": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/intake-room.md",
+        "sha256": "58ed48025cbf13d2956d6305694cebc81b0918d0583e737df5ecefdd87860477"
+      },
+      "room_id": "intake-room",
+      "runtime_plan": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/intake-room.json",
+        "sha256": "5ae2b4f0cb51529baa8e640faf1fc16a5fc85de639010e4cb1f0df997cdda113"
+      }
+    },
+    {
+      "execution_contract": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/discovery-room.json",
+        "sha256": "be2c3189950324d87330fe7638a33224e7defa10831a0c0ee0c896944dbe13ad"
+      },
+      "handoff": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/discovery-room.json",
+        "sha256": "00d66f1ef52182639cd37991cdcacb8089540fca16d8a4e46642f84ecf78de14"
+      },
+      "output_drafts": [
+        {
+          "output_id": "carte-contexte",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/carte-contexte.md",
+          "room_id": "discovery-room",
+          "sha256": "4797d92089f2142ae9d842f5c9f36b1ced763bf8771a7f26ceb26a9792f85111",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "questions-ouvertes",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/questions-ouvertes.md",
+          "room_id": "discovery-room",
+          "sha256": "65a40464d1baf2cdf14a2629461fc125456432bb26e08bb8cfa66ace3698a728",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "rooms-recommandees",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/rooms-recommandees.md",
+          "room_id": "discovery-room",
+          "sha256": "0f4e6731248fa5df43f755991894f04c496d083d51b816a8eb2a1c36e9c5148c",
+          "status": "deterministic_draft"
+        }
+      ],
+      "report": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/discovery-room.md",
+        "sha256": "9d2d833b238e94725670b5a65eb96ffb2db406c718390dd5cce63663408e6d09"
+      },
+      "room_id": "discovery-room",
+      "runtime_plan": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/discovery-room.json",
+        "sha256": "e8a6aedcb10e17ebb1ae6c7c02ebf3535c503983d3a887436102331ffd121a13"
+      }
+    },
+    {
+      "execution_contract": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/architecture-room.json",
+        "sha256": "292b96f6cb05355c817f4e509bd1121233d0ef6bcccdd6bef65f9efd4a97ac7c"
+      },
+      "handoff": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/architecture-room.json",
+        "sha256": "d85f01d9c7ecfefdd8cd52b0757c2e79a0c79f9f0ee53e8d92cf06daed23160e"
+      },
+      "output_drafts": [
+        {
+          "output_id": "note-architecture",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/note-architecture.md",
+          "room_id": "architecture-room",
+          "sha256": "71897a3a7c016836328906d5419c65191994ddab922477ea829f446eacd3309c",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "decoupage-taches",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decoupage-taches.md",
+          "room_id": "architecture-room",
+          "sha256": "8282e9a7d94e9c6159d119b513125d7da0c0a672058aec9fff3415a3d73975d4",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "decision-architecture",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decision-architecture.md",
+          "room_id": "architecture-room",
+          "sha256": "153ef7f48de7824a6c8b29941adc9f9b2f494747f4b678b5cb9fcaa5f0ceac3d",
+          "status": "deterministic_draft"
+        }
+      ],
+      "report": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/architecture-room.md",
+        "sha256": "b5d259ca426bc8292284e3eeb50ad80a43ad60146c9866b688657d51ce4f395e"
+      },
+      "room_id": "architecture-room",
+      "runtime_plan": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/architecture-room.json",
+        "sha256": "0deac5cc75e446be9172f769f3fc3381311cdf68dd9e40fde9434fb5753b3622"
+      }
+    },
+    {
+      "execution_contract": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/story-room.json",
+        "sha256": "73d2feb5608ed62d5f47e9c707dd170e738aba3c890c7358b225084498e24a35"
+      },
+      "handoff": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/story-room.json",
+        "sha256": "ef60487a7db85187a0e031560653810d13b972e95fac6a216af41f5833e33658"
+      },
+      "output_drafts": [
+        {
+          "output_id": "stories",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/stories.md",
+          "room_id": "story-room",
+          "sha256": "e82358590ab24315be0dedae360fadd0f9d871c422e6800c8f84a79d42d0a871",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "dependances",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/dependances.md",
+          "room_id": "story-room",
+          "sha256": "27f94158ee6f48fab4075d9da44745f333b716ef00b249264cbc3aa37df704c0",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "criteres-acceptation",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/criteres-acceptation.md",
+          "room_id": "story-room",
+          "sha256": "8fdc69d04b5a636f457b50b9da62f959256c93a286c44701249bfd7f4abcf689",
+          "status": "deterministic_draft"
+        }
+      ],
+      "report": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/story-room.md",
+        "sha256": "b4d510d5364a95889a3f8ab048b7c02b638a2bfc73d0e2547719cc583a8321b1"
+      },
+      "room_id": "story-room",
+      "runtime_plan": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+        "sha256": "4642820230b76db87f099ef90efd6bd3f42b41dd7bef95a52b914f47b70878ed"
+      }
+    },
+    {
+      "execution_contract": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/qa-room.json",
+        "sha256": "53a648a06c93697b0fa5918f84148e6c4cf98a58504798fee040430ab6097560"
+      },
+      "handoff": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/qa-room.json",
+        "sha256": "e60e4505d09ab562f3a552798df3dc0db51ac377c7490b96ecfad35a23cab85c"
+      },
+      "output_drafts": [
+        {
+          "output_id": "acceptance-mapping",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/acceptance-mapping.md",
+          "room_id": "qa-room",
+          "sha256": "8453ea455331d9b3ac3b8a19fdf7cb8fc9c09c32a228a392552c5afe18774697",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "rapport-non-regression",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/rapport-non-regression.md",
+          "room_id": "qa-room",
+          "sha256": "1c3f4299d3cace45e67e608f804a467b055feaba15042565d8d2c75c2a90610c",
+          "status": "deterministic_draft"
+        },
+        {
+          "output_id": "verdict-qualite",
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/verdict-qualite.md",
+          "room_id": "qa-room",
+          "sha256": "35b0b727bb160c1fe3191a5c423d9678c1c9f97dec4f7aed663065a6fb9da6b1",
+          "status": "deterministic_draft"
+        }
+      ],
+      "report": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/qa-room.md",
+        "sha256": "cc7a337db7715f3e94058dfe0eb66192358e7e5527d75ec6cc37d5ba18009a66"
+      },
+      "room_id": "qa-room",
+      "runtime_plan": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/qa-room.json",
+        "sha256": "d988e21a16843ff972b812e12c7b9facb6d521e5599defa7fe7e097a096a3198"
+      }
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-publication-memory-index/v1",
+  "source_repo_mutation_allowed": false,
+  "status": "metadata_only_index_ready"
+}

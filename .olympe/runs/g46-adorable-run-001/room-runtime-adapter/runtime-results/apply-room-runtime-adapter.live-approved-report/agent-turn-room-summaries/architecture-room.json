@@ -1,0 +1,63 @@
+{
+  "agent_ids": [
+    "architect-devlead-agent",
+    "documentation-agent",
+    "facilitator-agent",
+    "product-owner-agent",
+    "security-agent"
+  ],
+  "agent_positions_stored_inline": false,
+  "agent_turn_count": 5,
+  "agent_turn_result_refs": [
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+      "sha256": "2b028d245e6623ab072bd7796965c9fc76ceed2b29d38330daf2544d80f2c70a"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-02-facilitator-agent.json",
+      "sha256": "195375cad40c2d8d6aed0d2e9e7c1e390957496061711a8c7af468f4a83b9b8d"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-03-product-owner-agent.json",
+      "sha256": "f8c7579093f577ede9d86cd1dbcb813cd41acb8a85913671df7f819f36c8b231"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-04-security-agent.json",
+      "sha256": "c83cf6ff331a7890f25a893f65b5c0dad3f66d3c7439987871e2caf4f89a0a93"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-05-documentation-agent.json",
+      "sha256": "24bd90286e3cdb1ac1fee5fcc895e9cf252bb3da3338caa2eade29afca998f8a"
+    }
+  ],
+  "blockers": [],
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "decision": "blocked",
+  "evidence_refs": [],
+  "github_mutation_allowed": false,
+  "handoff_notes": [],
+  "production_action_allowed": false,
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "room_id": "architecture-room",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-agent-turn-room-synthesis/v1",
+  "status": "blocked_agent_position_synthesis",
+  "turn_ids": [
+    "architecture-room-turn-01-architect-devlead-agent",
+    "architecture-room-turn-02-facilitator-agent",
+    "architecture-room-turn-03-product-owner-agent",
+    "architecture-room-turn-04-security-agent",
+    "architecture-room-turn-05-documentation-agent"
+  ],
+  "unresolved_disagreements": [],
+  "validation_blockers": [
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing"
+  ]
+}

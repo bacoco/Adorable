@@ -1,0 +1,63 @@
+{
+  "agent_ids": [
+    "architect-devlead-agent",
+    "developer-runner-agent",
+    "documentation-agent",
+    "product-owner-agent",
+    "test-agent"
+  ],
+  "agent_positions_stored_inline": false,
+  "agent_turn_count": 5,
+  "agent_turn_result_refs": [
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-01-product-owner-agent.json",
+      "sha256": "5bbf6c1d8a1457eefe1f951e14a0deac263b7781e846ce49fec14ecc97c69fe7"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-02-architect-devlead-agent.json",
+      "sha256": "64a3a374dafd71f2d25438e60bd7c1e8ba96b55513a6943222c63d1d00ebe9bf"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-03-developer-runner-agent.json",
+      "sha256": "ae25e50083b5ef4ad69081baeadef465d9f02e54bd288fa855ba8520758b07ee"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-04-test-agent.json",
+      "sha256": "2db33e170732dae4460ea064d0dff85f78476d5c20b17580de67e09314b63a6a"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-05-documentation-agent.json",
+      "sha256": "fe8beb04afcd4da73e1e09a7adae10c7b4d81af1826d1f9774ebd54e0c9518a8"
+    }
+  ],
+  "blockers": [],
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "decision": "blocked",
+  "evidence_refs": [],
+  "github_mutation_allowed": false,
+  "handoff_notes": [],
+  "production_action_allowed": false,
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "room_id": "story-room",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-agent-turn-room-synthesis/v1",
+  "status": "blocked_agent_position_synthesis",
+  "turn_ids": [
+    "story-room-turn-01-product-owner-agent",
+    "story-room-turn-02-architect-devlead-agent",
+    "story-room-turn-03-developer-runner-agent",
+    "story-room-turn-04-test-agent",
+    "story-room-turn-05-documentation-agent"
+  ],
+  "unresolved_disagreements": [],
+  "validation_blockers": [
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing"
+  ]
+}

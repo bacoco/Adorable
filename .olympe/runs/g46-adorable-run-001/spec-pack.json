@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "data_classification": "non-sensitive-unverified",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "text": "G46 candidate: add a bounded documentation marker to README.md to prove the downstream Olympe chain on a public non-sensitive repo without publication."
+    },
+    {
+      "id": "REQ-002",
+      "text": "Keep GitHub as downstream durable project memory."
+    },
+    {
+      "id": "REQ-003",
+      "text": "Do not push, publish, merge or deploy without explicit human approval."
+    },
+    {
+      "id": "REQ-004",
+      "text": "Use a fork or controlled working repo before any source repo mutation."
+    }
+  ],
+  "schema_version": "spec-pack/v1",
+  "source_project_card_ref": "examples/g46-first-real-downstream/adorable/project-card.json",
+  "source_request": {
+    "github_repo": "freestyle-sh/adorable",
+    "need": "G46 candidate: add a bounded documentation marker to README.md to prove the downstream Olympe chain on a public non-sensitive repo without publication.",
+    "source_repo": "freestyle-sh/adorable",
+    "working_repo": "bacoco/adorable"
+  },
+  "spec_id": "SPEC-G46-ADORABLE-001",
+  "status": "ready_for_human_review"
+}

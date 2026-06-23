@@ -1,0 +1,39 @@
+{
+  "agent_id": "test-agent",
+  "agent_position": null,
+  "agent_position_present": false,
+  "command_id": "invoke_story-room-turn-04-test-agent",
+  "context_request_ingestion_policy": {
+    "ledger": "room-runtime-adapter/context-request-ingestion*.jsonl",
+    "raw_context_stored": false,
+    "resolved_now": false,
+    "secret_value_loading_allowed": false
+  },
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-04-test-agent.json",
+  "execution_contract_sha256": "467ff02c0f651372f578ef22b928b4327336f4f34d538f4d6599acd1103a028e",
+  "github_mutation_allowed": false,
+  "model": "gpt-5",
+  "production_action_allowed": false,
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-04-test-agent.md",
+  "prompt_sha256": "52af18679a4be326e5931ed3502eb41d744049658fa6295500501cc90a6fc902",
+  "provider": "auto",
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "returncode": 1,
+  "room_id": "story-room",
+  "run_id": "g46-adorable-run-001",
+  "runtime": "hermes-cli",
+  "schema": "olympe-agent-turn-runtime-result/v1",
+  "status": "blocked_agent_position",
+  "stderr_bytes": 190,
+  "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "turn_id": "story-room-turn-04-test-agent",
+  "validation_blockers": [
+    "structured_json_position_missing"
+  ]
+}

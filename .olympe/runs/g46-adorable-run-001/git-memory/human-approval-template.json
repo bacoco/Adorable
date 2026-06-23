@@ -1,0 +1,42 @@
+{
+  "allowed_actions": [
+    "commit_olympe_memory",
+    "push_working_branch"
+  ],
+  "approval_reason": "",
+  "approved": false,
+  "approved_actions": [],
+  "approver_role": "",
+  "blocked_actions": [
+    "source_repo_mutation",
+    "merge",
+    "production_action"
+  ],
+  "dry_run_only": false,
+  "exact_commit_message": "chore(olympe): store g46-adorable-run-001 memory",
+  "exact_paths_root": ".olympe",
+  "expires_at": "",
+  "operator_must_replace_before_execute": true,
+  "planned_branch": "olympe/g46-adorable-run-001",
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-human-git-memory-approval/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

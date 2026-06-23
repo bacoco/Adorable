@@ -1,0 +1,80 @@
+{
+  "approval": {
+    "approval_ref": {
+      "path": "<external-approval-file>",
+      "sha256": "23ecf05928df010a7637c3417d2846ce912faaa87c2e34c028384f2f0741a81d"
+    },
+    "approved": true,
+    "approved_actions": [
+      "create_fork"
+    ],
+    "blockers": [],
+    "dry_run_only": false,
+    "raw_identity_stored": false,
+    "raw_review_body_stored": false,
+    "valid": true
+  },
+  "approved_scope_blockers": [],
+  "command_results": [
+    {
+      "argv": [
+        "gh",
+        "repo",
+        "fork",
+        "freestyle-sh/adorable",
+        "--clone=false",
+        "--remote=false"
+      ],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "id": "create_fork",
+      "mutation": "create_fork",
+      "returncode": 0,
+      "source_repo": "freestyle-sh/adorable",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_stored": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "target_repo": "bacoco/adorable"
+    }
+  ],
+  "created_at": "2026-06-23T20:19:40Z",
+  "execute_requested": true,
+  "github_mutations_executed": true,
+  "live_confirmation_present": true,
+  "live_mutations_executed": true,
+  "mode": "execute",
+  "production_actions_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "safety_gates": {
+    "raw_command_output_stored": false,
+    "requires_execute_flag": true,
+    "requires_live_confirmation_flag": true,
+    "requires_valid_approval": true,
+    "source_repo_mutation_rejected": true
+  },
+  "schema": "olympe-working-repo-apply-report/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "executed",
+  "target_repo": "bacoco/adorable",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "working_repo_plan_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/working-repo/working-repo-plan.json",
+    "sha256": "23393514e245f1d9010bc5622d9597abc9eaeb87187a1db2b10ae1ecfd2b3d6a"
+  }
+}

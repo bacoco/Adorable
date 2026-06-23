@@ -1,0 +1,59 @@
+{
+  "agent_id": "readiness-agent",
+  "blockers": [],
+  "context_requests": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/readiness-agent.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/qa-room.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/qa-room.json",
+    ".olympe/runs/g46-adorable-run-001/qa-verdict.json",
+    ".olympe/runs/g46-adorable-run-001/code-review.json",
+    ".olympe/runs/g46-adorable-run-001/pr-pack.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/acceptance-mapping.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/rapport-non-regression.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/verdict-qualite.md"
+  ],
+  "handoff_notes": [
+    "Use room output templates for any produced deliverable.",
+    "Keep claims tied to listed .olympe evidence refs.",
+    "Return structured context requests instead of broad context loading."
+  ],
+  "invitation_scope": "invited",
+  "mode": "deterministic-fixture",
+  "output_template_refs": [
+    {
+      "output_id": "acceptance-mapping",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/acceptance-mapping.md",
+      "sha256": "4cda06fb0406873f31404fe8e2ef8d7a7dd131825af989024b0e6a709e320146"
+    },
+    {
+      "output_id": "rapport-non-regression",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/rapport-non-regression.md",
+      "sha256": "6e57890d12a8a3afea615dbcf7d1d78e99d21cae8734f8236600d6d2df7ad008"
+    },
+    {
+      "output_id": "verdict-qualite",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/verdict-qualite.md",
+      "sha256": "e08dc4998fba2d52c618012b64400bf9fb84f1ce1a4d28123aaa24fc1ef06883"
+    }
+  ],
+  "position": "contribute_within_contract",
+  "room_id": "qa-room",
+  "run_id": "g46-adorable-run-001",
+  "safety": {
+    "github_mutation_allowed": false,
+    "live_model_invoked": false,
+    "production_action_allowed": false,
+    "raw_brief_stored": false,
+    "raw_context_stored": false,
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_secret_values_loaded": false,
+    "source_repo_mutation_allowed": false
+  },
+  "schema": "olympe-deterministic-agent-position/v1",
+  "status": "deterministic_position_ready",
+  "turn": 5
+}

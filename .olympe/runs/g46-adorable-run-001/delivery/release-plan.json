@@ -1,0 +1,73 @@
+{
+  "blockers": [
+    "production_human_approval_missing"
+  ],
+  "branch": "olympe/g46-adorable-run-001",
+  "created_at": "2026-06-23T20:31:20Z",
+  "github_repo": "freestyle-sh/adorable",
+  "go_no_go_gates": [
+    {
+      "gate": "qa_passed",
+      "status": "passed"
+    },
+    {
+      "gate": "code_review_approved",
+      "status": "passed"
+    },
+    {
+      "gate": "working_pr_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "rollback_plan_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "monitoring_plan_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "human_go_no_go",
+      "status": "blocked"
+    }
+  ],
+  "human_validation_required": true,
+  "merge_allowed": false,
+  "production_deploy_allowed": false,
+  "publication_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+    "sha256": "6541cf927de56d0c4dbf6ccc18d789583bf414c53e185533e247bcb16567ab41"
+  },
+  "release_candidate": {
+    "code_review_status": "approved",
+    "files_changed": [
+      "README.md"
+    ],
+    "qa_status": "passed",
+    "title": "Update README.md through Olympe dev-chain"
+  },
+  "release_publication_allowed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-release-plan/v1",
+  "source_pr_pack": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+    "sha256": "612a007a7fa2100777aabed101d2c55a1b00a57f5b249e5ad145665d723329ba"
+  },
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_without_production_approval",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  }
+}

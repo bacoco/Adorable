@@ -1,0 +1,51 @@
+{
+  "actor_profile": "hermes-dev",
+  "cleaned": true,
+  "cleanup": {
+    "attempted": true,
+    "remaining_children": 0,
+    "result": "not-needed"
+  },
+  "command": "python <g20_fixture_runtime> <workspace-redacted> <allowed-file> <content-redacted>",
+  "command_sha256": "35754df7d7b26793a2f0e069646c691ff8fdfa2457e472422e7e41c0591d353f",
+  "ended_at": "2026-06-23T18:41:36Z",
+  "links": [
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-task.json",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/argos-events.jsonl",
+    "docs/code-runner-generic.md"
+  ],
+  "pid": 1619051,
+  "policy_decision": "allow",
+  "process_id": "proc-code-runner-generic",
+  "resource_enforcement": {
+    "child_processes": "measured-on-kill (group scan; setsid escapes uncounted)",
+    "output_kb": "measured-after-the-fact",
+    "peak_cpu_percent": "not-measured (no sampler; value is a placeholder, not enforced)",
+    "peak_memory_mb": "not-measured (no sampler; value is a placeholder, not enforced)",
+    "runtime_seconds": "enforced-via-timeout"
+  },
+  "resource_limits": {
+    "max_child_processes": 8,
+    "max_cpu_percent": 200,
+    "max_memory_mb": 1024,
+    "max_output_kb": 512,
+    "max_runtime_seconds": 900
+  },
+  "resource_observed": {
+    "child_processes": 0,
+    "output_kb": 1,
+    "peak_cpu_percent": 0,
+    "peak_memory_mb": 0,
+    "runtime_seconds": 1
+  },
+  "room_id": "story-room",
+  "schema": "process-record",
+  "sequence": 1,
+  "started_at": "2026-06-23T18:41:36Z",
+  "status": "completed",
+  "timestamp": "2026-06-23T18:41:36Z",
+  "trace_id": "trace-code-runner-generic",
+  "version": 1
+}

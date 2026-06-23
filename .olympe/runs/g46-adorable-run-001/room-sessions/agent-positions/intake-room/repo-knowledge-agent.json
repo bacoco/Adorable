@@ -1,0 +1,60 @@
+{
+  "agent_id": "repo-knowledge-agent",
+  "blockers": [],
+  "context_requests": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/repo-knowledge-agent.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/intake-room.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/intake-room.json",
+    ".olympe/runs/g46-adorable-run-001/project-card.json",
+    ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+    ".olympe/runs/g46-adorable-run-001/progressive-disclosure-log.json",
+    ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/fiche-besoin.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/pdd-projet.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/decision-intake.md"
+  ],
+  "handoff_notes": [
+    "Use room output templates for any produced deliverable.",
+    "Keep claims tied to listed .olympe evidence refs.",
+    "Return structured context requests instead of broad context loading."
+  ],
+  "invitation_scope": "invited",
+  "mode": "deterministic-fixture",
+  "output_template_refs": [
+    {
+      "output_id": "fiche-besoin",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/fiche-besoin.md",
+      "sha256": "f1566e5bd0ba4762d6f50bc720a0dae25e07b5a2cabdd1cfeb703ad9188c66a0"
+    },
+    {
+      "output_id": "pdd-projet",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/pdd-projet.md",
+      "sha256": "12b18d69dbab934f201970c49a47ad4c34bf96f08634bec082b2f0c65d75a041"
+    },
+    {
+      "output_id": "decision-intake",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/decision-intake.md",
+      "sha256": "aaf40ffeaaad44e8d6989f51dabc82c0e1ad5c26a9be99c0ef0a7cd7f4ec8924"
+    }
+  ],
+  "position": "contribute_within_contract",
+  "room_id": "intake-room",
+  "run_id": "g46-adorable-run-001",
+  "safety": {
+    "github_mutation_allowed": false,
+    "live_model_invoked": false,
+    "production_action_allowed": false,
+    "raw_brief_stored": false,
+    "raw_context_stored": false,
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_secret_values_loaded": false,
+    "source_repo_mutation_allowed": false
+  },
+  "schema": "olympe-deterministic-agent-position/v1",
+  "status": "deterministic_position_ready",
+  "turn": 5
+}

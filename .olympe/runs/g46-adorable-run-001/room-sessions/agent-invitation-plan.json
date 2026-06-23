@@ -1,0 +1,264 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "live_model_invoked": false,
+  "progressive_invitation_policy": [
+    "required agents are briefed at room opening",
+    "invited agents are briefed only for rooms where the manifest lists them",
+    "additional agents require a future room decision and Argos event"
+  ],
+  "rooms": [
+    {
+      "agents": [
+        {
+          "agent_id": "facilitator-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/facilitator-agent.md",
+          "brief_sha256": "9412f9701d068f7c5b73dedc61d82f40525ed90c0e94ba075f1100187bfdfcdf",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/facilitator-agent.json",
+          "deterministic_position_sha256": "d63a26a7c4be540605c954d2df45d81bc7257db8d82612e69495a41f50ae5a8a",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/product-owner-agent.md",
+          "brief_sha256": "abe94d8c116d3ecc001229a379a22cddd770b3fdd2f806bd468f26e0bea5ed5a",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/product-owner-agent.json",
+          "deterministic_position_sha256": "e11cb92268d90b6d4d052c0c7eb8fe72ab6f6de82520ecb58cdca46d9f79992c",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "triage-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/triage-agent.md",
+          "brief_sha256": "d8129ed94fc7103cc229cae3067807c4183704e6c27b1c604ad0a2b60fd02cfe",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/triage-agent.json",
+          "deterministic_position_sha256": "2f306b4836f8391ea4f245e30d11172c2fe2164af45b01ea173f85a5ef8f2ca8",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "project-analyst-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/project-analyst-agent.md",
+          "brief_sha256": "c8d01cb9ac83434e7da2c68a73a62bfbb25ad0df929ee1fc3aac727e6a525b55",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/project-analyst-agent.json",
+          "deterministic_position_sha256": "69b170cd77c084a1065b31c4bb70b129c7ab2f17890718d69425605c1287532a",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "repo-knowledge-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/repo-knowledge-agent.md",
+          "brief_sha256": "12eecef6a9a61c212b4e250065b6cad3d10ca1c7a4cedd9a51fa3cdc88443122",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/repo-knowledge-agent.json",
+          "deterministic_position_sha256": "be3d01f4d59aebd73515118aaa75a614f118227e9e539abdb57f340c46afaaa8",
+          "invitation_scope": "invited"
+        }
+      ],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/intake-room.json",
+      "live_invocation_status": "not_invoked",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/intake-room.md",
+      "room_id": "intake-room",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/intake-room.json",
+      "selection_policy": "manifest_required_then_contextual_invited_agents"
+    },
+    {
+      "agents": [
+        {
+          "agent_id": "facilitator-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/facilitator-agent.md",
+          "brief_sha256": "9d2363f4dee76ffc19f1fb52a809d0c36a42cd95f50a49ff23ec4179c448f2ec",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/facilitator-agent.json",
+          "deterministic_position_sha256": "395d1f40e1fb200611c8ff84842bd1ffc507ed949bb22d091afe744f9318bcd4",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "project-analyst-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/project-analyst-agent.md",
+          "brief_sha256": "ba1a79c4549f789a1e7a682dcddaad8095c1089365f5cdee38717dfd29604895",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/project-analyst-agent.json",
+          "deterministic_position_sha256": "5238dc2cbffd9f365dac70aecfd1f8c9d49bc49113a633b56f4cb633d8a170f4",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "repo-knowledge-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/repo-knowledge-agent.md",
+          "brief_sha256": "de71da78ccb9b1cd8c5c9dc377317795558a9eeeaed9960b83f66b317ce93cc7",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/repo-knowledge-agent.json",
+          "deterministic_position_sha256": "8e9c0d9f220c04a884c5b2b3b8cfc1e407bfe7b24b2ed1d1392cc45741bef0fe",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/product-owner-agent.md",
+          "brief_sha256": "bc69c7889da75e5d377d088d881d04b8a349ae4c42d4452a7f6b712a165d2ca4",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/product-owner-agent.json",
+          "deterministic_position_sha256": "4c71ceafb82c5cdbade497d4b498144bec6911113ed5b6bd6561ef31b8c7d1f1",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/documentation-agent.md",
+          "brief_sha256": "7d68c83e2953dcc5ed4f36a15a687ffdd81885f48180bc8865d48053ed49d9e9",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/documentation-agent.json",
+          "deterministic_position_sha256": "ee8ff38851193f23263579919e10d658feefd8604d9f9a7206a747d116bc0827",
+          "invitation_scope": "invited"
+        }
+      ],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/discovery-room.json",
+      "live_invocation_status": "not_invoked",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/discovery-room.md",
+      "room_id": "discovery-room",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/discovery-room.json",
+      "selection_policy": "manifest_required_then_contextual_invited_agents"
+    },
+    {
+      "agents": [
+        {
+          "agent_id": "architect-devlead-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/architect-devlead-agent.md",
+          "brief_sha256": "9c0591385e7e99f05cc6dddc93fa32a2d0333a32b90584dd5c592501f44bf4c2",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/architect-devlead-agent.json",
+          "deterministic_position_sha256": "302ef77cdf9fc612d76cd3c18583ad309e0418bfa061faf22c25ed3feeb74acf",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "facilitator-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/facilitator-agent.md",
+          "brief_sha256": "1b50ad005fd2e75e68b3a737c273b368f2299df115b6a44c4cb62570ca9e51fb",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/facilitator-agent.json",
+          "deterministic_position_sha256": "e58ccdf026b3e4c8b955c0572dc10db89b295771f160bcc14b285103de045713",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/product-owner-agent.md",
+          "brief_sha256": "107a85c9549bae0bf64efc6045d3eb4cf0d4855c3e2efa340bc656cef6dba102",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/product-owner-agent.json",
+          "deterministic_position_sha256": "016c9f8310ecded4d19b1ba182fc8d524bb5258f18c77ac9b2721e21fd5ccf26",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "security-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/security-agent.md",
+          "brief_sha256": "53d506b81042c7269ac0b2414f5747e464b206b75c346a211bf54b255a0ca0d0",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/security-agent.json",
+          "deterministic_position_sha256": "07d4a73f62cf9bf512f21ae53cb5fc1392612cb8eb4fc23b0fd9ccf9977925f7",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/documentation-agent.md",
+          "brief_sha256": "03dca3289e8eabcdf5623222a6b9ffdc8d0af8889f4085c128862fe9c4e136f1",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/documentation-agent.json",
+          "deterministic_position_sha256": "42854e7aba654581bc89e06c87e65d31d38e25c98a8d084977b7209d03cb923e",
+          "invitation_scope": "invited"
+        }
+      ],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/architecture-room.json",
+      "live_invocation_status": "not_invoked",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/architecture-room.md",
+      "room_id": "architecture-room",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/architecture-room.json",
+      "selection_policy": "manifest_required_then_contextual_invited_agents"
+    },
+    {
+      "agents": [
+        {
+          "agent_id": "product-owner-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/product-owner-agent.md",
+          "brief_sha256": "b35a01ebffa7acbe1712ecdee6e4848d0bc7cb8c66f93a33366cf040133c293a",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/product-owner-agent.json",
+          "deterministic_position_sha256": "3f2866a61f9d149f9a8f4cceafa4788f14a628f4a914b80fb9ef0c9792f4f6a0",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "architect-devlead-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/architect-devlead-agent.md",
+          "brief_sha256": "f4a556e67b5742f8bd30b419d94395c1018e93f0a3141d6d003a63f826c08937",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/architect-devlead-agent.json",
+          "deterministic_position_sha256": "b34bea464bfddece1c51519b4d462c8a6b4c2e898ff094f3632c1aeb5562cf71",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "developer-runner-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/developer-runner-agent.md",
+          "brief_sha256": "d5d1d2c1b1390aff5cc7250ccede5058fe472b6d37a4256a15dc4522f4626fd8",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/developer-runner-agent.json",
+          "deterministic_position_sha256": "181d9180d61cbc8790e936e8bb14064f67342a22a045456a62914c8b1eddac7d",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "test-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/test-agent.md",
+          "brief_sha256": "8417b7703ee1094735fb020a270ddc8e22d7927d72aeb54f070ee8c0f3dfbc1a",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/test-agent.json",
+          "deterministic_position_sha256": "88555dd293ab01cccacbd1c9227a052154908d11f005b7c784fbb4733847bbdd",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/documentation-agent.md",
+          "brief_sha256": "3e1c479b6560d28b8d622a2bdbd58c28ba5cc865f53aef2743b696fd56d0679b",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/documentation-agent.json",
+          "deterministic_position_sha256": "f6c525f15cd1b8b6d337e2c1e028076dd3b3197ddbcc48a8109151b7949d795e",
+          "invitation_scope": "invited"
+        }
+      ],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/story-room.json",
+      "live_invocation_status": "not_invoked",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/story-room.md",
+      "room_id": "story-room",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+      "selection_policy": "manifest_required_then_contextual_invited_agents"
+    },
+    {
+      "agents": [
+        {
+          "agent_id": "test-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/test-agent.md",
+          "brief_sha256": "e19f24b3fb5aa95d750c57dd638300392d787ae46eb904818cabc55397cabb1e",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/test-agent.json",
+          "deterministic_position_sha256": "ffdf896c2716de4cf3485833d7a69a108c3664e923b3df60c6df39c84361ef35",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "qa-automation-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/qa-automation-agent.md",
+          "brief_sha256": "96560c241ddd212981083f3a188c615f1c6acf177d9bbccd1988321d9eb1ed28",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/qa-automation-agent.json",
+          "deterministic_position_sha256": "c00f9b850b25425ed275b8916dac08e2fd94aaa924d9ef6e4e2f0e31afeaf67c",
+          "invitation_scope": "required"
+        },
+        {
+          "agent_id": "security-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/security-agent.md",
+          "brief_sha256": "6f669d98721f92309239fed9cb362c864ce94525e4e82519538077fa2d0d4bfd",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/security-agent.json",
+          "deterministic_position_sha256": "9be990f9b56eb47a9978d1dc71aa2fe26008a180ac0cde72c49dccbba7b86489",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "rgaa-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/rgaa-agent.md",
+          "brief_sha256": "97ea5d07eaa744db513ddc0bcd8801a545ff5b056fd759578ffb1af09af26574",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/rgaa-agent.json",
+          "deterministic_position_sha256": "b8b86a7bda776832c00f5049d92985b0279383b5bdf937a03e1c529914faf38e",
+          "invitation_scope": "invited"
+        },
+        {
+          "agent_id": "readiness-agent",
+          "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/qa-room/readiness-agent.md",
+          "brief_sha256": "b2ea75152d610049806cf2888493f059fbc29e6838ad8a9f975d697556ecd0a5",
+          "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/readiness-agent.json",
+          "deterministic_position_sha256": "0f1ababdd36f0eb8b297ff14bbf453161c022927d40fb7dbec8d0cacabb65c1b",
+          "invitation_scope": "invited"
+        }
+      ],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/qa-room.json",
+      "live_invocation_status": "not_invoked",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/qa-room.md",
+      "room_id": "qa-room",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/qa-room.json",
+      "selection_policy": "manifest_required_then_contextual_invited_agents"
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-agent-invitation-plan/v1",
+  "status": "planned_and_materialized_as_deterministic_fixture"
+}

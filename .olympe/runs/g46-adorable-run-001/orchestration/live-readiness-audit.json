@@ -1,0 +1,224 @@
+{
+  "blockers": [
+    "room_runtime:dry_run_approval_valid_plan_blocked",
+    "room_runtime_evidence:not_executed",
+    "dev_runner:dry_run_ready_for_execute",
+    "working_repo:dry_run_approval_valid_plan_blocked",
+    "git_memory:dry_run_approval_valid_plan_blocked",
+    "remote_git_memory:blocked_remote_git_memory",
+    "github_memory_evidence:blocked_github_memory_evidence",
+    "publication_prerequisites:blocked_publication_prerequisites",
+    "github_publication:dry_run_approval_valid_plan_blocked",
+    "github_publication_evidence:blocked_github_publication_evidence"
+  ],
+  "controlled_smoke_coverage": {
+    "dev_runner_dry_run_adapter": "covered by scripts/check_olympe_start.py; live OpenHands execution remains gated",
+    "dev_runner_fake_openhands": "covered by scripts/check_olympe_start.py; proves live PR-pack promotion without real LLM infra",
+    "git_memory_temp_bare_remote": "covered by scripts/check_olympe_start.py; not a GitHub remote",
+    "publication_fake_gh": "covered by scripts/check_olympe_start.py; not a remote GitHub mutation",
+    "remote_git_memory_fake_gh": "covered by scripts/check_olympe_start.py; read-only metadata probe, not a GitHub mutation",
+    "room_runtime_fake_hermes": "covered by scripts/check_olympe_start.py; not a real provider/model run",
+    "working_repo_fake_gh": "covered by scripts/check_olympe_start.py; not persisted as live evidence"
+  },
+  "created_at": "2026-06-23T12:00:00Z",
+  "github_memory_primary": true,
+  "github_mutations_executed_by_audit": false,
+  "live_execution_performed_by_audit": false,
+  "manual_next_steps": [
+    "Create or confirm the working fork/repo with explicit human approval.",
+    "Commit and push `.olympe/` memory to the working branch after explicit approval.",
+    "Run read-only GitHub prerequisite probes until branch and `.olympe/index.json` are visible.",
+    "Execute Super-Hermes room runtime with provider/model and non-fixture approval, then verify structured ingestion.",
+    "Execute the live code runner outside fixture mode with non-fixture approval, then inspect runner evidence.",
+    "Create working repo issues and PR only after publication approval and execution confirmation.",
+    "Keep upstream merge, release, deploy and rollback behind separate production approval."
+  ],
+  "production_actions_executed_by_audit": false,
+  "production_gate": {
+    "deploy_allowed_now": false,
+    "expected_blocked_status": "blocked_without_production_approval",
+    "merge_allowed_now": false,
+    "rollback_allowed_now": false,
+    "status": "blocked_without_production_approval"
+  },
+  "project_id": "g46-adorable",
+  "readiness_gates": [
+    {
+      "blocker": null,
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/room-session-run.json",
+      "id": "room_sessions",
+      "note": "deterministic rooms must have produced prompts, decisions and handoffs",
+      "observed_status": "executed_deterministic",
+      "ready": true,
+      "ready_statuses": [
+        "executed_deterministic"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "room_runtime:dry_run_approval_valid_plan_blocked",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/apply-room-runtime-adapter.dry-run-approved-report.json",
+      "id": "room_runtime",
+      "note": "live Super-Hermes runtime must ingest structured room results",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "ready": false,
+      "ready_statuses": [
+        "executed"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "room_runtime_evidence:not_executed",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/live-room-runtime-evidence.apply-room-runtime-adapter.dry-run-approved-report.json",
+      "id": "room_runtime_evidence",
+      "note": "live Super-Hermes runtime must produce a non-fixture agent-turn evidence pack",
+      "observed_status": "not_executed",
+      "ready": false,
+      "ready_statuses": [
+        "ready_live_room_runtime_evidence"
+      ],
+      "required": true
+    },
+    {
+      "blocker": null,
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+      "id": "room_runtime_context_resolution",
+      "note": "runtime context requests must be resolved metadata-only or absent before Super-Hermes proof can count",
+      "observed_status": "no_context_requests",
+      "ready": true,
+      "ready_statuses": [
+        "no_context_requests",
+        "resolved_metadata_only"
+      ],
+      "required": true
+    },
+    {
+      "blocker": null,
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/dev-chain-run.json",
+      "id": "dev_chain",
+      "note": "bounded change, QA and review must be present",
+      "observed_status": "passed",
+      "ready": true,
+      "ready_statuses": [
+        "passed"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "dev_runner:dry_run_ready_for_execute",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/dev-runner/apply-dev-runner-adapter.dry-run-approved-report.json",
+      "id": "dev_runner",
+      "note": "live code runner must replay the bounded task and produce live QA/review/PR pack artifacts",
+      "observed_status": "dry_run_ready_for_execute",
+      "ready": false,
+      "ready_statuses": [
+        "executed"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "working_repo:dry_run_approval_valid_plan_blocked",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/working-repo/apply-working-repo-adapter.dry-run-approved-report.json",
+      "id": "working_repo",
+      "note": "working fork/repo must exist before publication",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "ready": false,
+      "ready_statuses": [
+        "executed",
+        "externally_satisfied"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "git_memory:dry_run_approval_valid_plan_blocked",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.dry-run-approved-report.json",
+      "id": "git_memory",
+      "note": ".olympe memory must be committed and pushed or externally confirmed",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "ready": false,
+      "ready_statuses": [
+        "executed",
+        "externally_satisfied"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "remote_git_memory:blocked_remote_git_memory",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/git-memory/remote-git-memory-probe.json",
+      "id": "remote_git_memory",
+      "note": "remote working repo branch must expose .olympe/index.json before publication",
+      "observed_status": "blocked_remote_git_memory",
+      "ready": false,
+      "ready_statuses": [
+        "ready_remote_git_memory"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "github_memory_evidence:blocked_github_memory_evidence",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/git-memory/github-memory-evidence.json",
+      "id": "github_memory_evidence",
+      "note": "remote GitHub memory must have a metadata-only evidence pack before publication",
+      "observed_status": "blocked_github_memory_evidence",
+      "ready": false,
+      "ready_statuses": [
+        "ready_github_memory_evidence"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "publication_prerequisites:blocked_publication_prerequisites",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/publication/publication-prerequisites-probe.json",
+      "id": "publication_prerequisites",
+      "note": "working repo branch and remote .olympe/index.json must be visible",
+      "observed_status": "blocked_publication_prerequisites",
+      "ready": false,
+      "ready_statuses": [
+        "ready_for_publication_prerequisites"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "github_publication:dry_run_approval_valid_plan_blocked",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/publication/apply-github-publication.dry-run-approved-report.json",
+      "id": "github_publication",
+      "note": "issues and working PR must be created in the working repo",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "ready": false,
+      "ready_statuses": [
+        "executed"
+      ],
+      "required": true
+    },
+    {
+      "blocker": "github_publication_evidence:blocked_github_publication_evidence",
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/publication/github-publication-evidence.apply-github-publication.dry-run-approved-report.json",
+      "id": "github_publication_evidence",
+      "note": "working repo publication must have a metadata-only evidence pack after labels, milestone, issues and PR are created",
+      "observed_status": "blocked_github_publication_evidence",
+      "ready": false,
+      "ready_statuses": [
+        "ready_github_publication_evidence"
+      ],
+      "required": true
+    },
+    {
+      "blocker": null,
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/delivery/delivery-readiness.json",
+      "id": "delivery_handoff",
+      "note": "production, merge and release remain intentionally blocked behind a separate human gate",
+      "observed_status": "blocked_without_production_approval",
+      "ready": true,
+      "ready_statuses": [
+        "blocked_without_production_approval"
+      ],
+      "required": false
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-live-readiness-audit/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_live_readiness"
+}

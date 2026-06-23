@@ -1,0 +1,19 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/human-approval-template.json",
+  "blockers": [],
+  "no_github_mutation_executed": true,
+  "no_live_model_invoked": true,
+  "operator_steps": [
+    "Review room-runtime-adapter-plan.json and every room runtime plan.",
+    "Review the agent_turn_plan and agent briefs before enabling live model invocation.",
+    "Review output_draft_refs carried by each room and agent turn before enabling live model invocation.",
+    "Review agent_turn_command_plan plus agent-turn-prompts/ and agent-turn-contracts/ before per-agent execution.",
+    "Configure a supported live adapter, provider and model.",
+    "Fill human-approval-template.json before any model invocation.",
+    "Keep GitHub, source repo, merge and production mutations blocked."
+  ],
+  "plan_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-plan.json",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-room-runtime-adapter-handoff/v1",
+  "status": "ready_for_human_runtime_approval"
+}

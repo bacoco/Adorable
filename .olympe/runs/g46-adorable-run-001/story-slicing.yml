@@ -1,0 +1,18 @@
+schema_version: story-slicing/v1
+slicing_id: SLICE-G46-ADORABLE-001
+source_spec_pack:
+  path: examples/g46-first-real-downstream/adorable/spec-pack.json
+  sha256: 65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f
+status: ready_for_runner_task
+stories:
+- story_id: STORY-G46-ADORABLE-001
+  runner_task_ref: examples/g46-first-real-downstream/adorable/runner-task.json
+  status: ready_for_runner
+  acceptance_criteria:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  human_gate:
+    required: false
+    reason: planning pack only; publication gate remains separate

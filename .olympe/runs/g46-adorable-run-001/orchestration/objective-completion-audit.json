@@ -1,0 +1,338 @@
+{
+  "completion_claim_allowed": false,
+  "created_at": "2026-06-23T12:00:00Z",
+  "downstream_harness_scope": "downstream-only",
+  "github_memory_primary": true,
+  "github_mutations_executed_by_audit": false,
+  "live_execution_plan_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-execution-plan.json",
+    "sha256": "b2fd3587aae1b73a200b22d763fe1eb82666bcedb6ba308167a67b3da4e4f629"
+  },
+  "live_model_invoked_by_audit": false,
+  "live_readiness_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+    "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+  },
+  "manual_or_blocked_steps": [
+    "Execute guarded working repo creation/designation against a real private GitHub repo after human approval.",
+    "Commit and push `.olympe/` memory to the approved working branch, then run `probe-remote-git-memory` until `.olympe/index.json` visibility is proved.",
+    "Execute the live code runner outside fixture mode with non-fixture approval and inspect runner evidence.",
+    "Run Super-Hermes provider/model in agent-turns mode with non-fixture approval and ingest structured positions.",
+    "Create labels, milestone, issues and working PR in the working repo after publication approval.",
+    "Keep upstream PR, merge, deploy and rollback behind separate human gates."
+  ],
+  "olympe_self_enforcement": false,
+  "production_actions_executed_by_audit": false,
+  "project_id": "g46-adorable",
+  "proved_requirement_count": 9,
+  "raw_file_contents_stored": false,
+  "raw_github_response_body_stored": false,
+  "raw_model_output_stored": false,
+  "raw_secret_values_loaded": false,
+  "requirement_count": 13,
+  "requirements": [
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+          "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/working-repo/working-repo-plan.json",
+          "sha256": "376052603b825eefcf5f1e26c8d48ed27afea05f93fd852b18be5fca3403bca2"
+        }
+      ],
+      "id": "entry_project",
+      "notes": [
+        "Repo source read-only; working repo/fork remains the only planned mutation target."
+      ],
+      "requirement": "Prendre un repo GitHub existant ou un nouveau repo prive et isoler le repo source en fork-first.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+          "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+        }
+      ],
+      "id": "onboarding_safe_scan",
+      "notes": [],
+      "requirement": "Scanner le projet sans lire les secrets et produire stack, architecture, tests, risques et conventions.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/index.json",
+          "sha256": "34097800008940383316ff8d763a5c20bf99e2835372dfd7d775c7d445d2dde0"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/run.json",
+          "sha256": "a2f276a6f0d9e6079369d5ee2355eb2b0a781c667ca7f597c88b7866fe0c485c"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/project-card.json",
+          "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+        }
+      ],
+      "id": "project_memory_materialized",
+      "notes": [],
+      "requirement": "Initialiser la memoire projet dans le repo downstream local sous .olympe/.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/room-session-run.json",
+          "sha256": "a8b35548860cf1442c766146fa027790f0aa533cf13af7ef60571efac6a2c05b"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-invitation-plan.json",
+          "sha256": "c4541f20fba138fb855797db870f214d394ebd7d913918e3a5ed0d84c993eb0b"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/room-decisions.json",
+          "sha256": "a7287164de3ec95d015ed97ea643bd469237803e0823f33389dfef8f74b19e30"
+        }
+      ],
+      "id": "super_hermes_rooms",
+      "notes": [
+        "Current proof is deterministic room execution, not live provider execution."
+      ],
+      "requirement": "Ouvrir les rooms, inviter les agents utiles, produire decisions, handoffs, rapports et evenements Argos.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-plan.json",
+          "sha256": "6180e2b726e102f29cc5c51fdcf730014247089327604fd2566986fcbfd4e969"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-probe.json",
+          "sha256": "4a10fefa6cf64b036cbb323699f1f116496fe6751eec263b8815be5e7a9b11fa"
+        }
+      ],
+      "id": "agent_turn_runtime_contracts",
+      "notes": [],
+      "requirement": "Preparer des prompts, contrats et commandes par tour agent pour une execution Super-Hermes live.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/context-ledger.jsonl",
+          "sha256": "188ad471ea343ed1849fe5402d0923256824044b52086c60e22dfbaf7d38df05"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-sessions/context-request-ledger.jsonl",
+          "sha256": "332cb7057df6a406c086a9684b5e4ad0e160dd123fe33b4883f8ec12607cb3e5"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+          "sha256": "5b7d4ac9804d1ca64226b9933a28ff6235a4152a2b90390026398df5859f824b"
+        }
+      ],
+      "id": "progressive_disclosure",
+      "notes": [
+        "Context requests are resolved metadata-only; raw context is not copied into ledgers."
+      ],
+      "requirement": "Charger manifests et index d abord, demander les details seulement quand une room ou un agent en a besoin.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/dev-chain/dev-chain-run.json",
+          "sha256": "f08bba9d25881439ed788537f89bc6640dc7c5de16ab4eb18646aaa7d268f196"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+          "sha256": "7dc8ad6155ae3c3013f3bfa777eb0e6db3564213e840cc54629467188d797dbc"
+        }
+      ],
+      "id": "dev_chain_pr_pack",
+      "notes": [
+        "Persistent demo PR pack is produced by the fixture runner; live runner replay is tracked separately."
+      ],
+      "requirement": "Transformer le besoin en spec, story, changement borne, QA/review et PR pack.",
+      "status": "proved"
+    },
+    {
+      "blockers": [
+        "live_code_runner_not_executed_with_human_approval",
+        "live_pr_pack_not_ready"
+      ],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/dev-runner/dev-runner-plan.json",
+          "sha256": "1bf12123219c5e308a78bb10c667d72797671d072497c89c2aab39d1107cefc5"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/dev-runner/apply-dev-runner-adapter.dry-run-approved-report.json",
+          "sha256": "68daca2e4735cc8c99ffee3a4c2dc0df4754e56d20faa721e20f6920178545c2"
+        }
+      ],
+      "id": "code_runner_live_execution",
+      "notes": [
+        "The live runner adapter can now promote successful live runner evidence into QA/review/PR pack artifacts; persistent demo remains dry-run."
+      ],
+      "requirement": "Executer le runner de code hors fixture sur la tache bornee et produire QA/review/PR pack live.",
+      "status": "blocked"
+    },
+    {
+      "blockers": [
+        "git_memory_not_pushed_to_github_private_repo",
+        "remote_olympe_index_not_verified",
+        "github_memory_evidence_not_ready"
+      ],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/git-memory/git-memory-probe.json",
+          "sha256": "f6835dc6033d029d06c966af84f0ce0bc0c6ac06177d43bef1be927d6b7f0c24"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.dry-run-approved-report.json",
+          "sha256": "d4eb2e64e4d6595aa5ff2c433ecb83d05e0d4487bd9017d51646a0b033ecc2ec"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/git-memory/remote-git-memory-probe.json",
+          "sha256": "050511bccaf27d997c7d02ff5fea904c99460981cd704af6012b7595d3f7c4ab"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/git-memory/github-memory-evidence.json",
+          "sha256": "f52e62360761ea111d8bdea7d60f79e7adc5c6989795e151a8bc8cad1d6c9127"
+        }
+      ],
+      "id": "github_memory_live",
+      "notes": [
+        "Dry-run and local/bare-remote smoke exist; dedicated GitHub remote memory proof and evidence pack are required before completion."
+      ],
+      "requirement": "Construire la memoire durable dans GitHub prive avec branche et historique.",
+      "status": "blocked"
+    },
+    {
+      "blockers": [
+        "github_publication_not_executed_with_human_approval",
+        "github_publication_evidence_not_ready"
+      ],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+          "sha256": "a24e85e4225f4c5f73e7f3348cca69f7d131780d6148010a0a10fd2d6ebc89a1"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/publication/publication-prerequisites-probe.json",
+          "sha256": "d763731d307b417ff42b3c9902e383d8a7ea2c3e0e809832170d794726d6be48"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/publication/apply-github-publication.dry-run-approved-report.json",
+          "sha256": "3e7cfd5d6902d99e1d5557b52797a3d9ef26c5b1f62125be24f3187908ce4b9e"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-evidence.apply-github-publication.dry-run-approved-report.json",
+          "sha256": "9faebc6b0fc7ecb6273f7f0053dc49d9c0371040dd877df1124410c97aa3bac5"
+        }
+      ],
+      "id": "github_publication_live",
+      "notes": [
+        "Fake gh smoke proves command shape; real completion requires a ready metadata-only publication evidence pack for the working repo."
+      ],
+      "requirement": "Creer ou mettre a jour labels, milestones, issues et PR dans le repo de travail.",
+      "status": "blocked"
+    },
+    {
+      "blockers": [
+        "live_super_hermes_provider_run_missing",
+        "live_room_runtime_evidence_not_ready",
+        "room_runtime_context_requests_not_resolved"
+      ],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-plan.json",
+          "sha256": "6180e2b726e102f29cc5c51fdcf730014247089327604fd2566986fcbfd4e969"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-probe.json",
+          "sha256": "4a10fefa6cf64b036cbb323699f1f116496fe6751eec263b8815be5e7a9b11fa"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/live-room-runtime-evidence.apply-room-runtime-adapter.dry-run-approved-report.json",
+          "sha256": "eab36036e1aa0dddc25419273fd701a24bf28b1747826fafffc42bdfae818a7d"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+          "sha256": "5b7d4ac9804d1ca64226b9933a28ff6235a4152a2b90390026398df5859f824b"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+          "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+        }
+      ],
+      "id": "super_hermes_live_execution",
+      "notes": [
+        "Agent-turn execution is planned by default for live validation; persistent evidence remains dry-run/fake-runtime only until the evidence pack is ready and runtime context requests are resolved or absent."
+      ],
+      "requirement": "Executer les rooms par un runtime Super-Hermes live avec positions agents, syntheses de rooms et resolution metadata-only des demandes de contexte.",
+      "status": "blocked"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/delivery/delivery-readiness.json",
+          "sha256": "122430dd6b13b0885269862c63b01aac304a319174c15dceebd8cf370b6941cf"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+          "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-execution-plan.json",
+          "sha256": "b2fd3587aae1b73a200b22d763fe1eb82666bcedb6ba308167a67b3da4e4f629"
+        }
+      ],
+      "id": "human_gates",
+      "notes": [],
+      "requirement": "Bloquer publication, merge, deploy et rollback sans validation humaine explicite.",
+      "status": "proved"
+    },
+    {
+      "blockers": [],
+      "evidence_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+          "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/orchestration/safe-pipeline-run.json",
+          "sha256": "14cb6f293aa240a0229b4c3a70b9cc4ec743470173646d843508fe1111dd3b62"
+        }
+      ],
+      "id": "completion_honesty",
+      "notes": [
+        "Completion audit remains blocked until live GitHub, live Super-Hermes and remote memory proofs exist."
+      ],
+      "requirement": "Ne pas pretendre que la production live est fonctionnelle sans preuve reproductible.",
+      "status": "proved"
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-objective-completion-audit/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "status": "incomplete_blocked_by_live_evidence",
+  "unproved_requirements": [
+    "code_runner_live_execution",
+    "github_memory_live",
+    "github_publication_live",
+    "super_hermes_live_execution"
+  ]
+}

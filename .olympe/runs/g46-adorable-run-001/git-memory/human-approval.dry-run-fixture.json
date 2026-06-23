@@ -1,0 +1,41 @@
+{
+  "approval_reason": "Fixture-only approval to validate dry-run Git memory gates without local commit or push.",
+  "approved": true,
+  "approved_actions": [
+    "commit_olympe_memory"
+  ],
+  "approver_role": "fixture-operator",
+  "blocked_actions": [
+    "source_repo_mutation",
+    "merge",
+    "production_action",
+    "push_working_branch"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "dry_run_only": true,
+  "exact_commit_message": "chore(olympe): store g46-adorable-run-001 memory",
+  "exact_paths_root": ".olympe",
+  "expires_at": "fixture-only",
+  "operator_must_replace_before_execute": true,
+  "planned_branch": "olympe/g46-adorable-run-001",
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-human-git-memory-approval/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

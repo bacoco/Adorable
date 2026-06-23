@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "reason": "Publishing, pushing, opening a real PR, merging and production actions require explicit human validation.",
+  "schema": "human-decision-placeholder/v1",
+  "status": "required_for_publication"
+}

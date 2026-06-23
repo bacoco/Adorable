@@ -1,0 +1,17 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/dev-runner/human-approval-template.json",
+  "blockers": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "github_mutations_executed": false,
+  "live_code_runner_executed": false,
+  "operator_next_steps": [
+    "review the bounded runner task and allowed_files before approving live execution",
+    "run apply-dev-runner-adapter without --execute to confirm dry_run_ready_for_execute",
+    "only then add --execute and --i-understand-live-code-runner to invoke the live runner"
+  ],
+  "plan_ref": ".olympe/runs/g46-adorable-run-001/dev-runner/dev-runner-plan.json",
+  "production_actions_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-dev-runner-handoff/v1",
+  "status": "ready_for_human_approval"
+}

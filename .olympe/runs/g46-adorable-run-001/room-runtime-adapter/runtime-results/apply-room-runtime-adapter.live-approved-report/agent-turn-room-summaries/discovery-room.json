@@ -1,0 +1,63 @@
+{
+  "agent_ids": [
+    "documentation-agent",
+    "facilitator-agent",
+    "product-owner-agent",
+    "project-analyst-agent",
+    "repo-knowledge-agent"
+  ],
+  "agent_positions_stored_inline": false,
+  "agent_turn_count": 5,
+  "agent_turn_result_refs": [
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-01-facilitator-agent.json",
+      "sha256": "8812929ee9ab17b654ca732f3b0f7647570e3f0dc74c3055f419d41deaa68a3c"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-02-project-analyst-agent.json",
+      "sha256": "b2cb596ae75bfe42b9f5b4d24d25ac7aefdb0a466a0e0a612f3d9308b84b0e14"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-03-repo-knowledge-agent.json",
+      "sha256": "89ff3023e4863cdebd494ac7d948ddf35e228fe1c8dec6c1df877b2fd3485e4a"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-04-product-owner-agent.json",
+      "sha256": "d235ffdce25245a0f95af54f6db8e8daf377e95f32f64023871eb27450946269"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-05-documentation-agent.json",
+      "sha256": "d4f32baac0fd3f09745a00f7dea00fbb3b69c091337132f75c124b17520932d4"
+    }
+  ],
+  "blockers": [],
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "decision": "blocked",
+  "evidence_refs": [],
+  "github_mutation_allowed": false,
+  "handoff_notes": [],
+  "production_action_allowed": false,
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "room_id": "discovery-room",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-agent-turn-room-synthesis/v1",
+  "status": "blocked_agent_position_synthesis",
+  "turn_ids": [
+    "discovery-room-turn-01-facilitator-agent",
+    "discovery-room-turn-02-project-analyst-agent",
+    "discovery-room-turn-03-repo-knowledge-agent",
+    "discovery-room-turn-04-product-owner-agent",
+    "discovery-room-turn-05-documentation-agent"
+  ],
+  "unresolved_disagreements": [],
+  "validation_blockers": [
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing"
+  ]
+}

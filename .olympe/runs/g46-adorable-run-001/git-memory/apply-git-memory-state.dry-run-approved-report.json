@@ -1,0 +1,135 @@
+{
+  "approval": {
+    "approval_ref": {
+      "path": ".olympe/runs/g46-adorable-run-001/git-memory/human-approval.dry-run-fixture.json",
+      "sha256": "a26ee407b3fec2ae6851a1f7ae5892007b1ec5e4661bf5f3622abcbb6a57013d"
+    },
+    "approved": true,
+    "approved_actions": [
+      "commit_olympe_memory"
+    ],
+    "blockers": [],
+    "dry_run_only": true,
+    "raw_identity_stored": false,
+    "raw_review_body_stored": false,
+    "valid": true
+  },
+  "approved_scope_blockers": [
+    "git_memory_probe_not_ready"
+  ],
+  "command_results": [
+    {
+      "argv": [
+        "git",
+        "add",
+        ".olympe"
+      ],
+      "eligible_for_execution": false,
+      "executed": false,
+      "execution_blockers": [
+        "git_memory_probe_not_ready",
+        "dry_run_only"
+      ],
+      "id": "stage_olympe_memory",
+      "mutation": "commit_olympe_memory",
+      "requires_action": "commit_olympe_memory",
+      "returncode": null,
+      "stderr_stored": false,
+      "stdout_stored": false
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "chore(olympe): store g46-adorable-run-001 memory"
+      ],
+      "eligible_for_execution": false,
+      "executed": false,
+      "execution_blockers": [
+        "git_memory_probe_not_ready",
+        "dry_run_only"
+      ],
+      "id": "commit_olympe_memory",
+      "mutation": "commit_olympe_memory",
+      "requires_action": "commit_olympe_memory",
+      "returncode": null,
+      "stderr_stored": false,
+      "stdout_stored": false
+    },
+    {
+      "argv": [
+        "git",
+        "push",
+        "olympe-working",
+        "olympe/g46-adorable-run-001"
+      ],
+      "eligible_for_execution": false,
+      "executed": false,
+      "execution_blockers": [
+        "action_not_approved",
+        "git_memory_probe_not_ready",
+        "dry_run_only"
+      ],
+      "id": "push_working_branch",
+      "mutation": "push_working_branch",
+      "requires_action": "push_working_branch",
+      "returncode": null,
+      "stderr_stored": false,
+      "stdout_stored": false
+    }
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "execute_requested": false,
+  "git_memory_probe_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/git-memory/git-memory-probe.json",
+    "sha256": "f6835dc6033d029d06c966af84f0ce0bc0c6ac06177d43bef1be927d6b7f0c24"
+  },
+  "github_mutations_executed": false,
+  "live_confirmation_present": false,
+  "live_git_mutations_executed": false,
+  "mode": "dry-run",
+  "planned_branch": "olympe/g46-adorable-run-001",
+  "preflight": {
+    "blockers": [
+      "planned_branch_not_checked_out"
+    ],
+    "branch_returncode": 0,
+    "current_branch": "main",
+    "pending_change_count": 1,
+    "raw_stderr_stored": false,
+    "raw_stdout_stored": false,
+    "ready": false,
+    "root_returncode": 0,
+    "status_returncode": 0,
+    "status_stdout_sha256": "775247e3ed46087903d4eeb0e63cfac27d2cd7adfbf955cfac1aebab2d4323ef"
+  },
+  "production_actions_executed": false,
+  "remote_push_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "safety_gates": {
+    "raw_command_output_stored": false,
+    "requires_execute_flag": true,
+    "requires_live_confirmation_flag": true,
+    "requires_valid_approval": true,
+    "source_repo_mutation_rejected": true
+  },
+  "schema": "olympe-git-memory-apply-report/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "dry_run_approval_valid_plan_blocked",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

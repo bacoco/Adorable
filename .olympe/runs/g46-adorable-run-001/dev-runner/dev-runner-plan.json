@@ -1,0 +1,64 @@
+{
+  "blockers": [],
+  "command_plan": [
+    {
+      "argv": [
+        "python",
+        "scripts/run_code_runner_task.py",
+        "<runner-task-ref>",
+        "--output-dir",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner",
+        "--process-record",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner-process-record.json",
+        "--attestation",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner.attestation.json",
+        "--project-path",
+        "<downstream-repo-path>"
+      ],
+      "execute": false,
+      "expected_outputs": [
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner/diff.patch",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner-process-record.json",
+        ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-runner.attestation.json"
+      ],
+      "fixture_mode": false,
+      "id": "execute_live_code_runner",
+      "mutation": "live_code_runner_execution",
+      "raw_prompt_stored": false,
+      "raw_stderr_stored": false,
+      "raw_stdout_stored": false,
+      "runner": "scripts/run_code_runner_task.py",
+      "runner_task_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-task.json"
+    }
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "fixture_mode": false,
+  "github_mutation_allowed": false,
+  "human_approval_required": true,
+  "live_code_runner_allowed": false,
+  "live_pr_pack_ref_after_success": ".olympe/runs/g46-adorable-run-001/dev-runner/live-pr-pack.final.json",
+  "live_runner": "openhands-via-run_code_runner_task",
+  "post_execution_artifacts": [
+    ".olympe/runs/g46-adorable-run-001/dev-runner/live-test-evidence.json",
+    ".olympe/runs/g46-adorable-run-001/dev-runner/live-qa-verdict.json",
+    ".olympe/runs/g46-adorable-run-001/dev-runner/live-code-review.json",
+    ".olympe/runs/g46-adorable-run-001/dev-runner/live-pr-pack.final.json",
+    ".olympe/runs/g46-adorable-run-001/dev-runner/live-docs-memory-update.json"
+  ],
+  "production_action_allowed": false,
+  "report_name_after_success": "apply-dev-runner-adapter.live-approved-report.json",
+  "run_id": "g46-adorable-run-001",
+  "runner_task_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-task.json",
+    "sha256": "0bd00a09252005885774bbeb3c79bb425445038645b4d32ed4fe7adb3681e645"
+  },
+  "safety_notes": [
+    "runner task allowed_files and forbidden_files remain the execution boundary",
+    "run_code_runner_task uses an isolated workspace copy and redacted process evidence",
+    "no GitHub push, PR, merge or production action is part of this adapter"
+  ],
+  "schema": "olympe-dev-runner-plan/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "status": "ready_for_human_approval"
+}

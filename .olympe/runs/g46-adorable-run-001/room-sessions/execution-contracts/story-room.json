@@ -1,0 +1,630 @@
+{
+  "agent_briefs": [
+    {
+      "agent_id": "product-owner-agent",
+      "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/product-owner-agent.md",
+      "brief_sha256": "b35a01ebffa7acbe1712ecdee6e4848d0bc7cb8c66f93a33366cf040133c293a",
+      "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/product-owner-agent.json",
+      "deterministic_position_sha256": "3f2866a61f9d149f9a8f4cceafa4788f14a628f4a914b80fb9ef0c9792f4f6a0",
+      "invitation_scope": "required"
+    },
+    {
+      "agent_id": "architect-devlead-agent",
+      "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/architect-devlead-agent.md",
+      "brief_sha256": "f4a556e67b5742f8bd30b419d94395c1018e93f0a3141d6d003a63f826c08937",
+      "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/architect-devlead-agent.json",
+      "deterministic_position_sha256": "b34bea464bfddece1c51519b4d462c8a6b4c2e898ff094f3632c1aeb5562cf71",
+      "invitation_scope": "required"
+    },
+    {
+      "agent_id": "developer-runner-agent",
+      "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/developer-runner-agent.md",
+      "brief_sha256": "d5d1d2c1b1390aff5cc7250ccede5058fe472b6d37a4256a15dc4522f4626fd8",
+      "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/developer-runner-agent.json",
+      "deterministic_position_sha256": "181d9180d61cbc8790e936e8bb14064f67342a22a045456a62914c8b1eddac7d",
+      "invitation_scope": "required"
+    },
+    {
+      "agent_id": "test-agent",
+      "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/test-agent.md",
+      "brief_sha256": "8417b7703ee1094735fb020a270ddc8e22d7927d72aeb54f070ee8c0f3dfbc1a",
+      "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/test-agent.json",
+      "deterministic_position_sha256": "88555dd293ab01cccacbd1c9227a052154908d11f005b7c784fbb4733847bbdd",
+      "invitation_scope": "invited"
+    },
+    {
+      "agent_id": "documentation-agent",
+      "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/documentation-agent.md",
+      "brief_sha256": "3e1c479b6560d28b8d622a2bdbd58c28ba5cc865f53aef2743b696fd56d0679b",
+      "deterministic_position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/documentation-agent.json",
+      "deterministic_position_sha256": "f6c525f15cd1b8b6d337e2c1e028076dd3b3197ddbcc48a8109151b7949d795e",
+      "invitation_scope": "invited"
+    }
+  ],
+  "agent_protocol": {
+    "additional_agent_invitation_requires": [
+      "room_decision",
+      "argos_event",
+      "handoff_update"
+    ],
+    "invited_agents": [
+      "test-agent",
+      "documentation-agent"
+    ],
+    "required_agents": [
+      "product-owner-agent",
+      "architect-devlead-agent",
+      "developer-runner-agent"
+    ],
+    "turn_order": [
+      {
+        "agent_id": "product-owner-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "architect-devlead-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "developer-runner-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "test-agent",
+        "invitation_scope": "invited",
+        "required": false,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "documentation-agent",
+        "invitation_scope": "invited",
+        "required": false,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      }
+    ]
+  },
+  "argos_events_required": [
+    "room_opened",
+    "decision_recorded"
+  ],
+  "context_policy": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "full_source_file_reads_allowed_by_default": false,
+    "load_first_refs": [
+      {
+        "path": ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+        "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f"
+      },
+      {
+        "path": ".olympe/runs/g46-adorable-run-001/story-slicing.yml",
+        "sha256": "70fc8f4961419e3e04207c6826baecc98d6ee4946f59873ddd275c1cb2700c8e"
+      },
+      {
+        "path": ".olympe/runs/g46-adorable-run-001/runner-task.json",
+        "sha256": "536f360c18d5c489792dbeedfbaf5ffcdb4b05f675a53ec89276cf3f64b8df2d"
+      }
+    ],
+    "missing_context_behavior": "return_blocked_with_requested_refs",
+    "raw_secret_values_loaded": false,
+    "store_raw_context": false
+  },
+  "context_request_protocol": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "allowed_statuses": [
+      "requested",
+      "deferred",
+      "rejected",
+      "satisfied"
+    ],
+    "full_source_file_reads_require": [
+      "explicit_room_decision",
+      "operator_review_if_sensitive"
+    ],
+    "ledger_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/context-request-ledger.jsonl",
+    "raw_context_storage_allowed": false,
+    "request_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "human_validation_required": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "requested_by_agent": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requested_ref": {
+          "pattern": "^\\.olympe/",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "requested",
+            "deferred",
+            "rejected",
+            "satisfied"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "requested_ref",
+        "reason",
+        "status"
+      ],
+      "type": "object"
+    },
+    "room_id": "story-room",
+    "schema": "olympe-room-context-request-protocol/v1",
+    "secret_value_loading_allowed": false
+  },
+  "contract_source_ref": "rooms/story-room/contract.md",
+  "deliberation_protocol": {
+    "additional_agent_invitation_requires": [
+      "room_decision",
+      "argos_event",
+      "handoff_update"
+    ],
+    "agent_position_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_id": {
+          "type": "string"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "context_requests": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "human_validation_required": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "requested_by_agent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requested_ref": {
+                "pattern": "^\\.olympe/",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "deferred",
+                  "rejected",
+                  "satisfied"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "requested_ref",
+              "reason",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence_refs": {
+          "items": {
+            "pattern": "^\\.olympe/",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "position": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "agent_id",
+        "position",
+        "evidence_refs",
+        "blockers",
+        "context_requests"
+      ],
+      "type": "object"
+    },
+    "facilitator_resolution": "summarize_positions_record_disagreements_then_decide",
+    "schema": "olympe-room-deliberation-protocol/v1",
+    "turn_order": [
+      {
+        "agent_id": "product-owner-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "architect-devlead-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "developer-runner-agent",
+        "invitation_scope": "required",
+        "required": true,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "test-agent",
+        "invitation_scope": "invited",
+        "required": false,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      },
+      {
+        "agent_id": "documentation-agent",
+        "invitation_scope": "invited",
+        "required": false,
+        "turn_policy": "one_position_with_evidence_then_handoff_needs"
+      }
+    ],
+    "unresolved_disagreement_policy": "record_in_structured_summary_and_handoff"
+  },
+  "gates": [
+    {
+      "id": "criteres_acceptation_definis",
+      "required": true,
+      "status": "to_check_in_room"
+    },
+    {
+      "id": "tests_previsibles",
+      "required": true,
+      "status": "to_check_in_room"
+    },
+    {
+      "id": "perimetre_borne",
+      "required": true,
+      "status": "to_check_in_room"
+    }
+  ],
+  "human_validation": {
+    "reason": "priorisation des stories si conflit",
+    "required": false,
+    "role": "product-owner"
+  },
+  "live_invocation_status": "not_invoked",
+  "mutation_policy": {
+    "github_mutation_allowed": false,
+    "production_action_allowed": false,
+    "source_repo_mutation_allowed": false,
+    "working_repo_live_mutation_allowed": false
+  },
+  "objective": "Decouper le besoin en taches bornees et verifiables.",
+  "output_contract": {
+    "artifact_policy": {
+      "blocked_output_requires_reason": true,
+      "evidence_refs_required": true,
+      "raw_source_content_storage_allowed": false,
+      "template_ref_required_per_output": true
+    },
+    "draft_artifact_policy": {
+      "deterministic_draft_status_required": true,
+      "draft_ref_required_per_output": true,
+      "finalization_requires": [
+        "human_validation_or_live_room_runtime_evidence"
+      ],
+      "raw_source_content_storage_allowed": false
+    },
+    "expected_outputs": [
+      "stories",
+      "dependances",
+      "criteres-acceptation"
+    ],
+    "json_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_positions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "agent_id": {
+                "type": "string"
+              },
+              "blockers": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "context_requests": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "human_validation_required": {
+                      "type": "boolean"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "requested_by_agent": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "requested_ref": {
+                      "pattern": "^\\.olympe/",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "enum": [
+                        "requested",
+                        "deferred",
+                        "rejected",
+                        "satisfied"
+                      ],
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "requested_ref",
+                    "reason",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "evidence_refs": {
+                "items": {
+                  "pattern": "^\\.olympe/",
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "position": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "agent_id",
+              "position",
+              "evidence_refs",
+              "blockers",
+              "context_requests"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "context_refs_used": {
+          "items": {
+            "pattern": "^\\.olympe/",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "context_requests": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "human_validation_required": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "requested_by_agent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requested_ref": {
+                "pattern": "^\\.olympe/",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "deferred",
+                  "rejected",
+                  "satisfied"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "requested_ref",
+              "reason",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "decision": {
+          "enum": [
+            "continue",
+            "needs_human_validation",
+            "blocked"
+          ],
+          "type": "string"
+        },
+        "gates": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "gate": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "gate",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "handoff_to_next_room": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "human_validation_required": {
+          "type": "boolean"
+        },
+        "outputs_produced": {
+          "expected_outputs": [
+            "stories",
+            "dependances",
+            "criteres-acceptation"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "risks": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "room_id": {
+          "const": "story-room",
+          "type": "string"
+        },
+        "unresolved_disagreements": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "room_id",
+        "decision",
+        "outputs_produced",
+        "risks",
+        "gates",
+        "context_refs_used",
+        "agent_positions",
+        "context_requests",
+        "unresolved_disagreements",
+        "handoff_to_next_room",
+        "human_validation_required"
+      ],
+      "type": "object"
+    },
+    "output_drafts": [
+      {
+        "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/stories.md",
+        "draft_sha256": "e82358590ab24315be0dedae360fadd0f9d871c422e6800c8f84a79d42d0a871",
+        "output_id": "stories",
+        "status": "deterministic_draft",
+        "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+        "template_sha256": "a699e0bb6693a7d7424530ba2ef10f566748433171af4fed7f17e3635386e371"
+      },
+      {
+        "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/dependances.md",
+        "draft_sha256": "27f94158ee6f48fab4075d9da44745f333b716ef00b249264cbc3aa37df704c0",
+        "output_id": "dependances",
+        "status": "deterministic_draft",
+        "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+        "template_sha256": "fd2f3c3d73f138fb0b20f5667e371bf8a3e137f2da60bb089540eb2047b00969"
+      },
+      {
+        "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/criteres-acceptation.md",
+        "draft_sha256": "8fdc69d04b5a636f457b50b9da62f959256c93a286c44701249bfd7f4abcf689",
+        "output_id": "criteres-acceptation",
+        "status": "deterministic_draft",
+        "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md",
+        "template_sha256": "8a290ee8e3ed5a5b09320b4c330d0a30146ef4bb68b822b0232f3d55adcbce29"
+      }
+    ],
+    "output_templates": [
+      {
+        "output_id": "stories",
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+        "sha256": "a699e0bb6693a7d7424530ba2ef10f566748433171af4fed7f17e3635386e371"
+      },
+      {
+        "output_id": "dependances",
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+        "sha256": "fd2f3c3d73f138fb0b20f5667e371bf8a3e137f2da60bb089540eb2047b00969"
+      },
+      {
+        "output_id": "criteres-acceptation",
+        "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md",
+        "sha256": "8a290ee8e3ed5a5b09320b4c330d0a30146ef4bb68b822b0232f3d55adcbce29"
+      }
+    ],
+    "raw_model_output_stored": false,
+    "required_json_keys": [
+      "room_id",
+      "decision",
+      "outputs_produced",
+      "risks",
+      "gates",
+      "context_refs_used",
+      "agent_positions",
+      "context_requests",
+      "unresolved_disagreements",
+      "handoff_to_next_room",
+      "human_validation_required"
+    ],
+    "required_markdown_sections": [
+      "decision",
+      "outputs",
+      "risks",
+      "agent_positions",
+      "context_used",
+      "context_requests",
+      "unresolved_disagreements",
+      "handoff"
+    ],
+    "structured_summary_only": true
+  },
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/story-room.md",
+  "room_id": "story-room",
+  "room_name": "Story Room",
+  "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+  "schema": "olympe-room-execution-contract/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_role": "read-only-upstream",
+  "working_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+}

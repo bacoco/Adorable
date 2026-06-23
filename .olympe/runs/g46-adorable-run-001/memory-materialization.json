@@ -1,0 +1,142 @@
+{
+  "automation_auto_merge": false,
+  "automation_create_real_pr": false,
+  "branch": "olympe/g46-adorable-run-001",
+  "created_at": "2026-06-23T12:00:00Z",
+  "files_written": [
+    {
+      "path": ".olympe/project-card.json",
+      "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+    },
+    {
+      "path": ".olympe/onboarding-scan.json",
+      "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+    },
+    {
+      "path": ".olympe/github-memory-plan.json",
+      "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/run.json",
+      "sha256": "a2f276a6f0d9e6079369d5ee2355eb2b0a781c667ca7f597c88b7866fe0c485c"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/project-card.json",
+      "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+      "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/progressive-disclosure-log.json",
+      "sha256": "040270bb52c0b382ecffad8cbef0304dfec7900b45e4c8deb66f8a99c360ed2a"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-openings.json",
+      "sha256": "1ee1e965e985aa2e5aa7d26d0feb186dae82ab65f34e661033b2d2f94a6aad0d"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+      "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/story-slicing.yml",
+      "sha256": "70fc8f4961419e3e04207c6826baecc98d6ee4946f59873ddd275c1cb2700c8e"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/runner-task.json",
+      "sha256": "536f360c18d5c489792dbeedfbaf5ffcdb4b05f675a53ec89276cf3f64b8df2d"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/qa-verdict.json",
+      "sha256": "295025d22c42020e63ea15b0d6d8488ca1a1b3458b08774eb3af79eb7391da30"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/code-review.json",
+      "sha256": "5b2369f243d2e0038387d85839331ef667e77742a30f6bdf27808d08e410f843"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/pr-pack.json",
+      "sha256": "5c022a986abe10dce3b09c2456b3ec6b286c2e3b006e1c256146240f3d2e9148"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/docs-memory-update.json",
+      "sha256": "9ec6f7351969a68053460d75ea57e3fe9f5461760fa40976ce2394e1ff7bb676"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+      "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/human-gates.json",
+      "sha256": "cbe182bb3ef933db43fd0b6731a815a0c2edb38cc98b0b4893d45fb80f50f599"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/argos-events.jsonl",
+      "sha256": "f76c4a4b82be4bccfd2ac24ed1c44bd1df6b4f3a2d1f673b7200053e176dc16c"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/attestation.json",
+      "sha256": "48cd8fa4ed14b6bf62d84c811b2d7745c725d02c65be34e20d73f367400b0157"
+    },
+    {
+      "path": ".olympe/decisions/README.md",
+      "sha256": "7d16487f11746de4658268930a07e32899b00c09fd8cddb7a56caa2b157557ef"
+    },
+    {
+      "path": ".olympe/runbooks/operator-handoff.md",
+      "sha256": "ebc4d6ca537c451ad92c1156149684d10c521880a8b2b061106482e3e28aee79"
+    },
+    {
+      "path": ".olympe/index.json",
+      "sha256": "c2cb36fd32885ebe7dc4e5a5b7379738cdcec6115642ca0dbafc15aa70fcab4c"
+    }
+  ],
+  "git": {
+    "blocked_reason": null,
+    "branch_checked_out": false,
+    "branch_created_locally": false,
+    "branch_requested": "olympe/g46-adorable-run-001",
+    "current_branch_after": "main",
+    "current_branch_before": "main",
+    "git_status_porcelain_after": [
+      "?? .olympe/"
+    ],
+    "git_status_porcelain_before": [],
+    "github_push_allowed": false,
+    "inside_git_work_tree": true
+  },
+  "github_memory_primary": true,
+  "github_mutation_allowed": false,
+  "github_push_allowed": false,
+  "github_repo": "freestyle-sh/adorable",
+  "human_validation_required_before": [
+    "git_push",
+    "issue_create",
+    "pr_create",
+    "merge",
+    "production_deploy"
+  ],
+  "local_workspace_role": "checkout-cache",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-memory-materialization/v1",
+  "source_pack_ref": "examples/g46-first-real-downstream/adorable",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "target_repo_ref": "/data/loic/tmp/adorable-check",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

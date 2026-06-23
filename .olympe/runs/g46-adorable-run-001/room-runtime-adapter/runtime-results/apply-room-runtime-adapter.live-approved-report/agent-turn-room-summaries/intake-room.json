@@ -1,0 +1,63 @@
+{
+  "agent_ids": [
+    "facilitator-agent",
+    "product-owner-agent",
+    "project-analyst-agent",
+    "repo-knowledge-agent",
+    "triage-agent"
+  ],
+  "agent_positions_stored_inline": false,
+  "agent_turn_count": 5,
+  "agent_turn_result_refs": [
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-01-facilitator-agent.json",
+      "sha256": "8c9af0aa834e4de1b91d2a2e2164fa4497c805154cc7d22f1ffd16f822d4295c"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-02-product-owner-agent.json",
+      "sha256": "e65725352fb8822028472c1c7e568eef9d19a9eee114f27aef2b6c61d3a405db"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-03-triage-agent.json",
+      "sha256": "3fdbcda8cd7911e4fa82ad141452ba1544c413721eb28dc36a8aa95aa36a1c0c"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-04-project-analyst-agent.json",
+      "sha256": "c681dc548c3dcf82c34ffed7872c94b46e5699b5529a54c9cc6de5977cee6afb"
+    },
+    {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-05-repo-knowledge-agent.json",
+      "sha256": "11a21787d75f187ea3ca0c8b7c888c5f00172fcfdcb9c4c0a7f55e30c52d978b"
+    }
+  ],
+  "blockers": [],
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "decision": "blocked",
+  "evidence_refs": [],
+  "github_mutation_allowed": false,
+  "handoff_notes": [],
+  "production_action_allowed": false,
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "room_id": "intake-room",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-agent-turn-room-synthesis/v1",
+  "status": "blocked_agent_position_synthesis",
+  "turn_ids": [
+    "intake-room-turn-01-facilitator-agent",
+    "intake-room-turn-02-product-owner-agent",
+    "intake-room-turn-03-triage-agent",
+    "intake-room-turn-04-project-analyst-agent",
+    "intake-room-turn-05-repo-knowledge-agent"
+  ],
+  "unresolved_disagreements": [],
+  "validation_blockers": [
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing",
+    "structured_json_position_missing"
+  ]
+}

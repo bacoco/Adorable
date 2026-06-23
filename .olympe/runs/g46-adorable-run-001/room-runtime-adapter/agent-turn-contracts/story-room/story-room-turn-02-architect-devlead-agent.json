@@ -1,0 +1,170 @@
+{
+  "agent_id": "architect-devlead-agent",
+  "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/architect-devlead-agent.md",
+  "context_policy": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "load_raw_context": false,
+    "missing_context_behavior": "return_context_request",
+    "raw_secret_values_loaded": false,
+    "store_raw_context": false
+  },
+  "context_request_ledger_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/context-request-ledger.jsonl",
+  "context_resolution_ref": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+  "live_invocation_status": "not_invoked",
+  "mutation_policy": {
+    "github_mutation_allowed": false,
+    "production_action_allowed": false,
+    "source_repo_mutation_allowed": false,
+    "working_repo_live_mutation_allowed": false
+  },
+  "output_contract": {
+    "json_name": "agent_position",
+    "json_schema": {
+      "properties": {
+        "agent_id": {
+          "type": "string"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "context_requests": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "human_validation_required": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "requested_by_agent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requested_ref": {
+                "pattern": "^\\.olympe/",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "deferred",
+                  "rejected",
+                  "satisfied"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "requested_ref",
+              "reason",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "handoff_notes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "output_draft_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "position": {
+          "type": "string"
+        },
+        "room_id": {
+          "type": "string"
+        },
+        "turn_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "turn_id",
+        "room_id",
+        "agent_id",
+        "position",
+        "evidence_refs",
+        "output_draft_refs",
+        "blockers",
+        "context_requests",
+        "handoff_notes"
+      ],
+      "type": "object"
+    },
+    "raw_model_output_stored": false,
+    "structured_summary_only": true
+  },
+  "output_draft_count": 3,
+  "output_draft_policy": {
+    "deterministic_draft_status_required": true,
+    "draft_ref_required_per_output": true,
+    "draft_refs_required_in_evidence_when_relevant": true,
+    "finalization_requires": [
+      "human_validation_or_live_room_runtime_evidence"
+    ],
+    "raw_draft_content_storage_allowed": false,
+    "raw_source_content_storage_allowed": false
+  },
+  "output_draft_refs": [
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/stories.md",
+      "draft_sha256": "e82358590ab24315be0dedae360fadd0f9d871c422e6800c8f84a79d42d0a871",
+      "output_id": "stories",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+      "template_sha256": "a699e0bb6693a7d7424530ba2ef10f566748433171af4fed7f17e3635386e371"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/dependances.md",
+      "draft_sha256": "27f94158ee6f48fab4075d9da44745f333b716ef00b249264cbc3aa37df704c0",
+      "output_id": "dependances",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+      "template_sha256": "fd2f3c3d73f138fb0b20f5667e371bf8a3e137f2da60bb089540eb2047b00969"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/criteres-acceptation.md",
+      "draft_sha256": "8fdc69d04b5a636f457b50b9da62f959256c93a286c44701249bfd7f4abcf689",
+      "output_id": "criteres-acceptation",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md",
+      "template_sha256": "8a290ee8e3ed5a5b09320b4c330d0a30146ef4bb68b822b0232f3d55adcbce29"
+    }
+  ],
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-02-architect-devlead-agent.md",
+  "room_execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/story-room.json",
+  "room_id": "story-room",
+  "room_prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/story-room.md",
+  "room_runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+  "schema": "olympe-room-agent-turn-execution-contract/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "turn_id": "story-room-turn-02-architect-devlead-agent",
+  "turn_index": 2,
+  "working_repo": "bacoco/adorable",
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

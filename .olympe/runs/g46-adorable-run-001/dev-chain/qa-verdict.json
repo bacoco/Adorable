@@ -1,0 +1,44 @@
+{
+  "acceptance_evidence": [
+    {
+      "criterion": "README.md contains G46 Olympe downstream proof marker.",
+      "evidence_refs": [
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch"
+      ],
+      "status": "met"
+    },
+    {
+      "criterion": "Only the bounded allowed file changes",
+      "evidence_refs": [
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch"
+      ],
+      "status": "met"
+    },
+    {
+      "criterion": "Declared fixture test passes",
+      "evidence_refs": [
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch"
+      ],
+      "status": "met"
+    }
+  ],
+  "argos_event_type": "gate_passed",
+  "gaps": [],
+  "generated_at": "2026-06-23T12:00:00Z",
+  "runner_result_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+  "runner_result_sha256": "69a974e8dc202934c36d4fd7d0c648010bcb37e18e621c87259d3ebbb0cbd5c7",
+  "status": "pass",
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "test_evidence": [
+    {
+      "evidence_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/test-evidence.json",
+      "name": "grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "status": "passed"
+    }
+  ],
+  "trace_id": "g46-adorable-run-001",
+  "verdict_id": "QA-G46-ADORABLE-DEV-001"
+}
