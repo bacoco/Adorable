@@ -1,0 +1,15 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/delivery/production-approval-template.json",
+  "delivery_readiness_ref": ".olympe/runs/g46-adorable-run-001/delivery/delivery-readiness.json",
+  "no_github_mutation_executed": true,
+  "no_live_production_action_executed": true,
+  "operator_steps": [
+    "Review release-plan.json, rollback-plan.json, monitoring-plan.json and incident-response-runbook.md.",
+    "Configure production monitoring outside .olympe without storing secrets.",
+    "Fill production-approval-template.json only when a human go/no-go is intended.",
+    "Do not deploy, merge, rollback or publish a release without explicit human approval."
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-delivery-handoff/v1",
+  "status": "blocked_without_production_approval"
+}

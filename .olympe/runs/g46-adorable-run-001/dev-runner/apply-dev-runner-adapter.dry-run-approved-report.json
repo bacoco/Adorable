@@ -1,0 +1,42 @@
+{
+  "approval": {
+    "approval_ref": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-runner/human-approval.dry-run-fixture.json",
+      "sha256": "00a0e331e121712a5ab5372ecb36b6ede71720622d49a75c7e03d07f898c1772"
+    },
+    "approved": true,
+    "blockers": [],
+    "dry_run_only": true,
+    "raw_identity_stored": false,
+    "raw_review_body_stored": false,
+    "valid": true
+  },
+  "blockers": [
+    "dry_run_only"
+  ],
+  "command_id": "execute_live_code_runner",
+  "created_at": "2026-06-23T12:00:00Z",
+  "diff_ref": null,
+  "executed_blockers": [],
+  "executed_returncode": null,
+  "github_mutations_executed": false,
+  "live_code_runner_executed": false,
+  "live_pr_artifacts": {
+    "blockers": [],
+    "status": "not_executed"
+  },
+  "live_pr_pack_ref": null,
+  "mode": "dry-run",
+  "plan_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-runner/dev-runner-plan.json",
+    "sha256": "1bf12123219c5e308a78bb10c667d72797671d072497c89c2aab39d1107cefc5"
+  },
+  "production_actions_executed": false,
+  "raw_prompt_stored": false,
+  "raw_stderr_stored": false,
+  "raw_stdout_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "runner_result_ref": null,
+  "schema": "olympe-dev-runner-apply-report/v1",
+  "status": "dry_run_ready_for_execute"
+}

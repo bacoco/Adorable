@@ -1,0 +1,34 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/git-memory/human-approval-template.json",
+  "created_at": "2026-06-23T20:27:27Z",
+  "github_mutations_executed": false,
+  "live_git_mutations_executed": false,
+  "operator_next_steps": [
+    "review git-memory-probe.json",
+    "copy and complete human-approval-template.json",
+    "run apply-git-memory-state without --execute to confirm dry_run_ready_for_execute",
+    "only then add --execute and --i-understand-live-git-mutations for the approved scope"
+  ],
+  "planned_branch": "olympe/g46-adorable-run-001",
+  "probe_ref": ".olympe/runs/g46-adorable-run-001/git-memory/git-memory-probe.json",
+  "production_actions_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-git-memory-handoff/v1",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_without_git_memory_approval",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

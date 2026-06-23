@@ -1,0 +1,371 @@
+{
+  "automation_auto_merge": false,
+  "automation_create_issue": false,
+  "automation_create_real_pr": false,
+  "automation_push_branch": false,
+  "blocked_mutations": [
+    "create_fork",
+    "create_private_repo",
+    "configure_remote",
+    "commit_memory",
+    "push_branch",
+    "mutate_source_repo",
+    "create_upstream_pr",
+    "merge",
+    "auto_merge",
+    "production_deploy"
+  ],
+  "blockers": [
+    "working_repo_not_created_or_confirmed",
+    "git_memory_not_pushed_or_confirmed"
+  ],
+  "branch": "olympe/g46-adorable-run-001",
+  "command_plan": [
+    {
+      "argv": [
+        "gh",
+        "label",
+        "create",
+        "olympe",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--color",
+        "5319e7",
+        "--description",
+        "Olympe-managed downstream memory and orchestration",
+        "--force"
+      ],
+      "execute": false,
+      "id": "ensure_label_1",
+      "mutation": "ensure_label",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "label",
+        "create",
+        "cadrage",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--color",
+        "1d76db",
+        "--description",
+        "Initial cadrage, discovery and scoping",
+        "--force"
+      ],
+      "execute": false,
+      "id": "ensure_label_2",
+      "mutation": "ensure_label",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "label",
+        "create",
+        "human-gate",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--color",
+        "d93f0b",
+        "--description",
+        "Requires explicit human validation before live action",
+        "--force"
+      ],
+      "execute": false,
+      "id": "ensure_label_3",
+      "mutation": "ensure_label",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "api",
+        "repos/operator-or-olympe-workspace/adorable-olympe-work/milestones",
+        "-f",
+        "title=Olympe g46-adorable-run-001",
+        "-f",
+        "description=Initial Olympe downstream factory run"
+      ],
+      "execute": false,
+      "id": "create_milestone_1",
+      "mutation": "create_milestone",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "issue",
+        "create",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--title",
+        "[Olympe] Cadrage initial - G46 candidate: add a bounded documentation marker to README.md to prove the down",
+        "--label",
+        "olympe,cadrage",
+        "--body-file",
+        ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-1.md",
+        "--milestone",
+        "Olympe g46-adorable-run-001"
+      ],
+      "execute": false,
+      "id": "create_issue_1",
+      "mutation": "create_issue",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "issue",
+        "create",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--title",
+        "[Olympe] Validation humaine avant runner et publication PR",
+        "--label",
+        "olympe,human-gate",
+        "--body-file",
+        ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-2.md",
+        "--milestone",
+        "Olympe g46-adorable-run-001"
+      ],
+      "execute": false,
+      "id": "create_issue_2",
+      "mutation": "create_issue",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "argv": [
+        "gh",
+        "pr",
+        "create",
+        "--repo",
+        "operator-or-olympe-workspace/adorable-olympe-work",
+        "--head",
+        "olympe/g46-adorable-run-001",
+        "--base",
+        "default-branch-after-human-review",
+        "--title",
+        "Update README.md through Olympe dev-chain",
+        "--body-file",
+        ".olympe/runs/g46-adorable-run-001/publication/pr-body.md"
+      ],
+      "execute": false,
+      "id": "create_working_pr",
+      "mutation": "create_working_pr",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    }
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "forbidden_commands": [
+    "gh repo create",
+    "gh issue create",
+    "gh pr create",
+    "gh pr merge",
+    "gh pr ready",
+    "git push",
+    "git merge",
+    "git reset --hard"
+  ],
+  "fork_first": true,
+  "github_mutation_allowed": false,
+  "github_repo": "freestyle-sh/adorable",
+  "human_approval_present": false,
+  "human_approval_required": true,
+  "human_approval_template": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/human-approval-template.json",
+    "sha256": "40f2887738bff88f8a016ef4126b8ab0f40d7975932db151e388fdd29b9a9d98"
+  },
+  "intake_strategy": "fork-first",
+  "issue_plans": [
+    {
+      "body_file": {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-1.md",
+        "sha256": "402be02bcc5a2ad4b2f990be7b43f5cb5661c400e59a20f97f9b882f3180b6b2"
+      },
+      "body_source": ".olympe/runs/g46-adorable-run-001/project-card.json",
+      "create_live": false,
+      "labels": [
+        "olympe",
+        "cadrage"
+      ],
+      "milestone": "Olympe g46-adorable-run-001",
+      "raw_body_stored_in_plan": false,
+      "source_repo": "freestyle-sh/adorable",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+      "title": "[Olympe] Cadrage initial - G46 candidate: add a bounded documentation marker to README.md to prove the down"
+    },
+    {
+      "body_file": {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-2.md",
+        "sha256": "56058e2c51022903de7ee3a3ed70d7e82e8bdbbd7cc4f6f2dbec8a4402210160"
+      },
+      "body_source": ".olympe/runs/g46-adorable-run-001/project-card.json",
+      "create_live": false,
+      "labels": [
+        "olympe",
+        "human-gate"
+      ],
+      "milestone": "Olympe g46-adorable-run-001",
+      "raw_body_stored_in_plan": false,
+      "source_repo": "freestyle-sh/adorable",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+      "title": "[Olympe] Validation humaine avant runner et publication PR"
+    }
+  ],
+  "label_plans": [
+    {
+      "color": "5319e7",
+      "create_live": false,
+      "description": "Olympe-managed downstream memory and orchestration",
+      "name": "olympe",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "color": "1d76db",
+      "create_live": false,
+      "description": "Initial cadrage, discovery and scoping",
+      "name": "cadrage",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    },
+    {
+      "color": "d93f0b",
+      "create_live": false,
+      "description": "Requires explicit human validation before live action",
+      "name": "human-gate",
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work"
+    }
+  ],
+  "live_mutations_executed": false,
+  "milestone_plans": [
+    {
+      "create_live": false,
+      "description": "Initial Olympe downstream factory run",
+      "due_on": null,
+      "target_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+      "title": "Olympe g46-adorable-run-001"
+    }
+  ],
+  "pr_plan": {
+    "base": "default-branch-after-human-review",
+    "body": {
+      "code_review_verdict": {
+        "path": ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json",
+        "self_approved": false,
+        "sha256": "9f45c47f9b93247776bb34a90d1d729a907a7fc85f7a35351cf6d98225c5050f",
+        "status": "approved"
+      },
+      "evidence_refs": [
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json"
+      ],
+      "human_gate": "Required before creation of the live PR, merge or production action.",
+      "output_draft_count": 15,
+      "publication_memory_index": {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/publication-memory-index.json",
+        "sha256": "ec8eeb47a553aa4f30d05fd2b9cff0f8e7c4b579430614f33b74fd6aca7cd2ea"
+      },
+      "qa_verdict": {
+        "path": ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+        "sha256": "887377d1af0597458ef97d01b2ba3c68757651b95dd246cd3d87947186c7a7f1",
+        "status": "passed"
+      },
+      "room_memory_refs": [
+        ".olympe/runs/g46-adorable-run-001/room-sessions/room-session-run.json",
+        ".olympe/runs/g46-adorable-run-001/room-sessions/prompt-pack-manifest.json",
+        ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md"
+      ],
+      "run_memory": ".olympe/runs/g46-adorable-run-001/",
+      "summary": "Update README.md through Olympe dev-chain"
+    },
+    "body_file": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/pr-body.md",
+      "sha256": "ff0efccf956d76099bf0a3ec99a60cfc86ec66ad38d0c68fc33ad29959526d3e"
+    },
+    "create_live": false,
+    "head": "olympe/g46-adorable-run-001",
+    "raw_body_stored_in_plan": false,
+    "source_repo": "freestyle-sh/adorable",
+    "target_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+    "title": "Update README.md through Olympe dev-chain",
+    "upstream_handoff": {
+      "create_live": false,
+      "from_working_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+      "requires_separate_human_upstream_approval": true,
+      "target_repo": "freestyle-sh/adorable"
+    }
+  },
+  "prerequisites": {
+    "blockers": [
+      "working_repo_not_created_or_confirmed",
+      "git_memory_not_pushed_or_confirmed"
+    ],
+    "git_memory_apply_status": "dry_run_approval_valid_plan_blocked",
+    "git_memory_ref": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.dry-run-approved-report.json",
+    "manual_external_satisfaction_status": "externally_satisfied",
+    "satisfied": false,
+    "working_repo_apply_status": "dry_run_approval_valid_plan_blocked",
+    "working_repo_ref": ".olympe/runs/g46-adorable-run-001/working-repo/apply-working-repo-adapter.dry-run-approved-report.json"
+  },
+  "publication_artifacts": {
+    "issue_body_files": [
+      {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-1.md",
+        "sha256": "402be02bcc5a2ad4b2f990be7b43f5cb5661c400e59a20f97f9b882f3180b6b2"
+      },
+      {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-2.md",
+        "sha256": "56058e2c51022903de7ee3a3ed70d7e82e8bdbbd7cc4f6f2dbec8a4402210160"
+      }
+    ],
+    "publication_memory_index": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/publication-memory-index.json",
+      "sha256": "ec8eeb47a553aa4f30d05fd2b9cff0f8e7c4b579430614f33b74fd6aca7cd2ea"
+    },
+    "raw_issue_bodies_stored_in_plan": false,
+    "raw_pr_body_stored_in_plan": false,
+    "working_pr_body": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/pr-body.md",
+      "sha256": "ff0efccf956d76099bf0a3ec99a60cfc86ec66ad38d0c68fc33ad29959526d3e"
+    }
+  },
+  "publication_memory_index": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/publication-memory-index.json",
+    "sha256": "ec8eeb47a553aa4f30d05fd2b9cff0f8e7c4b579430614f33b74fd6aca7cd2ea"
+  },
+  "ready_pr_pack": true,
+  "requested_mutations": [
+    "ensure_label",
+    "create_milestone",
+    "create_issue",
+    "create_working_pr"
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-github-publication-plan/v1",
+  "source_pr_pack": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+    "sha256": "7dc8ad6155ae3c3013f3bfa777eb0e6db3564213e840cc54629467188d797dbc"
+  },
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "source_repo_role": "read-only-upstream",
+  "status": "blocked_without_human_approval",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "working_repo_mutation_allowed": false,
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

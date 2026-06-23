@@ -1,0 +1,146 @@
+{
+  "rooms": [
+    {
+      "detail_ref": "rooms/intake-room/README.md",
+      "hermes_profile": "hermes-cadrage",
+      "invited_agents": [
+        "project-analyst-agent",
+        "repo-knowledge-agent"
+      ],
+      "manifest_ref": "rooms/rooms.manifest.yml",
+      "name": "Intake Room",
+      "order": 1,
+      "progressive_disclosure": {
+        "deferred_until_room_execution": [
+          "rooms/intake-room/README.md",
+          "rooms/intake-room/contract.md"
+        ],
+        "loaded_now": [
+          "rooms/rooms.manifest.yml",
+          "agents/agents.manifest.yml"
+        ]
+      },
+      "required_agents": [
+        "facilitator-agent",
+        "product-owner-agent",
+        "triage-agent"
+      ],
+      "room_id": "intake-room",
+      "status": "opened_planned"
+    },
+    {
+      "detail_ref": "rooms/discovery-room/README.md",
+      "hermes_profile": "hermes-cadrage",
+      "invited_agents": [
+        "product-owner-agent",
+        "documentation-agent"
+      ],
+      "manifest_ref": "rooms/rooms.manifest.yml",
+      "name": "Discovery Room",
+      "order": 2,
+      "progressive_disclosure": {
+        "deferred_until_room_execution": [
+          "rooms/discovery-room/README.md",
+          "rooms/discovery-room/contract.md"
+        ],
+        "loaded_now": [
+          "rooms/rooms.manifest.yml",
+          "agents/agents.manifest.yml"
+        ]
+      },
+      "required_agents": [
+        "facilitator-agent",
+        "project-analyst-agent",
+        "repo-knowledge-agent"
+      ],
+      "room_id": "discovery-room",
+      "status": "opened_planned"
+    },
+    {
+      "detail_ref": "rooms/architecture-room/README.md",
+      "hermes_profile": "hermes-cadrage",
+      "invited_agents": [
+        "product-owner-agent",
+        "security-agent",
+        "documentation-agent"
+      ],
+      "manifest_ref": "rooms/rooms.manifest.yml",
+      "name": "Architecture Room",
+      "order": 3,
+      "progressive_disclosure": {
+        "deferred_until_room_execution": [
+          "rooms/architecture-room/README.md",
+          "rooms/architecture-room/contract.md"
+        ],
+        "loaded_now": [
+          "rooms/rooms.manifest.yml",
+          "agents/agents.manifest.yml"
+        ]
+      },
+      "required_agents": [
+        "architect-devlead-agent",
+        "facilitator-agent"
+      ],
+      "room_id": "architecture-room",
+      "status": "opened_planned"
+    },
+    {
+      "detail_ref": "rooms/story-room/README.md",
+      "hermes_profile": "hermes-dev",
+      "invited_agents": [
+        "test-agent",
+        "documentation-agent"
+      ],
+      "manifest_ref": "rooms/rooms.manifest.yml",
+      "name": "Story Room",
+      "order": 4,
+      "progressive_disclosure": {
+        "deferred_until_room_execution": [
+          "rooms/story-room/README.md",
+          "rooms/story-room/contract.md"
+        ],
+        "loaded_now": [
+          "rooms/rooms.manifest.yml",
+          "agents/agents.manifest.yml"
+        ]
+      },
+      "required_agents": [
+        "product-owner-agent",
+        "architect-devlead-agent",
+        "developer-runner-agent"
+      ],
+      "room_id": "story-room",
+      "status": "opened_planned"
+    },
+    {
+      "detail_ref": "rooms/qa-room/README.md",
+      "hermes_profile": "hermes-integration",
+      "invited_agents": [
+        "security-agent",
+        "rgaa-agent",
+        "readiness-agent"
+      ],
+      "manifest_ref": "rooms/rooms.manifest.yml",
+      "name": "QA Room",
+      "order": 5,
+      "progressive_disclosure": {
+        "deferred_until_room_execution": [
+          "rooms/qa-room/README.md",
+          "rooms/qa-room/contract.md"
+        ],
+        "loaded_now": [
+          "rooms/rooms.manifest.yml",
+          "agents/agents.manifest.yml"
+        ]
+      },
+      "required_agents": [
+        "test-agent",
+        "qa-automation-agent"
+      ],
+      "room_id": "qa-room",
+      "status": "opened_planned"
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "room-openings/v1"
+}

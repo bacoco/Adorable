@@ -1,0 +1,59 @@
+{
+  "agent_id": "documentation-agent",
+  "blockers": [],
+  "context_requests": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/story-room/documentation-agent.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/story-room.json",
+    ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+    ".olympe/runs/g46-adorable-run-001/story-slicing.yml",
+    ".olympe/runs/g46-adorable-run-001/runner-task.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md"
+  ],
+  "handoff_notes": [
+    "Use room output templates for any produced deliverable.",
+    "Keep claims tied to listed .olympe evidence refs.",
+    "Return structured context requests instead of broad context loading."
+  ],
+  "invitation_scope": "invited",
+  "mode": "deterministic-fixture",
+  "output_template_refs": [
+    {
+      "output_id": "stories",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+      "sha256": "a699e0bb6693a7d7424530ba2ef10f566748433171af4fed7f17e3635386e371"
+    },
+    {
+      "output_id": "dependances",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+      "sha256": "fd2f3c3d73f138fb0b20f5667e371bf8a3e137f2da60bb089540eb2047b00969"
+    },
+    {
+      "output_id": "criteres-acceptation",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md",
+      "sha256": "8a290ee8e3ed5a5b09320b4c330d0a30146ef4bb68b822b0232f3d55adcbce29"
+    }
+  ],
+  "position": "contribute_within_contract",
+  "room_id": "story-room",
+  "run_id": "g46-adorable-run-001",
+  "safety": {
+    "github_mutation_allowed": false,
+    "live_model_invoked": false,
+    "production_action_allowed": false,
+    "raw_brief_stored": false,
+    "raw_context_stored": false,
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_secret_values_loaded": false,
+    "source_repo_mutation_allowed": false
+  },
+  "schema": "olympe-deterministic-agent-position/v1",
+  "status": "deterministic_position_ready",
+  "turn": 5
+}

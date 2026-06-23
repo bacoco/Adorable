@@ -1,0 +1,112 @@
+{
+  "blockers": [],
+  "commit_plan": {
+    "commands": [
+      {
+        "argv": [
+          "git",
+          "switch",
+          "olympe/g46-adorable-run-001"
+        ],
+        "execute": false,
+        "id": "checkout_planned_branch",
+        "required_if": "planned_branch_not_checked_out"
+      },
+      {
+        "argv": [
+          "git",
+          "add",
+          ".olympe"
+        ],
+        "execute": false,
+        "id": "stage_olympe_memory"
+      },
+      {
+        "argv": [
+          "git",
+          "commit",
+          "-m",
+          "chore(olympe): store g46-adorable-run-001 memory"
+        ],
+        "execute": false,
+        "id": "commit_olympe_memory"
+      },
+      {
+        "argv": [
+          "git",
+          "push",
+          "olympe-working",
+          "olympe/g46-adorable-run-001"
+        ],
+        "execute": false,
+        "id": "push_working_branch_after_human_approval",
+        "requires_human_approval": true
+      }
+    ],
+    "commit_message": "chore(olympe): store g46-adorable-run-001 memory",
+    "execute": false,
+    "human_approval_required_before_push": true,
+    "local_commit_allowed_now": false,
+    "push_allowed_now": false
+  },
+  "created_at": "2026-06-23T20:27:27Z",
+  "current_branch": "olympe/g46-adorable-run-001",
+  "git": {
+    "available": true,
+    "current_branch_returncode": 0,
+    "inside_parent_worktree": false,
+    "inside_worktree": true,
+    "raw_stderr_stored": false,
+    "raw_stdout_stored": false,
+    "remote_returncode": 0,
+    "remote_stdout_sha256": "566708471858e721b2577dbeb9a61c83e3dedbcbcd02a80d2256b76dc7310d90",
+    "root_matches_repo_path": true,
+    "root_returncode": 0,
+    "status_returncode": 0,
+    "status_stdout_sha256": "775247e3ed46087903d4eeb0e63cfac27d2cd7adfbf955cfac1aebab2d4323ef"
+  },
+  "github_mutations_executed": false,
+  "live_git_mutations_executed": false,
+  "olympe_memory_changes": {
+    "paths_root": ".olympe",
+    "pending_change_count": 1,
+    "raw_status_stored": false
+  },
+  "planned_branch": "olympe/g46-adorable-run-001",
+  "production_actions_executed": false,
+  "push_readiness": {
+    "blockers": [
+      "human_push_approval_missing"
+    ],
+    "human_approval_required_before_push": true,
+    "push_allowed_now": false,
+    "remote_config_required_before_push": false,
+    "required_remote": "olympe-working",
+    "status": "blocked_without_human_push_approval"
+  },
+  "remote_names": [
+    "olympe-working",
+    "origin"
+  ],
+  "remote_urls_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-git-memory-probe/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "ready_for_local_memory_commit",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

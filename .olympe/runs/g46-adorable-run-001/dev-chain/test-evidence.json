@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "runner_result_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+  "runner_result_sha256": "69a974e8dc202934c36d4fd7d0c648010bcb37e18e621c87259d3ebbb0cbd5c7",
+  "schema": "test-evidence/v1",
+  "status": "passed",
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "tests": [
+    {
+      "exit_code": 0,
+      "name": "grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "raw_output_stored": false,
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "bf0787c4155e620d6006295702e4a822fc98424a0fb802970abcfa796b5a8822"
+    }
+  ]
+}

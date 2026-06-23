@@ -1,0 +1,10 @@
+{
+  "argos_event_type": "gate_blocked",
+  "blocker": "runner_not_executed",
+  "generated_at": "2026-06-23T12:00:00Z",
+  "required_before_pr_publication": true,
+  "status": "blocked",
+  "task_id": "RT-G46-ADORABLE-001",
+  "trace_id": "g46-adorable-run-001",
+  "verdict_id": "QA-G46-ADORABLE-001"
+}

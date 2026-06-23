@@ -1,0 +1,337 @@
+{
+  "blocked_live_actions": [
+    "live_model_invocation",
+    "live_code_runner_execution",
+    "working_repo_create",
+    "local_git_commit",
+    "git_push",
+    "issue_create",
+    "pr_create",
+    "merge",
+    "production_deploy",
+    "production_rollback"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "downstream_harness_scope": "downstream-only",
+  "github_memory_primary": true,
+  "github_mutations_executed": false,
+  "human_validation_required_before_live_actions": true,
+  "key_refs": {
+    "context_resolution": {
+      "path": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+      "sha256": "5b7d4ac9804d1ca64226b9933a28ff6235a4152a2b90390026398df5859f824b"
+    },
+    "delivery": {
+      "path": ".olympe/runs/g46-adorable-run-001/delivery/delivery-readiness.json",
+      "sha256": "122430dd6b13b0885269862c63b01aac304a319174c15dceebd8cf370b6941cf"
+    },
+    "dev_chain": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/dev-chain-run.json",
+      "sha256": "f08bba9d25881439ed788537f89bc6640dc7c5de16ab4eb18646aaa7d268f196"
+    },
+    "dev_runner": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-runner/dev-runner-plan.json",
+      "sha256": "1bf12123219c5e308a78bb10c667d72797671d072497c89c2aab39d1107cefc5"
+    },
+    "dev_runner_apply": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-runner/apply-dev-runner-adapter.dry-run-approved-report.json",
+      "sha256": "68daca2e4735cc8c99ffee3a4c2dc0df4754e56d20faa721e20f6920178545c2"
+    },
+    "git_memory_apply": {
+      "path": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.dry-run-approved-report.json",
+      "sha256": "d4eb2e64e4d6595aa5ff2c433ecb83d05e0d4487bd9017d51646a0b033ecc2ec"
+    },
+    "git_memory_probe": {
+      "path": ".olympe/runs/g46-adorable-run-001/git-memory/git-memory-probe.json",
+      "sha256": "f6835dc6033d029d06c966af84f0ce0bc0c6ac06177d43bef1be927d6b7f0c24"
+    },
+    "git_memory_remote": {
+      "path": ".olympe/runs/g46-adorable-run-001/git-memory/remote-git-memory-probe.json",
+      "sha256": "050511bccaf27d997c7d02ff5fea904c99460981cd704af6012b7595d3f7c4ab"
+    },
+    "github_memory_evidence": {
+      "path": ".olympe/runs/g46-adorable-run-001/git-memory/github-memory-evidence.json",
+      "sha256": "f52e62360761ea111d8bdea7d60f79e7adc5c6989795e151a8bc8cad1d6c9127"
+    },
+    "github_publication_evidence": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-evidence.apply-github-publication.dry-run-approved-report.json",
+      "sha256": "9faebc6b0fc7ecb6273f7f0053dc49d9c0371040dd877df1124410c97aa3bac5"
+    },
+    "live_execution_plan": {
+      "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-execution-plan.json",
+      "sha256": "b2fd3587aae1b73a200b22d763fe1eb82666bcedb6ba308167a67b3da4e4f629"
+    },
+    "live_readiness": {
+      "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+      "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+    },
+    "pr_pack": {
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+      "sha256": "7dc8ad6155ae3c3013f3bfa777eb0e6db3564213e840cc54629467188d797dbc"
+    },
+    "publication": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+      "sha256": "a24e85e4225f4c5f73e7f3348cca69f7d131780d6148010a0a10fd2d6ebc89a1"
+    },
+    "publication_prerequisites": {
+      "path": ".olympe/runs/g46-adorable-run-001/publication/publication-prerequisites-probe.json",
+      "sha256": "d763731d307b417ff42b3c9902e383d8a7ea2c3e0e809832170d794726d6be48"
+    },
+    "resume": {
+      "path": ".olympe/runs/g46-adorable-run-001/orchestration/resume-summary.json",
+      "sha256": "f3add35ecc71faf78bae950c297d305d0ead51fbd12932b7b5bb12eb0d51cced"
+    },
+    "room_runtime_evidence": {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/live-room-runtime-evidence.apply-room-runtime-adapter.dry-run-approved-report.json",
+      "sha256": "eab36036e1aa0dddc25419273fd701a24bf28b1747826fafffc42bdfae818a7d"
+    },
+    "room_runtime_probe": {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-probe.json",
+      "sha256": "4a10fefa6cf64b036cbb323699f1f116496fe6751eec263b8815be5e7a9b11fa"
+    },
+    "room_sessions": {
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/room-session-run.json",
+      "sha256": "a8b35548860cf1442c766146fa027790f0aa533cf13af7ef60571efac6a2c05b"
+    },
+    "working_repo": {
+      "path": ".olympe/runs/g46-adorable-run-001/working-repo/working-repo-plan.json",
+      "sha256": "376052603b825eefcf5f1e26c8d48ed27afea05f93fd852b18be5fca3403bca2"
+    }
+  },
+  "live_model_invoked": false,
+  "mode": "plan-only-safe-orchestration",
+  "olympe_self_enforcement": false,
+  "production_actions_executed": false,
+  "project_id": "g46-adorable",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-safe-pipeline-run/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "status": "completed_plan_only_with_human_gates",
+  "step_count": 32,
+  "steps": [
+    {
+      "id": "materialize-memory",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "resume",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-working-repo-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-working-repo-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "write-dry-run-working-repo-approval",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-working-repo-adapter-approved-dry-run",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "run-room-sessions",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-room-runtime-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "probe-room-runtime-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-room-runtime-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "write-dry-run-room-runtime-approval",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-room-runtime-adapter-approved-dry-run",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "resolve-context-requests",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "run-dev-chain",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-dev-runner-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-dev-runner-adapter",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "write-dry-run-dev-runner-approval",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-dev-runner-adapter-approved-dry-run",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "probe-git-memory-state",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-git-memory-state",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "write-dry-run-git-memory-approval",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-git-memory-state-approved-dry-run",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "probe-remote-git-memory",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "probe-github-context",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "probe-publication-prerequisites",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-github-publication",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-github-publication",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "write-dry-run-publication-approval",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "apply-github-publication-approved-dry-run",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-delivery-handoff",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "audit-live-readiness",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "id": "prepare-live-execution-plan",
+      "live_mutation_allowed": false,
+      "production_action_allowed": false,
+      "returncode": 0,
+      "status": "completed"
+    }
+  ]
+}

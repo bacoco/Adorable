@@ -1,0 +1,41 @@
+{
+  "blockers": [
+    "production_human_approval_missing"
+  ],
+  "changelog_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/changelog-plan.json",
+    "sha256": "a83e0c159435f2351dd1b0a0636dd25bd32e1e9646f79bd2cec47198a5ad86db"
+  },
+  "created_at": "2026-06-23T12:00:00Z",
+  "human_validation_required": true,
+  "incident_response_runbook": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/incident-response-runbook.md",
+    "sha256": "97e8f12260c693f5474b1f4b6b85a8b98f3c84988dcae79a7bea44c2eb15c500"
+  },
+  "merge_allowed": false,
+  "monitoring_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/monitoring-plan.json",
+    "sha256": "0dc999500a80a03b6d024ff42e1addf6ca4f15990f114168da5c22e3ed439fe4"
+  },
+  "post_mortem_template": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/post-mortem-template.md",
+    "sha256": "cff805cd7813cc0d718b9c4f3159c60b43d0003bd66c20b4abf4ff95d17a2802"
+  },
+  "production_approval_template": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/production-approval-template.json",
+    "sha256": "11afff98c96552002f082392c84f5460a6d1510838cd358d6372634c5f652188"
+  },
+  "production_deploy_allowed": false,
+  "release_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/release-plan.json",
+    "sha256": "80dc93d9e77c83f69c89f277810e8b3b00cd9e1bd6d8d9f28cadd3d14c48ae4c"
+  },
+  "rollback_allowed": false,
+  "rollback_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/rollback-plan.json",
+    "sha256": "6ec4f60ee770a8975bb109b126eff5a04e00f4217700dbe2475a190f67817cce"
+  },
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-delivery-readiness/v1",
+  "status": "blocked_without_production_approval"
+}

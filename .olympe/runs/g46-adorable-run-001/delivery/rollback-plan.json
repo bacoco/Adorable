@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "raw_production_logs_required": false,
+  "requires_human_approval": true,
+  "rollback_allowed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-rollback-plan/v1",
+  "source_release_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/release-plan.json",
+    "sha256": "80dc93d9e77c83f69c89f277810e8b3b00cd9e1bd6d8d9f28cadd3d14c48ae4c"
+  },
+  "status": "ready_for_human_review_blocked_for_execution",
+  "steps": [
+    {
+      "action": "identify_last_known_good_ref",
+      "execute": false,
+      "order": 1
+    },
+    {
+      "action": "stop_new_release_traffic_if_applicable",
+      "execute": false,
+      "order": 2
+    },
+    {
+      "action": "revert_or_redeploy_last_known_good_after_human_approval",
+      "execute": false,
+      "order": 3
+    },
+    {
+      "action": "verify_service_health_and_argos_signals",
+      "execute": false,
+      "order": 4
+    },
+    {
+      "action": "open_incident_and_post_mortem_if_rollback_used",
+      "execute": false,
+      "order": 5
+    }
+  ],
+  "verification_signals": [
+    "service_health",
+    "error_rate",
+    "latency",
+    "argos_gate_blocked_or_passed",
+    "operator_confirmation"
+  ]
+}

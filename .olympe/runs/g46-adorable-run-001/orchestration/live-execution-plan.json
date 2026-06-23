@@ -1,0 +1,452 @@
+{
+  "blockers": [
+    "confirmation_flag_required",
+    "current_status:blocked_publication_prerequisites",
+    "current_status:blocked_remote_git_memory",
+    "current_status:dry_run_approval_valid_plan_blocked",
+    "current_status:dry_run_ready_for_execute",
+    "human_approval_required"
+  ],
+  "completion_evidence_required": [
+    "working_repo_apply_status=executed or externally_satisfied",
+    "room_runtime_apply_status=executed with agent-turn positions, room syntheses and no raw model output stored",
+    "dev_runner_apply_status=executed with live runner evidence plus live QA/review/PR pack outside fixture mode",
+    "git_memory_apply_status=executed or externally_satisfied",
+    "remote_git_memory_probe_status=ready_remote_git_memory",
+    "publication_prerequisites_probe_status=ready_for_publication_prerequisites",
+    "publication_apply_status=executed",
+    "github_publication_evidence_status=ready_github_publication_evidence",
+    "delivery_status=blocked_without_production_approval until a separate production go/no-go"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "execute_now": false,
+  "github_memory_primary": true,
+  "github_mutations_executed": false,
+  "live_code_runner_executed": false,
+  "live_model_invoked": false,
+  "live_readiness_blockers": [
+    "room_runtime:dry_run_approval_valid_plan_blocked",
+    "room_runtime_evidence:not_executed",
+    "dev_runner:dry_run_ready_for_execute",
+    "working_repo:dry_run_approval_valid_plan_blocked",
+    "git_memory:dry_run_approval_valid_plan_blocked",
+    "remote_git_memory:blocked_remote_git_memory",
+    "github_memory_evidence:blocked_github_memory_evidence",
+    "publication_prerequisites:blocked_publication_prerequisites",
+    "github_publication:dry_run_approval_valid_plan_blocked",
+    "github_publication_evidence:blocked_github_publication_evidence"
+  ],
+  "live_readiness_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/orchestration/live-readiness-audit.json",
+    "sha256": "048e77a54d26325c7a662a8368909407bdbddfab4922be5206007e6356d4f329"
+  },
+  "live_readiness_status": "blocked_live_readiness",
+  "production_actions_executed": false,
+  "project_id": "g46-adorable",
+  "raw_github_response_body_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "raw_remote_urls_stored": false,
+  "required_operator_sequence": [
+    {
+      "approval_file_placeholder": "<completed-working-repo-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/working-repo/human-approval-template.json",
+        "sha256": "ed296c19018bd1e31d0c62d0a2d025124ce8a88224866cb6b8b6f6448a6727d6"
+      },
+      "blocked_reasons": [
+        "human_approval_required",
+        "confirmation_flag_required",
+        "current_status:dry_run_approval_valid_plan_blocked"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "apply-working-repo-adapter",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--approval-file",
+        "<completed-working-repo-approval-file>",
+        "--report-name",
+        "apply-working-repo-adapter.live-approved-report.json",
+        "--execute",
+        "--i-understand-live-github-mutations"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/working-repo/apply-working-repo-adapter.live-approved-report.json",
+      "execute_now": false,
+      "expected_success_status": "executed",
+      "expected_success_statuses": [
+        "executed"
+      ],
+      "human_validation_required": true,
+      "id": "create_or_confirm_working_repo",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "phase": "github-memory",
+      "purpose": "Create or confirm the private fork/working repo before any issue, PR or memory push.",
+      "ready_now": false,
+      "required_confirmation_flag": "--i-understand-live-github-mutations",
+      "requires_prior_steps": [],
+      "sensitive_actions": [
+        "github_working_repo_provision"
+      ]
+    },
+    {
+      "approval_file_placeholder": "<completed-room-runtime-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/human-approval-template.json",
+        "sha256": "1755fa0c9d77522d9e281bd56726ccc4a02f76b00fc938ef5e9b21662e7677e0"
+      },
+      "blocked_reasons": [
+        "human_approval_required",
+        "confirmation_flag_required",
+        "current_status:dry_run_approval_valid_plan_blocked"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "apply-room-runtime-adapter",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--approval-file",
+        "<completed-room-runtime-approval-file>",
+        "--report-name",
+        "apply-room-runtime-adapter.live-approved-report.json",
+        "--execution-granularity",
+        "agent-turns",
+        "--execute",
+        "--i-understand-live-model-invocation"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/apply-room-runtime-adapter.live-approved-report.json",
+      "execute_now": false,
+      "expected_success_status": "executed",
+      "expected_success_statuses": [
+        "executed"
+      ],
+      "human_validation_required": true,
+      "id": "execute_room_runtime",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "phase": "super-hermes-runtime",
+      "purpose": "Invoke the configured room runtime with prompt and execution-contract refs, then ingest structured agent turns and room syntheses.",
+      "ready_now": false,
+      "required_confirmation_flag": "--i-understand-live-model-invocation",
+      "requires_prior_steps": [
+        "run-room-sessions",
+        "prepare-room-runtime-adapter",
+        "probe-room-runtime-adapter"
+      ],
+      "sensitive_actions": [
+        "live_model_invocation"
+      ]
+    },
+    {
+      "approval_file_placeholder": null,
+      "approval_template_ref": null,
+      "blocked_reasons": [],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "resolve-context-requests",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--report-name",
+        "context-request-resolution.live-room-runtime-report.json"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.live-room-runtime-report.json",
+      "execute_now": false,
+      "expected_success_status": "resolved_metadata_only",
+      "expected_success_statuses": [
+        "no_context_requests",
+        "resolved_metadata_only"
+      ],
+      "human_validation_required": false,
+      "id": "resolve_room_runtime_context",
+      "observed_status": "no_context_requests",
+      "phase": "super-hermes-runtime",
+      "purpose": "Resolve or explicitly block context requests emitted by live room agent turns without loading raw context.",
+      "ready_now": false,
+      "required_confirmation_flag": null,
+      "requires_prior_steps": [
+        "execute_room_runtime"
+      ],
+      "sensitive_actions": []
+    },
+    {
+      "approval_file_placeholder": "<completed-dev-runner-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/dev-runner/human-approval-template.json",
+        "sha256": "08e390608df596764ef95d0d52331d8fc7b17d038f6d68403534194e0614c04f"
+      },
+      "blocked_reasons": [
+        "human_approval_required",
+        "confirmation_flag_required",
+        "current_status:dry_run_ready_for_execute"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "apply-dev-runner-adapter",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--approval-file",
+        "<completed-dev-runner-approval-file>",
+        "--report-name",
+        "apply-dev-runner-adapter.live-approved-report.json",
+        "--execute",
+        "--i-understand-live-code-runner"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/dev-runner/apply-dev-runner-adapter.live-approved-report.json",
+      "execute_now": false,
+      "expected_success_status": "executed",
+      "expected_success_statuses": [
+        "executed"
+      ],
+      "human_validation_required": true,
+      "id": "execute_live_code_runner",
+      "observed_status": "dry_run_ready_for_execute",
+      "phase": "dev-runner",
+      "purpose": "Replay the bounded runner task outside fixture mode and store structured runner evidence.",
+      "ready_now": false,
+      "required_confirmation_flag": "--i-understand-live-code-runner",
+      "requires_prior_steps": [
+        "run-dev-chain",
+        "prepare-dev-runner-adapter"
+      ],
+      "sensitive_actions": [
+        "live_code_runner_execution"
+      ]
+    },
+    {
+      "approval_file_placeholder": "<completed-git-memory-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/git-memory/human-approval-template.json",
+        "sha256": "c9a250311aa0e75ee8ab29847f31b6de9504be48069f16bb2097145b46cf23a7"
+      },
+      "blocked_reasons": [
+        "human_approval_required",
+        "confirmation_flag_required",
+        "current_status:dry_run_approval_valid_plan_blocked"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "apply-git-memory-state",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--approval-file",
+        "<completed-git-memory-approval-file>",
+        "--report-name",
+        "apply-git-memory-state.live-approved-report.json",
+        "--execute",
+        "--i-understand-live-git-mutations"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/git-memory/apply-git-memory-state.live-approved-report.json",
+      "execute_now": false,
+      "expected_success_status": "executed",
+      "expected_success_statuses": [
+        "executed"
+      ],
+      "human_validation_required": true,
+      "id": "commit_and_push_olympe_memory",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "phase": "github-memory",
+      "purpose": "Commit and push the downstream .olympe memory to the approved working branch.",
+      "ready_now": false,
+      "required_confirmation_flag": "--i-understand-live-git-mutations",
+      "requires_prior_steps": [
+        "probe-git-memory-state"
+      ],
+      "sensitive_actions": [
+        "git_memory_commit",
+        "git_memory_push"
+      ]
+    },
+    {
+      "approval_file_placeholder": null,
+      "approval_template_ref": null,
+      "blocked_reasons": [
+        "current_status:blocked_remote_git_memory"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "probe-remote-git-memory",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/git-memory/remote-git-memory-probe.json",
+      "execute_now": false,
+      "expected_success_status": "ready_remote_git_memory",
+      "expected_success_statuses": [
+        "ready_remote_git_memory"
+      ],
+      "human_validation_required": false,
+      "id": "probe_remote_git_memory",
+      "observed_status": "blocked_remote_git_memory",
+      "phase": "github-memory",
+      "purpose": "Verify that the working repo branch exposes .olympe/index.json as remote GitHub memory.",
+      "ready_now": false,
+      "required_confirmation_flag": null,
+      "requires_prior_steps": [
+        "commit_and_push_olympe_memory"
+      ],
+      "sensitive_actions": []
+    },
+    {
+      "approval_file_placeholder": null,
+      "approval_template_ref": null,
+      "blocked_reasons": [
+        "current_status:blocked_publication_prerequisites"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "probe-publication-prerequisites",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/publication/publication-prerequisites-probe.json",
+      "execute_now": false,
+      "expected_success_status": "ready_for_publication_prerequisites",
+      "expected_success_statuses": [
+        "ready_for_publication_prerequisites"
+      ],
+      "human_validation_required": false,
+      "id": "probe_remote_publication_prerequisites",
+      "observed_status": "blocked_publication_prerequisites",
+      "phase": "github-publication",
+      "purpose": "Verify the working repo branch and remote .olympe/index.json are visible before issue or PR creation.",
+      "ready_now": false,
+      "required_confirmation_flag": null,
+      "requires_prior_steps": [
+        "probe_remote_git_memory"
+      ],
+      "sensitive_actions": []
+    },
+    {
+      "approval_file_placeholder": "<completed-publication-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/publication/human-approval-template.json",
+        "sha256": "40f2887738bff88f8a016ef4126b8ab0f40d7975932db151e388fdd29b9a9d98"
+      },
+      "blocked_reasons": [
+        "human_approval_required",
+        "confirmation_flag_required",
+        "current_status:dry_run_approval_valid_plan_blocked"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "apply-github-publication",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001",
+        "--approval-file",
+        "<completed-publication-approval-file>",
+        "--report-name",
+        "apply-github-publication.live-approved-report.json",
+        "--execute",
+        "--i-understand-live-github-mutations"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/publication/github-publication-evidence.apply-github-publication.live-approved-report.json",
+      "execute_now": false,
+      "expected_success_status": "executed",
+      "expected_success_statuses": [
+        "executed"
+      ],
+      "human_validation_required": true,
+      "id": "create_working_issues_and_pr",
+      "observed_status": "dry_run_approval_valid_plan_blocked",
+      "phase": "github-publication",
+      "purpose": "Create the working-repo issues and PR only after prerequisites and publication approval pass.",
+      "ready_now": false,
+      "required_confirmation_flag": "--i-understand-live-github-mutations",
+      "requires_prior_steps": [
+        "probe_remote_publication_prerequisites"
+      ],
+      "sensitive_actions": [
+        "github_issue_publication",
+        "github_working_pr_publication"
+      ]
+    },
+    {
+      "approval_file_placeholder": "<completed-production-approval-file>",
+      "approval_template_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/delivery/production-approval-template.json",
+        "sha256": "11afff98c96552002f082392c84f5460a6d1510838cd358d6372634c5f652188"
+      },
+      "blocked_reasons": [
+        "human_approval_required"
+      ],
+      "command_template": [
+        "python",
+        "scripts/olympe.py",
+        "prepare-delivery-handoff",
+        "--pack-dir",
+        "<olympe-pack-dir>",
+        "--repo-path",
+        "<downstream-repo-path>",
+        "--run-id",
+        "g46-adorable-run-001"
+      ],
+      "evidence_ref_after_success": ".olympe/runs/g46-adorable-run-001/delivery/delivery-readiness.json",
+      "execute_now": false,
+      "expected_success_status": "blocked_without_production_approval",
+      "expected_success_statuses": [
+        "blocked_without_production_approval"
+      ],
+      "human_validation_required": true,
+      "id": "keep_production_blocked",
+      "observed_status": "blocked_without_production_approval",
+      "phase": "delivery",
+      "purpose": "Prepare release, rollback and incident handoff, but keep merge/deploy/rollback behind a separate production approval.",
+      "ready_now": false,
+      "required_confirmation_flag": null,
+      "requires_prior_steps": [
+        "create_working_issues_and_pr"
+      ],
+      "sensitive_actions": [
+        "merge",
+        "deploy",
+        "rollback"
+      ]
+    }
+  ],
+  "room_runtime_execution_granularity": "agent-turns",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-live-execution-plan/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "prepared_blocked_without_human_approvals"
+}

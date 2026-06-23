@@ -1,0 +1,39 @@
+{
+  "allowed_actions": [
+    "create_fork"
+  ],
+  "approval_reason": "",
+  "approved": false,
+  "approved_actions": [],
+  "approver_role": "",
+  "blocked_actions": [
+    "mutate_source_repo",
+    "create_issue",
+    "create_pr",
+    "merge",
+    "production_action"
+  ],
+  "dry_run_only": false,
+  "exact_working_repo": "operator-or-olympe-workspace/adorable-olympe-work",
+  "expires_at": "",
+  "operator_must_replace_before_execute": true,
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-human-working-repo-approval/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  }
+}

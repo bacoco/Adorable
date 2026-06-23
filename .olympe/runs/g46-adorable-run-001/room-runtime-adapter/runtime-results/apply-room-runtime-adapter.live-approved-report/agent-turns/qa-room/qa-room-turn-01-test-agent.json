@@ -1,0 +1,39 @@
+{
+  "agent_id": "test-agent",
+  "agent_position": null,
+  "agent_position_present": false,
+  "command_id": "invoke_qa-room-turn-01-test-agent",
+  "context_request_ingestion_policy": {
+    "ledger": "room-runtime-adapter/context-request-ingestion*.jsonl",
+    "raw_context_stored": false,
+    "resolved_now": false,
+    "secret_value_loading_allowed": false
+  },
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-01-test-agent.json",
+  "execution_contract_sha256": "5ba273110d26cd0902da32a96a6d84c6330a2ae99aeb7064e03c38d0db9c31d1",
+  "github_mutation_allowed": false,
+  "model": "gpt-5",
+  "production_action_allowed": false,
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-01-test-agent.md",
+  "prompt_sha256": "93996d180fc007010a3e2e9f4eeda4b12454d38e0c6235ca8665c2b66dc09908",
+  "provider": "auto",
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "returncode": 1,
+  "room_id": "qa-room",
+  "run_id": "g46-adorable-run-001",
+  "runtime": "hermes-cli",
+  "schema": "olympe-agent-turn-runtime-result/v1",
+  "status": "blocked_agent_position",
+  "stderr_bytes": 190,
+  "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "turn_id": "qa-room-turn-01-test-agent",
+  "validation_blockers": [
+    "structured_json_position_missing"
+  ]
+}

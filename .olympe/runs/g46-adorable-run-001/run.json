@@ -1,0 +1,122 @@
+{
+  "artifacts": {
+    "argos-events.jsonl": "examples/g46-first-real-downstream/adorable/argos-events.jsonl",
+    "code-review.json": "examples/g46-first-real-downstream/adorable/code-review.json",
+    "docs-memory-update.json": "examples/g46-first-real-downstream/adorable/docs-memory-update.json",
+    "github-memory-plan.json": "examples/g46-first-real-downstream/adorable/github-memory-plan.json",
+    "human-gates.json": "examples/g46-first-real-downstream/adorable/human-gates.json",
+    "onboarding-scan.json": "examples/g46-first-real-downstream/adorable/onboarding-scan.json",
+    "pr-pack.json": "examples/g46-first-real-downstream/adorable/pr-pack.json",
+    "progressive-disclosure-log.json": "examples/g46-first-real-downstream/adorable/progressive-disclosure-log.json",
+    "project-card.json": "examples/g46-first-real-downstream/adorable/project-card.json",
+    "qa-verdict.json": "examples/g46-first-real-downstream/adorable/qa-verdict.json",
+    "room-openings.json": "examples/g46-first-real-downstream/adorable/room-openings.json",
+    "run.json": "examples/g46-first-real-downstream/adorable/run.json",
+    "runner-task.json": "examples/g46-first-real-downstream/adorable/runner-task.json",
+    "spec-pack.json": "examples/g46-first-real-downstream/adorable/spec-pack.json",
+    "story-slicing.yml": "examples/g46-first-real-downstream/adorable/story-slicing.yml"
+  },
+  "created_at": "2026-06-23T12:00:00Z",
+  "downstream_harness_scope": "downstream-only",
+  "github_memory_primary": true,
+  "github_repo": "freestyle-sh/adorable",
+  "human_gates": [
+    {
+      "gate": "github_mutation",
+      "required": true
+    },
+    {
+      "gate": "production_action",
+      "required": true
+    }
+  ],
+  "local_workspace_role": "cache-and-operator-staging",
+  "mode": "plan-only",
+  "olympe_self_enforcement": false,
+  "project_id": "g46-adorable",
+  "rooms_opened": [
+    "intake-room",
+    "discovery-room",
+    "architecture-room",
+    "story-room",
+    "qa-room"
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-start-run/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "stages": [
+    {
+      "goal": "G29",
+      "id": "spec-pack",
+      "live_step_allowed": false,
+      "name": "Spec Pack Generator",
+      "status": "planned"
+    },
+    {
+      "goal": "G30",
+      "id": "story-slicing",
+      "live_step_allowed": false,
+      "name": "Story To Runner-Task Generator",
+      "status": "planned"
+    },
+    {
+      "goal": "G28",
+      "id": "generic-runner",
+      "live_step_allowed": false,
+      "name": "Hephaistos Generic Dev Runner",
+      "status": "planned"
+    },
+    {
+      "goal": "G31",
+      "id": "qa-verify",
+      "live_step_allowed": false,
+      "name": "QA Verify Gate",
+      "status": "planned"
+    },
+    {
+      "goal": "G32",
+      "id": "code-review",
+      "live_step_allowed": false,
+      "name": "Generic Code Review Gate",
+      "status": "planned"
+    },
+    {
+      "goal": "G33",
+      "id": "pr-pack",
+      "live_step_allowed": false,
+      "name": "Change Unit PR Pack",
+      "status": "planned"
+    },
+    {
+      "goal": "G34",
+      "id": "docs-memory",
+      "live_step_allowed": false,
+      "name": "Documentation And Memory Update",
+      "status": "planned"
+    },
+    {
+      "goal": "G35",
+      "id": "workflow-handoff",
+      "live_step_allowed": false,
+      "name": "Dev Workflow Orchestrator",
+      "status": "planned"
+    }
+  ],
+  "status": "planned",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

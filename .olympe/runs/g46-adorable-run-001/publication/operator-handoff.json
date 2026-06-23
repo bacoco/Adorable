@@ -1,0 +1,35 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/publication/human-approval-template.json",
+  "fork_first": true,
+  "issue_body_refs": [
+    ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-1.md",
+    ".olympe/runs/g46-adorable-run-001/publication/issue-bodies/issue-2.md"
+  ],
+  "no_live_command_executed": true,
+  "operator_steps": [
+    "Review the final PR pack and GitHub publication plan.",
+    "Fill human-approval-template.json with explicit approval if working repo publication is desired.",
+    "Confirm the working repo exists and the Olympe memory branch has been pushed before running label/milestone/issue/PR publication."
+  ],
+  "publication_memory_index_ref": ".olympe/runs/g46-adorable-run-001/publication/publication-memory-index.json",
+  "publication_plan_ref": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-github-publication-handoff/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "awaiting_human_approval",
+  "working_pr_body_ref": ".olympe/runs/g46-adorable-run-001/publication/pr-body.md",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  }
+}

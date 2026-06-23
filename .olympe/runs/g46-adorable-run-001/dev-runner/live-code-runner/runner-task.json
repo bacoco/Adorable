@@ -1,0 +1,69 @@
+{
+  "acceptance_criteria": [
+    "README.md contains G46 Olympe downstream proof marker.",
+    "Only the bounded allowed file changes",
+    "Declared fixture test passes"
+  ],
+  "allowed_files": [
+    "README.md"
+  ],
+  "autonomy": "supervised",
+  "budget": {
+    "max_minutes": 2
+  },
+  "constraints": [
+    "fixture-mode",
+    "no-github-mutation",
+    "no-production",
+    "downstream-memory"
+  ],
+  "context_summary": "Executable downstream dev-chain task loaded from .olympe memory.",
+  "data_classification": "non-sensible",
+  "environment": "dev",
+  "expected_output": "diff + runner-result + QA + review + PR pack stored in downstream .olympe memory",
+  "fixture_edit": {
+    "content": "G46 Olympe downstream proof marker.\n",
+    "path": "README.md"
+  },
+  "forbidden_files": [
+    ".env",
+    ".env.*",
+    "secrets/**",
+    "*.pem",
+    "*.key",
+    ".olympe/**"
+  ],
+  "generated_at": "2026-06-23T12:00:00Z",
+  "human_review_required": false,
+  "inputs": [
+    {
+      "id": "downstream-run",
+      "provenance": "downstream:.olympe/runs/g46-adorable-run-001/run.json",
+      "quarantined": false,
+      "sha256": "a2f276a6f0d9e6079369d5ee2355eb2b0a781c667ca7f597c88b7866fe0c485c",
+      "trust_level": "trusted"
+    },
+    {
+      "id": "downstream-spec",
+      "provenance": "downstream:.olympe/runs/g46-adorable-run-001/spec-pack.json",
+      "quarantined": false,
+      "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f",
+      "trust_level": "trusted"
+    }
+  ],
+  "maturity_level": "M2",
+  "objective": "Write 'G46 Olympe downstream proof marker.' to README.md.",
+  "phase": "implement",
+  "project_id": "g46-adorable",
+  "room_id": "story-room",
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "test_commands": [
+    "grep -F 'G46 Olympe downstream proof marker.' README.md"
+  ],
+  "tests_defined": true,
+  "tools_allowed": [
+    "file_editor",
+    "run_tests",
+    "finish"
+  ]
+}

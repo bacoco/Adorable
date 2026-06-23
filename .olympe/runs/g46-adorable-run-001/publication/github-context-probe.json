@@ -1,0 +1,65 @@
+{
+  "blockers": [
+    "source_repo_not_readable:repo_not_accessible",
+    "working_repo_placeholder"
+  ],
+  "commands_executed": [
+    "gh --version",
+    "gh auth status",
+    "gh repo view source"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "gh": {
+    "auth_returncode": 0,
+    "auth_stderr_sha256": "1ac303ce94191e3621603b137529869dd5f0500c4b6eff2087ef66eb78a99eb8",
+    "auth_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": true,
+    "raw_auth_output_stored": false,
+    "version_returncode": 0,
+    "version_stdout_sha256": "a821debdacc13180e3a5081a7160fac2fcb2f719549c942abee755255c161282"
+  },
+  "live_mutations_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-github-context-probe/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "source_repo_probe": {
+    "accessible": false,
+    "blocker": "repo_not_accessible",
+    "checked": true,
+    "metadata": {},
+    "repo": "freestyle-sh/adorable",
+    "returncode": 1,
+    "stderr_sha256": "aa3d574a5e159f4382ea567aed379e938e71ca54b1c818d01531c8ca73367852",
+    "stderr_stored": false,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_stored": false
+  },
+  "status": "blocked_read_only_github_context",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "working_repo_probe": {
+    "accessible": false,
+    "blocker": "placeholder_repo",
+    "checked": false,
+    "metadata": {},
+    "repo": "operator-or-olympe-workspace/adorable-olympe-work",
+    "returncode": null,
+    "stderr_sha256": null,
+    "stderr_stored": false,
+    "stdout_sha256": null,
+    "stdout_stored": false
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

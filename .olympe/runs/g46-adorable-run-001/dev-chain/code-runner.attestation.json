@@ -1,0 +1,63 @@
+{
+  "attestations": [
+    {
+      "claim": "code-runner-generic-runner-task",
+      "evidence_uri": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-task.json",
+      "sha256": "0bd00a09252005885774bbeb3c79bb425445038645b4d32ed4fe7adb3681e645"
+    },
+    {
+      "claim": "code-runner-generic-runner-result",
+      "evidence_uri": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+      "sha256": "49d6a0b085314f6dc70e167d2218ff3f542e1a4113d916fbdc0c9ac28c5a152c"
+    },
+    {
+      "claim": "code-runner-generic-argos-events",
+      "evidence_uri": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/argos-events.jsonl",
+      "sha256": "18363e0d9212299e758a1c52c7fad9e26e5b7f33d4354474852f0f0a4eb85720"
+    },
+    {
+      "claim": "code-runner-generic-code-runner-process-record",
+      "evidence_uri": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner-process-record.json",
+      "sha256": "e2305541117963e1d90f9cc6a123f97ab7691208a93bbff8acb5f452d79de08d"
+    },
+    {
+      "claim": "code-runner-generic-diff",
+      "evidence_uri": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+      "sha256": "b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1"
+    },
+    {
+      "claim": "code-runner-generic-code-runner-generic",
+      "evidence_uri": "docs/code-runner-generic.md",
+      "sha256": "c4dfa91d741fa85b99cb2955194a9b7b6df2256cc40636660a0760e4c56dd5a3"
+    },
+    {
+      "claim": "code-runner-generic-run-code-runner-task",
+      "evidence_uri": "scripts/run_code_runner_task.py",
+      "sha256": "c15722e1dc791b3e31c12c165b9013e6e5b21126d0977ce688e5448b51c3feaf"
+    },
+    {
+      "claim": "code-runner-generic-check-code-runner-generic",
+      "evidence_uri": "scripts/check_code_runner_generic.py",
+      "sha256": "b9cbff500df18ac98593a7e880cdcc580437a859587f17f86ed808742e996ad4"
+    }
+  ],
+  "governance_blocked": [
+    "live-openhands-infra",
+    "human-review-required"
+  ],
+  "governance_verified_scope": [
+    "g20-static-contract-and-fixture"
+  ],
+  "identity": "local-olympe-worktree",
+  "identityType": "local",
+  "provenance": {
+    "mode": "fixture-no-live-openhands for committed static evidence; live OpenHands path remains local/infra",
+    "redaction": "Raw prompt, OpenHands stdout/stderr, API keys, secrets, and local temp paths are omitted; sha256 digests retained.",
+    "runtime": "openhands"
+  },
+  "signature": null,
+  "signature_required": false,
+  "specVersion": "1.0",
+  "subject": "code-runner-generic",
+  "subjectType": "runtime-proof"
+}

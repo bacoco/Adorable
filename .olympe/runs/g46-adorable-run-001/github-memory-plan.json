@@ -1,0 +1,126 @@
+{
+  "automation_auto_merge": false,
+  "automation_create_issue": false,
+  "automation_create_real_pr": false,
+  "automation_create_repo": false,
+  "automation_push_branch": false,
+  "forbidden_commands": [
+    "gh repo create",
+    "gh issue create",
+    "gh pr create",
+    "gh pr merge",
+    "gh pr ready",
+    "git push",
+    "git merge",
+    "git reset --hard"
+  ],
+  "fork_first": true,
+  "github_mutation_allowed": false,
+  "github_repo": "freestyle-sh/adorable",
+  "intake_strategy": "fork-first",
+  "mode": "plan-only",
+  "planned_branch_targets": [
+    {
+      "branch": "olympe/g46-adorable-run-001",
+      "create_live": false,
+      "repo": "bacoco/adorable"
+    }
+  ],
+  "planned_branches": [
+    "olympe/g46-adorable-run-001"
+  ],
+  "planned_files": [
+    ".olympe/project-card.json",
+    ".olympe/onboarding-scan.json",
+    ".olympe/runs/g46-adorable-run-001/run.json",
+    ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+    ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+    ".olympe/runs/g46-adorable-run-001/pr-pack.json",
+    ".olympe/runs/g46-adorable-run-001/argos-events.jsonl"
+  ],
+  "planned_issues": [
+    {
+      "create_live": false,
+      "labels": [
+        "olympe",
+        "cadrage"
+      ],
+      "milestone": "Olympe g46-adorable-run-001",
+      "target_repo": "bacoco/adorable",
+      "title": "[Olympe] Cadrage initial - G46 candidate: add a bounded documentation marker to README.md to prove the down"
+    },
+    {
+      "create_live": false,
+      "labels": [
+        "olympe",
+        "human-gate"
+      ],
+      "milestone": "Olympe g46-adorable-run-001",
+      "target_repo": "bacoco/adorable",
+      "title": "[Olympe] Validation humaine avant runner et publication PR"
+    }
+  ],
+  "planned_labels": [
+    {
+      "color": "5319e7",
+      "create_live": false,
+      "description": "Olympe-managed downstream memory and orchestration",
+      "name": "olympe",
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "color": "1d76db",
+      "create_live": false,
+      "description": "Initial cadrage, discovery and scoping",
+      "name": "cadrage",
+      "target_repo": "bacoco/adorable"
+    },
+    {
+      "color": "d93f0b",
+      "create_live": false,
+      "description": "Requires explicit human validation before live action",
+      "name": "human-gate",
+      "target_repo": "bacoco/adorable"
+    }
+  ],
+  "planned_milestones": [
+    {
+      "create_live": false,
+      "description": "Initial Olympe downstream factory run",
+      "due_on": null,
+      "target_repo": "bacoco/adorable",
+      "title": "Olympe g46-adorable-run-001"
+    }
+  ],
+  "planned_pr": {
+    "branch": "olympe/g46-adorable-run-001",
+    "create_live": false,
+    "requires_separate_human_upstream_approval": true,
+    "source_pr_pack_ref": "examples/g46-first-real-downstream/adorable/pr-pack.json",
+    "target_repo": "bacoco/adorable",
+    "upstream_create_live": false,
+    "upstream_repo": "freestyle-sh/adorable"
+  },
+  "repo_action": "load_existing_private_repo",
+  "run_id": "g46-adorable-run-001",
+  "schema": "github-memory-plan/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "source_repo_role": "read-only-upstream",
+  "target_visibility": "private",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

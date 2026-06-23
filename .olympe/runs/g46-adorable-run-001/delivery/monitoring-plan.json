@@ -1,0 +1,45 @@
+{
+  "alert_routes": [
+    {
+      "status": "must_configure_before_production",
+      "target": "operator"
+    }
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "production_observation_allowed": false,
+  "raw_log_collection": "operator-controlled; do not store secrets in .olympe",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-monitoring-plan/v1",
+  "signals": [
+    {
+      "name": "availability",
+      "required": true,
+      "threshold": "operator-defined"
+    },
+    {
+      "name": "error_rate",
+      "required": true,
+      "threshold": "operator-defined"
+    },
+    {
+      "name": "latency",
+      "required": true,
+      "threshold": "operator-defined"
+    },
+    {
+      "name": "cost",
+      "required": false,
+      "threshold": "operator-defined"
+    },
+    {
+      "name": "argos_events",
+      "required": true,
+      "threshold": "no unexpected gate_blocked after approval"
+    }
+  ],
+  "source_release_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/delivery/release-plan.json",
+    "sha256": "80dc93d9e77c83f69c89f277810e8b3b00cd9e1bd6d8d9f28cadd3d14c48ae4c"
+  },
+  "status": "planned_not_active"
+}

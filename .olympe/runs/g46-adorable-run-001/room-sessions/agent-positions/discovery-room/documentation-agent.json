@@ -1,0 +1,60 @@
+{
+  "agent_id": "documentation-agent",
+  "blockers": [],
+  "context_requests": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/discovery-room/documentation-agent.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/discovery-room.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/discovery-room.json",
+    ".olympe/runs/g46-adorable-run-001/project-card.json",
+    ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+    ".olympe/runs/g46-adorable-run-001/progressive-disclosure-log.json",
+    ".olympe/runs/g46-adorable-run-001/room-openings.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/carte-contexte.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/questions-ouvertes.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/rooms-recommandees.md"
+  ],
+  "handoff_notes": [
+    "Use room output templates for any produced deliverable.",
+    "Keep claims tied to listed .olympe evidence refs.",
+    "Return structured context requests instead of broad context loading."
+  ],
+  "invitation_scope": "invited",
+  "mode": "deterministic-fixture",
+  "output_template_refs": [
+    {
+      "output_id": "carte-contexte",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/carte-contexte.md",
+      "sha256": "54acfab98a417d4af2edc68c52b894a8034d86d8b3a86aab50e9be02fab1a8ee"
+    },
+    {
+      "output_id": "questions-ouvertes",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/questions-ouvertes.md",
+      "sha256": "1c332df7fe4ae97a75482ba142f5ebab0d8bd1a4f1d85fc113ea137a7ead3f77"
+    },
+    {
+      "output_id": "rooms-recommandees",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/rooms-recommandees.md",
+      "sha256": "3a22c83a1cfddac948c31cb5dc85de3a137078b1be8bb76805b6c6f295e29b87"
+    }
+  ],
+  "position": "contribute_within_contract",
+  "room_id": "discovery-room",
+  "run_id": "g46-adorable-run-001",
+  "safety": {
+    "github_mutation_allowed": false,
+    "live_model_invoked": false,
+    "production_action_allowed": false,
+    "raw_brief_stored": false,
+    "raw_context_stored": false,
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_secret_values_loaded": false,
+    "source_repo_mutation_allowed": false
+  },
+  "schema": "olympe-deterministic-agent-position/v1",
+  "status": "deterministic_position_ready",
+  "turn": 5
+}

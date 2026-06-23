@@ -1,0 +1,170 @@
+{
+  "agent_id": "repo-knowledge-agent",
+  "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/intake-room/repo-knowledge-agent.md",
+  "context_policy": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "load_raw_context": false,
+    "missing_context_behavior": "return_context_request",
+    "raw_secret_values_loaded": false,
+    "store_raw_context": false
+  },
+  "context_request_ledger_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/context-request-ledger.jsonl",
+  "context_resolution_ref": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+  "live_invocation_status": "not_invoked",
+  "mutation_policy": {
+    "github_mutation_allowed": false,
+    "production_action_allowed": false,
+    "source_repo_mutation_allowed": false,
+    "working_repo_live_mutation_allowed": false
+  },
+  "output_contract": {
+    "json_name": "agent_position",
+    "json_schema": {
+      "properties": {
+        "agent_id": {
+          "type": "string"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "context_requests": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "human_validation_required": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "requested_by_agent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requested_ref": {
+                "pattern": "^\\.olympe/",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "deferred",
+                  "rejected",
+                  "satisfied"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "requested_ref",
+              "reason",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "handoff_notes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "output_draft_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "position": {
+          "type": "string"
+        },
+        "room_id": {
+          "type": "string"
+        },
+        "turn_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "turn_id",
+        "room_id",
+        "agent_id",
+        "position",
+        "evidence_refs",
+        "output_draft_refs",
+        "blockers",
+        "context_requests",
+        "handoff_notes"
+      ],
+      "type": "object"
+    },
+    "raw_model_output_stored": false,
+    "structured_summary_only": true
+  },
+  "output_draft_count": 3,
+  "output_draft_policy": {
+    "deterministic_draft_status_required": true,
+    "draft_ref_required_per_output": true,
+    "draft_refs_required_in_evidence_when_relevant": true,
+    "finalization_requires": [
+      "human_validation_or_live_room_runtime_evidence"
+    ],
+    "raw_draft_content_storage_allowed": false,
+    "raw_source_content_storage_allowed": false
+  },
+  "output_draft_refs": [
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/fiche-besoin.md",
+      "draft_sha256": "8f274456b98e9cd96bc0c315e1771a1c1c78c7f0cdbb0613f272fbf04a0dd7df",
+      "output_id": "fiche-besoin",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/fiche-besoin.md",
+      "template_sha256": "f1566e5bd0ba4762d6f50bc720a0dae25e07b5a2cabdd1cfeb703ad9188c66a0"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md",
+      "draft_sha256": "4aa8de7aa84dc04d3b2e6712c65af254ce03f459638de7e8523fcfe18748067f",
+      "output_id": "pdd-projet",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/pdd-projet.md",
+      "template_sha256": "12b18d69dbab934f201970c49a47ad4c34bf96f08634bec082b2f0c65d75a041"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/decision-intake.md",
+      "draft_sha256": "04a9a0b33f3bec6b279a0b995d88e5eed08f4350498e4c4a4f8f80582d027655",
+      "output_id": "decision-intake",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/decision-intake.md",
+      "template_sha256": "aaf40ffeaaad44e8d6989f51dabc82c0e1ad5c26a9be99c0ef0a7cd7f4ec8924"
+    }
+  ],
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-05-repo-knowledge-agent.md",
+  "room_execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/intake-room.json",
+  "room_id": "intake-room",
+  "room_prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/intake-room.md",
+  "room_runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/intake-room.json",
+  "schema": "olympe-room-agent-turn-execution-contract/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "turn_id": "intake-room-turn-05-repo-knowledge-agent",
+  "turn_index": 5,
+  "working_repo": "bacoco/adorable",
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

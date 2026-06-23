@@ -1,0 +1,733 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "decisions": [
+    {
+      "agent_position_refs": [
+        {
+          "agent_id": "facilitator-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/facilitator-agent.json",
+          "position_sha256": "d63a26a7c4be540605c954d2df45d81bc7257db8d82612e69495a41f50ae5a8a"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/product-owner-agent.json",
+          "position_sha256": "e11cb92268d90b6d4d052c0c7eb8fe72ab6f6de82520ecb58cdca46d9f79992c"
+        },
+        {
+          "agent_id": "triage-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/triage-agent.json",
+          "position_sha256": "2f306b4836f8391ea4f245e30d11172c2fe2164af45b01ea173f85a5ef8f2ca8"
+        },
+        {
+          "agent_id": "project-analyst-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/project-analyst-agent.json",
+          "position_sha256": "69b170cd77c084a1065b31c4bb70b129c7ab2f17890718d69425605c1287532a"
+        },
+        {
+          "agent_id": "repo-knowledge-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/intake-room/repo-knowledge-agent.json",
+          "position_sha256": "be3d01f4d59aebd73515118aaa75a614f118227e9e539abdb57f340c46afaaa8"
+        }
+      ],
+      "constraints": [
+        "no_secret_values_loaded",
+        "source_repo_read_only",
+        "working_repo_only",
+        "no_live_github_mutation"
+      ],
+      "decision": "continue_with_documented_handoff",
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/intake-room.json",
+      "gates_checked": [
+        {
+          "gate": "validation_perimetre",
+          "status": "documented"
+        }
+      ],
+      "handoff_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/intake-room.json",
+      "human_validation_required": true,
+      "human_validation_role": "referent-metier",
+      "input_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/project-card.json",
+          "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+          "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/progressive-disclosure-log.json",
+          "sha256": "040270bb52c0b382ecffad8cbef0304dfec7900b45e4c8deb66f8a99c360ed2a"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+          "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+        }
+      ],
+      "output_draft_refs": [
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/fiche-besoin.md",
+          "draft_sha256": "8f274456b98e9cd96bc0c315e1771a1c1c78c7f0cdbb0613f272fbf04a0dd7df",
+          "output_id": "fiche-besoin",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/fiche-besoin.md",
+          "template_sha256": "f1566e5bd0ba4762d6f50bc720a0dae25e07b5a2cabdd1cfeb703ad9188c66a0"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/pdd-projet.md",
+          "draft_sha256": "4aa8de7aa84dc04d3b2e6712c65af254ce03f459638de7e8523fcfe18748067f",
+          "output_id": "pdd-projet",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/pdd-projet.md",
+          "template_sha256": "12b18d69dbab934f201970c49a47ad4c34bf96f08634bec082b2f0c65d75a041"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/intake-room/decision-intake.md",
+          "draft_sha256": "04a9a0b33f3bec6b279a0b995d88e5eed08f4350498e4c4a4f8f80582d027655",
+          "output_id": "decision-intake",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/intake-room/decision-intake.md",
+          "template_sha256": "aaf40ffeaaad44e8d6989f51dabc82c0e1ad5c26a9be99c0ef0a7cd7f4ec8924"
+        }
+      ],
+      "outputs_expected": [
+        "fiche-besoin",
+        "pdd-projet",
+        "decision-intake"
+      ],
+      "report_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/intake-room.md",
+      "response_contract": {
+        "allowed_decisions": [
+          "continue",
+          "needs_human_validation",
+          "blocked"
+        ],
+        "expected_outputs": [
+          "fiche-besoin",
+          "pdd-projet",
+          "decision-intake"
+        ],
+        "format": "markdown_plus_json_summary",
+        "required_json_keys": [
+          "room_id",
+          "decision",
+          "outputs_produced",
+          "risks",
+          "gates",
+          "context_refs_used",
+          "agent_positions",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff_to_next_room",
+          "human_validation_required"
+        ],
+        "required_markdown_sections": [
+          "decision",
+          "outputs",
+          "risks",
+          "agent_positions",
+          "context_used",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff"
+        ],
+        "room_id": "intake-room"
+      },
+      "room_id": "intake-room",
+      "runtime": "local-deterministic-super-hermes-fixture",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/intake-room.json",
+      "status": "executed_deterministic"
+    },
+    {
+      "agent_position_refs": [
+        {
+          "agent_id": "facilitator-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/facilitator-agent.json",
+          "position_sha256": "395d1f40e1fb200611c8ff84842bd1ffc507ed949bb22d091afe744f9318bcd4"
+        },
+        {
+          "agent_id": "project-analyst-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/project-analyst-agent.json",
+          "position_sha256": "5238dc2cbffd9f365dac70aecfd1f8c9d49bc49113a633b56f4cb633d8a170f4"
+        },
+        {
+          "agent_id": "repo-knowledge-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/repo-knowledge-agent.json",
+          "position_sha256": "8e9c0d9f220c04a884c5b2b3b8cfc1e407bfe7b24b2ed1d1392cc45741bef0fe"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/product-owner-agent.json",
+          "position_sha256": "4c71ceafb82c5cdbade497d4b498144bec6911113ed5b6bd6561ef31b8c7d1f1"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/discovery-room/documentation-agent.json",
+          "position_sha256": "ee8ff38851193f23263579919e10d658feefd8604d9f9a7206a747d116bc0827"
+        }
+      ],
+      "constraints": [
+        "no_secret_values_loaded",
+        "source_repo_read_only",
+        "working_repo_only",
+        "no_live_github_mutation"
+      ],
+      "decision": "continue_with_documented_handoff",
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/discovery-room.json",
+      "gates_checked": [
+        {
+          "gate": "contexte_suffisant",
+          "status": "documented"
+        },
+        {
+          "gate": "inconnues_listees",
+          "status": "documented"
+        }
+      ],
+      "handoff_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/discovery-room.json",
+      "human_validation_required": false,
+      "human_validation_role": "sponsor-produit",
+      "input_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/project-card.json",
+          "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+          "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/progressive-disclosure-log.json",
+          "sha256": "040270bb52c0b382ecffad8cbef0304dfec7900b45e4c8deb66f8a99c360ed2a"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/room-openings.json",
+          "sha256": "1ee1e965e985aa2e5aa7d26d0feb186dae82ab65f34e661033b2d2f94a6aad0d"
+        }
+      ],
+      "output_draft_refs": [
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/carte-contexte.md",
+          "draft_sha256": "4797d92089f2142ae9d842f5c9f36b1ced763bf8771a7f26ceb26a9792f85111",
+          "output_id": "carte-contexte",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/carte-contexte.md",
+          "template_sha256": "54acfab98a417d4af2edc68c52b894a8034d86d8b3a86aab50e9be02fab1a8ee"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/questions-ouvertes.md",
+          "draft_sha256": "65a40464d1baf2cdf14a2629461fc125456432bb26e08bb8cfa66ace3698a728",
+          "output_id": "questions-ouvertes",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/questions-ouvertes.md",
+          "template_sha256": "1c332df7fe4ae97a75482ba142f5ebab0d8bd1a4f1d85fc113ea137a7ead3f77"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/discovery-room/rooms-recommandees.md",
+          "draft_sha256": "0f4e6731248fa5df43f755991894f04c496d083d51b816a8eb2a1c36e9c5148c",
+          "output_id": "rooms-recommandees",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/discovery-room/rooms-recommandees.md",
+          "template_sha256": "3a22c83a1cfddac948c31cb5dc85de3a137078b1be8bb76805b6c6f295e29b87"
+        }
+      ],
+      "outputs_expected": [
+        "carte-contexte",
+        "questions-ouvertes",
+        "rooms-recommandees"
+      ],
+      "report_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/discovery-room.md",
+      "response_contract": {
+        "allowed_decisions": [
+          "continue",
+          "needs_human_validation",
+          "blocked"
+        ],
+        "expected_outputs": [
+          "carte-contexte",
+          "questions-ouvertes",
+          "rooms-recommandees"
+        ],
+        "format": "markdown_plus_json_summary",
+        "required_json_keys": [
+          "room_id",
+          "decision",
+          "outputs_produced",
+          "risks",
+          "gates",
+          "context_refs_used",
+          "agent_positions",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff_to_next_room",
+          "human_validation_required"
+        ],
+        "required_markdown_sections": [
+          "decision",
+          "outputs",
+          "risks",
+          "agent_positions",
+          "context_used",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff"
+        ],
+        "room_id": "discovery-room"
+      },
+      "room_id": "discovery-room",
+      "runtime": "local-deterministic-super-hermes-fixture",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/discovery-room.json",
+      "status": "executed_deterministic"
+    },
+    {
+      "agent_position_refs": [
+        {
+          "agent_id": "architect-devlead-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/architect-devlead-agent.json",
+          "position_sha256": "302ef77cdf9fc612d76cd3c18583ad309e0418bfa061faf22c25ed3feeb74acf"
+        },
+        {
+          "agent_id": "facilitator-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/facilitator-agent.json",
+          "position_sha256": "e58ccdf026b3e4c8b955c0572dc10db89b295771f160bcc14b285103de045713"
+        },
+        {
+          "agent_id": "product-owner-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/product-owner-agent.json",
+          "position_sha256": "016c9f8310ecded4d19b1ba182fc8d524bb5258f18c77ac9b2721e21fd5ccf26"
+        },
+        {
+          "agent_id": "security-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/security-agent.json",
+          "position_sha256": "07d4a73f62cf9bf512f21ae53cb5fc1392612cb8eb4fc23b0fd9ccf9977925f7"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/architecture-room/documentation-agent.json",
+          "position_sha256": "42854e7aba654581bc89e06c87e65d31d38e25c98a8d084977b7209d03cb923e"
+        }
+      ],
+      "constraints": [
+        "no_secret_values_loaded",
+        "source_repo_read_only",
+        "working_repo_only",
+        "no_live_github_mutation"
+      ],
+      "decision": "continue_with_documented_handoff",
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/architecture-room.json",
+      "gates_checked": [
+        {
+          "gate": "architecture_legere_validee",
+          "status": "documented"
+        },
+        {
+          "gate": "controle_informations_confidentielles",
+          "status": "documented"
+        }
+      ],
+      "handoff_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/architecture-room.json",
+      "human_validation_required": true,
+      "human_validation_role": "referent-technique",
+      "input_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/project-card.json",
+          "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+          "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+          "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+          "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+        }
+      ],
+      "output_draft_refs": [
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/note-architecture.md",
+          "draft_sha256": "71897a3a7c016836328906d5419c65191994ddab922477ea829f446eacd3309c",
+          "output_id": "note-architecture",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/note-architecture.md",
+          "template_sha256": "23f53e1b5638de89ac55b59e0c60a65cc90381600f247fece186a033832ef752"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decoupage-taches.md",
+          "draft_sha256": "8282e9a7d94e9c6159d119b513125d7da0c0a672058aec9fff3415a3d73975d4",
+          "output_id": "decoupage-taches",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decoupage-taches.md",
+          "template_sha256": "2281441c7b743936c5708eab23a100744d66e9a426bb0110f3c80b538a1bcb94"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decision-architecture.md",
+          "draft_sha256": "153ef7f48de7824a6c8b29941adc9f9b2f494747f4b678b5cb9fcaa5f0ceac3d",
+          "output_id": "decision-architecture",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decision-architecture.md",
+          "template_sha256": "07e9243f09d71dcf3ebcf6d5828e0812db6a3184dc8269fe414538b6e17dc03f"
+        }
+      ],
+      "outputs_expected": [
+        "note-architecture",
+        "decoupage-taches",
+        "decision-architecture"
+      ],
+      "report_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/architecture-room.md",
+      "response_contract": {
+        "allowed_decisions": [
+          "continue",
+          "needs_human_validation",
+          "blocked"
+        ],
+        "expected_outputs": [
+          "note-architecture",
+          "decoupage-taches",
+          "decision-architecture"
+        ],
+        "format": "markdown_plus_json_summary",
+        "required_json_keys": [
+          "room_id",
+          "decision",
+          "outputs_produced",
+          "risks",
+          "gates",
+          "context_refs_used",
+          "agent_positions",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff_to_next_room",
+          "human_validation_required"
+        ],
+        "required_markdown_sections": [
+          "decision",
+          "outputs",
+          "risks",
+          "agent_positions",
+          "context_used",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff"
+        ],
+        "room_id": "architecture-room"
+      },
+      "room_id": "architecture-room",
+      "runtime": "local-deterministic-super-hermes-fixture",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/architecture-room.json",
+      "status": "executed_deterministic"
+    },
+    {
+      "agent_position_refs": [
+        {
+          "agent_id": "product-owner-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/product-owner-agent.json",
+          "position_sha256": "3f2866a61f9d149f9a8f4cceafa4788f14a628f4a914b80fb9ef0c9792f4f6a0"
+        },
+        {
+          "agent_id": "architect-devlead-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/architect-devlead-agent.json",
+          "position_sha256": "b34bea464bfddece1c51519b4d462c8a6b4c2e898ff094f3632c1aeb5562cf71"
+        },
+        {
+          "agent_id": "developer-runner-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/developer-runner-agent.json",
+          "position_sha256": "181d9180d61cbc8790e936e8bb14064f67342a22a045456a62914c8b1eddac7d"
+        },
+        {
+          "agent_id": "test-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/test-agent.json",
+          "position_sha256": "88555dd293ab01cccacbd1c9227a052154908d11f005b7c784fbb4733847bbdd"
+        },
+        {
+          "agent_id": "documentation-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/story-room/documentation-agent.json",
+          "position_sha256": "f6c525f15cd1b8b6d337e2c1e028076dd3b3197ddbcc48a8109151b7949d795e"
+        }
+      ],
+      "constraints": [
+        "no_secret_values_loaded",
+        "source_repo_read_only",
+        "working_repo_only",
+        "no_live_github_mutation"
+      ],
+      "decision": "continue_with_documented_handoff",
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/story-room.json",
+      "gates_checked": [
+        {
+          "gate": "criteres_acceptation_definis",
+          "status": "documented"
+        },
+        {
+          "gate": "tests_previsibles",
+          "status": "documented"
+        },
+        {
+          "gate": "perimetre_borne",
+          "status": "documented"
+        }
+      ],
+      "handoff_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/story-room.json",
+      "human_validation_required": false,
+      "human_validation_role": "product-owner",
+      "input_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+          "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/story-slicing.yml",
+          "sha256": "70fc8f4961419e3e04207c6826baecc98d6ee4946f59873ddd275c1cb2700c8e"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/runner-task.json",
+          "sha256": "536f360c18d5c489792dbeedfbaf5ffcdb4b05f675a53ec89276cf3f64b8df2d"
+        }
+      ],
+      "output_draft_refs": [
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/stories.md",
+          "draft_sha256": "e82358590ab24315be0dedae360fadd0f9d871c422e6800c8f84a79d42d0a871",
+          "output_id": "stories",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/stories.md",
+          "template_sha256": "a699e0bb6693a7d7424530ba2ef10f566748433171af4fed7f17e3635386e371"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/dependances.md",
+          "draft_sha256": "27f94158ee6f48fab4075d9da44745f333b716ef00b249264cbc3aa37df704c0",
+          "output_id": "dependances",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/dependances.md",
+          "template_sha256": "fd2f3c3d73f138fb0b20f5667e371bf8a3e137f2da60bb089540eb2047b00969"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/story-room/criteres-acceptation.md",
+          "draft_sha256": "8fdc69d04b5a636f457b50b9da62f959256c93a286c44701249bfd7f4abcf689",
+          "output_id": "criteres-acceptation",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/story-room/criteres-acceptation.md",
+          "template_sha256": "8a290ee8e3ed5a5b09320b4c330d0a30146ef4bb68b822b0232f3d55adcbce29"
+        }
+      ],
+      "outputs_expected": [
+        "stories",
+        "dependances",
+        "criteres-acceptation"
+      ],
+      "report_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/story-room.md",
+      "response_contract": {
+        "allowed_decisions": [
+          "continue",
+          "needs_human_validation",
+          "blocked"
+        ],
+        "expected_outputs": [
+          "stories",
+          "dependances",
+          "criteres-acceptation"
+        ],
+        "format": "markdown_plus_json_summary",
+        "required_json_keys": [
+          "room_id",
+          "decision",
+          "outputs_produced",
+          "risks",
+          "gates",
+          "context_refs_used",
+          "agent_positions",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff_to_next_room",
+          "human_validation_required"
+        ],
+        "required_markdown_sections": [
+          "decision",
+          "outputs",
+          "risks",
+          "agent_positions",
+          "context_used",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff"
+        ],
+        "room_id": "story-room"
+      },
+      "room_id": "story-room",
+      "runtime": "local-deterministic-super-hermes-fixture",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/story-room.json",
+      "status": "executed_deterministic"
+    },
+    {
+      "agent_position_refs": [
+        {
+          "agent_id": "test-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/test-agent.json",
+          "position_sha256": "ffdf896c2716de4cf3485833d7a69a108c3664e923b3df60c6df39c84361ef35"
+        },
+        {
+          "agent_id": "qa-automation-agent",
+          "invitation_scope": "required",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/qa-automation-agent.json",
+          "position_sha256": "c00f9b850b25425ed275b8916dac08e2fd94aaa924d9ef6e4e2f0e31afeaf67c"
+        },
+        {
+          "agent_id": "security-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/security-agent.json",
+          "position_sha256": "9be990f9b56eb47a9978d1dc71aa2fe26008a180ac0cde72c49dccbba7b86489"
+        },
+        {
+          "agent_id": "rgaa-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/rgaa-agent.json",
+          "position_sha256": "b8b86a7bda776832c00f5049d92985b0279383b5bdf937a03e1c529914faf38e"
+        },
+        {
+          "agent_id": "readiness-agent",
+          "invitation_scope": "invited",
+          "position_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-positions/qa-room/readiness-agent.json",
+          "position_sha256": "0f1ababdd36f0eb8b297ff14bbf453161c022927d40fb7dbec8d0cacabb65c1b"
+        }
+      ],
+      "constraints": [
+        "no_secret_values_loaded",
+        "source_repo_read_only",
+        "working_repo_only",
+        "no_live_github_mutation"
+      ],
+      "decision": "continue_with_documented_handoff",
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/qa-room.json",
+      "gates_checked": [
+        {
+          "gate": "tests",
+          "status": "documented"
+        },
+        {
+          "gate": "revue_securite",
+          "status": "documented"
+        }
+      ],
+      "handoff_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/handoffs/qa-room.json",
+      "human_validation_required": false,
+      "human_validation_role": "referent-qualite",
+      "input_refs": [
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/qa-verdict.json",
+          "sha256": "295025d22c42020e63ea15b0d6d8488ca1a1b3458b08774eb3af79eb7391da30"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/code-review.json",
+          "sha256": "5b2369f243d2e0038387d85839331ef667e77742a30f6bdf27808d08e410f843"
+        },
+        {
+          "path": ".olympe/runs/g46-adorable-run-001/pr-pack.json",
+          "sha256": "5c022a986abe10dce3b09c2456b3ec6b286c2e3b006e1c256146240f3d2e9148"
+        }
+      ],
+      "output_draft_refs": [
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/acceptance-mapping.md",
+          "draft_sha256": "8453ea455331d9b3ac3b8a19fdf7cb8fc9c09c32a228a392552c5afe18774697",
+          "output_id": "acceptance-mapping",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/acceptance-mapping.md",
+          "template_sha256": "4cda06fb0406873f31404fe8e2ef8d7a7dd131825af989024b0e6a709e320146"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/rapport-non-regression.md",
+          "draft_sha256": "1c3f4299d3cace45e67e608f804a467b055feaba15042565d8d2c75c2a90610c",
+          "output_id": "rapport-non-regression",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/rapport-non-regression.md",
+          "template_sha256": "6e57890d12a8a3afea615dbcf7d1d78e99d21cae8734f8236600d6d2df7ad008"
+        },
+        {
+          "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/qa-room/verdict-qualite.md",
+          "draft_sha256": "35b0b727bb160c1fe3191a5c423d9678c1c9f97dec4f7aed663065a6fb9da6b1",
+          "output_id": "verdict-qualite",
+          "status": "deterministic_draft",
+          "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/qa-room/verdict-qualite.md",
+          "template_sha256": "e08dc4998fba2d52c618012b64400bf9fb84f1ce1a4d28123aaa24fc1ef06883"
+        }
+      ],
+      "outputs_expected": [
+        "acceptance-mapping",
+        "rapport-non-regression",
+        "verdict-qualite"
+      ],
+      "report_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/reports/qa-room.md",
+      "response_contract": {
+        "allowed_decisions": [
+          "continue",
+          "needs_human_validation",
+          "blocked"
+        ],
+        "expected_outputs": [
+          "acceptance-mapping",
+          "rapport-non-regression",
+          "verdict-qualite"
+        ],
+        "format": "markdown_plus_json_summary",
+        "required_json_keys": [
+          "room_id",
+          "decision",
+          "outputs_produced",
+          "risks",
+          "gates",
+          "context_refs_used",
+          "agent_positions",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff_to_next_room",
+          "human_validation_required"
+        ],
+        "required_markdown_sections": [
+          "decision",
+          "outputs",
+          "risks",
+          "agent_positions",
+          "context_used",
+          "context_requests",
+          "unresolved_disagreements",
+          "handoff"
+        ],
+        "room_id": "qa-room"
+      },
+      "room_id": "qa-room",
+      "runtime": "local-deterministic-super-hermes-fixture",
+      "runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/qa-room.json",
+      "status": "executed_deterministic"
+    }
+  ],
+  "github_mutation_allowed": false,
+  "live_model_invoked": false,
+  "run_id": "g46-adorable-run-001",
+  "runtime": "local-deterministic-super-hermes-fixture",
+  "schema": "olympe-room-decisions/v1",
+  "source_repo_mutation_allowed": false
+}

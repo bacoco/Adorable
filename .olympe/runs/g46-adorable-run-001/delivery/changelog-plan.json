@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "entries": [
+    {
+      "evidence_refs": [
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+        ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json"
+      ],
+      "summary": "Update README.md through Olympe dev-chain",
+      "type": "changed"
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-changelog-plan/v1",
+  "source_pr_pack": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+    "sha256": "7dc8ad6155ae3c3013f3bfa777eb0e6db3564213e840cc54629467188d797dbc"
+  },
+  "status": "planned_after_human_publication",
+  "write_allowed_now": false,
+  "write_targets": [
+    ".olympe/changelog.md",
+    "CHANGELOG.md after human approval"
+  ]
+}

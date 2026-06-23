@@ -1,0 +1,55 @@
+{
+  "blockers": [],
+  "command_plan": [
+    {
+      "argv": [
+        "gh",
+        "repo",
+        "fork",
+        "freestyle-sh/adorable",
+        "--clone=false",
+        "--remote=false"
+      ],
+      "execute": false,
+      "expected_repo_after_execution": "bacoco/adorable",
+      "id": "create_fork",
+      "mutation": "create_fork",
+      "raw_command_output_stored": false,
+      "source_repo": "freestyle-sh/adorable",
+      "target_repo": "bacoco/adorable"
+    }
+  ],
+  "created_at": "2026-06-23T20:19:18Z",
+  "fork_first": true,
+  "github_mutation_allowed": false,
+  "github_repo": "freestyle-sh/adorable",
+  "human_approval_required": true,
+  "live_mutations_executed": false,
+  "required_action": "create_fork",
+  "run_id": "g46-adorable-run-001",
+  "safety_notes": [
+    "source repo remains read-only",
+    "working repo creation is isolated from label/milestone/issue/PR publication",
+    "fork execution is blocked when the requested target name cannot be created by gh repo fork"
+  ],
+  "schema": "olympe-working-repo-plan/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "ready_for_human_approval",
+  "target_repo": "bacoco/adorable",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

@@ -1,0 +1,50 @@
+{
+  "github_mutation_allowed": false,
+  "github_repo": "freestyle-sh/adorable",
+  "human_validation_required_before": [
+    "git_push",
+    "issue_create",
+    "pr_create",
+    "merge",
+    "production_deploy"
+  ],
+  "loaded_refs": {
+    "github_plan": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+    "human_gates": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/human-gates.json",
+    "onboarding_scan": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+    "pr_pack": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/pr-pack.json",
+    "project_card": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/project-card.json",
+    "run": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001/run.json"
+  },
+  "mode": "plan-only",
+  "pr_pack_status": "blocked",
+  "project_id": "g46-adorable",
+  "repo_memory_ref": "/data/loic/tmp/adorable-check/.olympe/runs/g46-adorable-run-001",
+  "rooms_opened": [
+    "intake-room",
+    "discovery-room",
+    "architecture-room",
+    "story-room",
+    "qa-room"
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-resume-summary/v1",
+  "source_of_truth": "downstream-repo-memory",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "planned",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

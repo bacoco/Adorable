@@ -1,0 +1,60 @@
+{
+  "agent_id": "architect-devlead-agent",
+  "blockers": [],
+  "context_requests": [],
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/architect-devlead-agent.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/architecture-room.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/architecture-room.json",
+    ".olympe/runs/g46-adorable-run-001/project-card.json",
+    ".olympe/runs/g46-adorable-run-001/onboarding-scan.json",
+    ".olympe/runs/g46-adorable-run-001/spec-pack.json",
+    ".olympe/runs/g46-adorable-run-001/github-memory-plan.json",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/note-architecture.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decoupage-taches.md",
+    ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decision-architecture.md"
+  ],
+  "handoff_notes": [
+    "Use room output templates for any produced deliverable.",
+    "Keep claims tied to listed .olympe evidence refs.",
+    "Return structured context requests instead of broad context loading."
+  ],
+  "invitation_scope": "required",
+  "mode": "deterministic-fixture",
+  "output_template_refs": [
+    {
+      "output_id": "note-architecture",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/note-architecture.md",
+      "sha256": "23f53e1b5638de89ac55b59e0c60a65cc90381600f247fece186a033832ef752"
+    },
+    {
+      "output_id": "decoupage-taches",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decoupage-taches.md",
+      "sha256": "2281441c7b743936c5708eab23a100744d66e9a426bb0110f3c80b538a1bcb94"
+    },
+    {
+      "output_id": "decision-architecture",
+      "path": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decision-architecture.md",
+      "sha256": "07e9243f09d71dcf3ebcf6d5828e0812db6a3184dc8269fe414538b6e17dc03f"
+    }
+  ],
+  "position": "contribute_within_contract",
+  "room_id": "architecture-room",
+  "run_id": "g46-adorable-run-001",
+  "safety": {
+    "github_mutation_allowed": false,
+    "live_model_invoked": false,
+    "production_action_allowed": false,
+    "raw_brief_stored": false,
+    "raw_context_stored": false,
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_secret_values_loaded": false,
+    "source_repo_mutation_allowed": false
+  },
+  "schema": "olympe-deterministic-agent-position/v1",
+  "status": "deterministic_position_ready",
+  "turn": 1
+}

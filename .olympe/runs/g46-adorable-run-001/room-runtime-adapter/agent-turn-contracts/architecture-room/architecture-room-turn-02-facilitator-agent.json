@@ -1,0 +1,170 @@
+{
+  "agent_id": "facilitator-agent",
+  "brief_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/agent-briefs/architecture-room/facilitator-agent.md",
+  "context_policy": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "load_raw_context": false,
+    "missing_context_behavior": "return_context_request",
+    "raw_secret_values_loaded": false,
+    "store_raw_context": false
+  },
+  "context_request_ledger_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/context-request-ledger.jsonl",
+  "context_resolution_ref": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.json",
+  "live_invocation_status": "not_invoked",
+  "mutation_policy": {
+    "github_mutation_allowed": false,
+    "production_action_allowed": false,
+    "source_repo_mutation_allowed": false,
+    "working_repo_live_mutation_allowed": false
+  },
+  "output_contract": {
+    "json_name": "agent_position",
+    "json_schema": {
+      "properties": {
+        "agent_id": {
+          "type": "string"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "context_requests": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "human_validation_required": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "requested_by_agent": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requested_ref": {
+                "pattern": "^\\.olympe/",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "requested",
+                  "deferred",
+                  "rejected",
+                  "satisfied"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "requested_ref",
+              "reason",
+              "status"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "evidence_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "handoff_notes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "output_draft_refs": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "position": {
+          "type": "string"
+        },
+        "room_id": {
+          "type": "string"
+        },
+        "turn_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "turn_id",
+        "room_id",
+        "agent_id",
+        "position",
+        "evidence_refs",
+        "output_draft_refs",
+        "blockers",
+        "context_requests",
+        "handoff_notes"
+      ],
+      "type": "object"
+    },
+    "raw_model_output_stored": false,
+    "structured_summary_only": true
+  },
+  "output_draft_count": 3,
+  "output_draft_policy": {
+    "deterministic_draft_status_required": true,
+    "draft_ref_required_per_output": true,
+    "draft_refs_required_in_evidence_when_relevant": true,
+    "finalization_requires": [
+      "human_validation_or_live_room_runtime_evidence"
+    ],
+    "raw_draft_content_storage_allowed": false,
+    "raw_source_content_storage_allowed": false
+  },
+  "output_draft_refs": [
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/note-architecture.md",
+      "draft_sha256": "71897a3a7c016836328906d5419c65191994ddab922477ea829f446eacd3309c",
+      "output_id": "note-architecture",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/note-architecture.md",
+      "template_sha256": "23f53e1b5638de89ac55b59e0c60a65cc90381600f247fece186a033832ef752"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decoupage-taches.md",
+      "draft_sha256": "8282e9a7d94e9c6159d119b513125d7da0c0a672058aec9fff3415a3d73975d4",
+      "output_id": "decoupage-taches",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decoupage-taches.md",
+      "template_sha256": "2281441c7b743936c5708eab23a100744d66e9a426bb0110f3c80b538a1bcb94"
+    },
+    {
+      "draft_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-drafts/architecture-room/decision-architecture.md",
+      "draft_sha256": "153ef7f48de7824a6c8b29941adc9f9b2f494747f4b678b5cb9fcaa5f0ceac3d",
+      "output_id": "decision-architecture",
+      "status": "deterministic_draft",
+      "template_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/output-templates/architecture-room/decision-architecture.md",
+      "template_sha256": "07e9243f09d71dcf3ebcf6d5828e0812db6a3184dc8269fe414538b6e17dc03f"
+    }
+  ],
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-02-facilitator-agent.md",
+  "room_execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/execution-contracts/architecture-room.json",
+  "room_id": "architecture-room",
+  "room_prompt_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/prompts/architecture-room.md",
+  "room_runtime_plan_ref": ".olympe/runs/g46-adorable-run-001/room-sessions/runtime-plans/architecture-room.json",
+  "schema": "olympe-room-agent-turn-execution-contract/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "turn_id": "architecture-room-turn-02-facilitator-agent",
+  "turn_index": 2,
+  "working_repo": "bacoco/adorable",
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

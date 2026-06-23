@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "docs_update_plan": [
+    {
+      "action": "create",
+      "path": ".olympe/project-card.json"
+    },
+    {
+      "action": "create",
+      "path": ".olympe/runs/g46-adorable-run-001/run.json"
+    }
+  ],
+  "memory_update_plan": [
+    {
+      "action": "create_if_missing",
+      "path": ".olympe/decisions/README.md"
+    },
+    {
+      "action": "create_if_missing",
+      "path": ".olympe/runbooks/operator-handoff.md"
+    }
+  ],
+  "post_change_only": false,
+  "source_kind": "olympe-start",
+  "source_ref": "examples/g46-first-real-downstream/adorable/project-card.json",
+  "task_id": "RT-G46-ADORABLE-001",
+  "trace_id": "g46-adorable-run-001",
+  "update_id": "DOCMEM-G46-ADORABLE-001"
+}

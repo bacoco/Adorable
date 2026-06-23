@@ -1,0 +1,39 @@
+{
+  "agent_id": "architect-devlead-agent",
+  "agent_position": null,
+  "agent_position_present": false,
+  "command_id": "invoke_architecture-room-turn-01-architect-devlead-agent",
+  "context_request_ingestion_policy": {
+    "ledger": "room-runtime-adapter/context-request-ingestion*.jsonl",
+    "raw_context_stored": false,
+    "resolved_now": false,
+    "secret_value_loading_allowed": false
+  },
+  "context_requests_ingested": 0,
+  "created_at": "2026-06-23T20:23:27Z",
+  "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+  "execution_contract_sha256": "828e9614a9a2be03ce629e2f2e867074a0085ed34ab94b52d1a73181c703bbce",
+  "github_mutation_allowed": false,
+  "model": "gpt-5",
+  "production_action_allowed": false,
+  "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-01-architect-devlead-agent.md",
+  "prompt_sha256": "397d666daf9296d45d6a4b4fe97266e877512c805cb6c44d6351bf8748c30155",
+  "provider": "auto",
+  "raw_execution_contract_stored": false,
+  "raw_model_output_stored": false,
+  "raw_prompt_stored": false,
+  "returncode": 1,
+  "room_id": "architecture-room",
+  "run_id": "g46-adorable-run-001",
+  "runtime": "hermes-cli",
+  "schema": "olympe-agent-turn-runtime-result/v1",
+  "status": "blocked_agent_position",
+  "stderr_bytes": 190,
+  "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+  "stdout_bytes": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "turn_id": "architecture-room-turn-01-architect-devlead-agent",
+  "validation_blockers": [
+    "structured_json_position_missing"
+  ]
+}

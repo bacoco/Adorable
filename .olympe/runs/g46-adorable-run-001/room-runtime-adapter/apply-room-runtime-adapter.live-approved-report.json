@@ -1,0 +1,1364 @@
+{
+  "agent_turn_results": [
+    {
+      "agent_id": "facilitator-agent",
+      "command_id": "invoke_intake-room-turn-01-facilitator-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-01-facilitator-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-01-facilitator-agent.json",
+        "sha256": "8c9af0aa834e4de1b91d2a2e2164fa4497c805154cc7d22f1ffd16f822d4295c"
+      },
+      "room_id": "intake-room",
+      "status": "blocked_agent_position",
+      "turn_id": "intake-room-turn-01-facilitator-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "command_id": "invoke_intake-room-turn-02-product-owner-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-02-product-owner-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-02-product-owner-agent.json",
+        "sha256": "e65725352fb8822028472c1c7e568eef9d19a9eee114f27aef2b6c61d3a405db"
+      },
+      "room_id": "intake-room",
+      "status": "blocked_agent_position",
+      "turn_id": "intake-room-turn-02-product-owner-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "triage-agent",
+      "command_id": "invoke_intake-room-turn-03-triage-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-03-triage-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-03-triage-agent.json",
+        "sha256": "3fdbcda8cd7911e4fa82ad141452ba1544c413721eb28dc36a8aa95aa36a1c0c"
+      },
+      "room_id": "intake-room",
+      "status": "blocked_agent_position",
+      "turn_id": "intake-room-turn-03-triage-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "project-analyst-agent",
+      "command_id": "invoke_intake-room-turn-04-project-analyst-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-04-project-analyst-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-04-project-analyst-agent.json",
+        "sha256": "c681dc548c3dcf82c34ffed7872c94b46e5699b5529a54c9cc6de5977cee6afb"
+      },
+      "room_id": "intake-room",
+      "status": "blocked_agent_position",
+      "turn_id": "intake-room-turn-04-project-analyst-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "repo-knowledge-agent",
+      "command_id": "invoke_intake-room-turn-05-repo-knowledge-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-05-repo-knowledge-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-05-repo-knowledge-agent.json",
+        "sha256": "11a21787d75f187ea3ca0c8b7c888c5f00172fcfdcb9c4c0a7f55e30c52d978b"
+      },
+      "room_id": "intake-room",
+      "status": "blocked_agent_position",
+      "turn_id": "intake-room-turn-05-repo-knowledge-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "facilitator-agent",
+      "command_id": "invoke_discovery-room-turn-01-facilitator-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-01-facilitator-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-01-facilitator-agent.json",
+        "sha256": "8812929ee9ab17b654ca732f3b0f7647570e3f0dc74c3055f419d41deaa68a3c"
+      },
+      "room_id": "discovery-room",
+      "status": "blocked_agent_position",
+      "turn_id": "discovery-room-turn-01-facilitator-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "project-analyst-agent",
+      "command_id": "invoke_discovery-room-turn-02-project-analyst-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-02-project-analyst-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-02-project-analyst-agent.json",
+        "sha256": "b2cb596ae75bfe42b9f5b4d24d25ac7aefdb0a466a0e0a612f3d9308b84b0e14"
+      },
+      "room_id": "discovery-room",
+      "status": "blocked_agent_position",
+      "turn_id": "discovery-room-turn-02-project-analyst-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "repo-knowledge-agent",
+      "command_id": "invoke_discovery-room-turn-03-repo-knowledge-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-03-repo-knowledge-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-03-repo-knowledge-agent.json",
+        "sha256": "89ff3023e4863cdebd494ac7d948ddf35e228fe1c8dec6c1df877b2fd3485e4a"
+      },
+      "room_id": "discovery-room",
+      "status": "blocked_agent_position",
+      "turn_id": "discovery-room-turn-03-repo-knowledge-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "command_id": "invoke_discovery-room-turn-04-product-owner-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-04-product-owner-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-04-product-owner-agent.json",
+        "sha256": "d235ffdce25245a0f95af54f6db8e8daf377e95f32f64023871eb27450946269"
+      },
+      "room_id": "discovery-room",
+      "status": "blocked_agent_position",
+      "turn_id": "discovery-room-turn-04-product-owner-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "documentation-agent",
+      "command_id": "invoke_discovery-room-turn-05-documentation-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-05-documentation-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-05-documentation-agent.json",
+        "sha256": "d4f32baac0fd3f09745a00f7dea00fbb3b69c091337132f75c124b17520932d4"
+      },
+      "room_id": "discovery-room",
+      "status": "blocked_agent_position",
+      "turn_id": "discovery-room-turn-05-documentation-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "architect-devlead-agent",
+      "command_id": "invoke_architecture-room-turn-01-architect-devlead-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+        "sha256": "2b028d245e6623ab072bd7796965c9fc76ceed2b29d38330daf2544d80f2c70a"
+      },
+      "room_id": "architecture-room",
+      "status": "blocked_agent_position",
+      "turn_id": "architecture-room-turn-01-architect-devlead-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "facilitator-agent",
+      "command_id": "invoke_architecture-room-turn-02-facilitator-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-02-facilitator-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-02-facilitator-agent.json",
+        "sha256": "195375cad40c2d8d6aed0d2e9e7c1e390957496061711a8c7af468f4a83b9b8d"
+      },
+      "room_id": "architecture-room",
+      "status": "blocked_agent_position",
+      "turn_id": "architecture-room-turn-02-facilitator-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "command_id": "invoke_architecture-room-turn-03-product-owner-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-03-product-owner-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-03-product-owner-agent.json",
+        "sha256": "f8c7579093f577ede9d86cd1dbcb813cd41acb8a85913671df7f819f36c8b231"
+      },
+      "room_id": "architecture-room",
+      "status": "blocked_agent_position",
+      "turn_id": "architecture-room-turn-03-product-owner-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "security-agent",
+      "command_id": "invoke_architecture-room-turn-04-security-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-04-security-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-04-security-agent.json",
+        "sha256": "c83cf6ff331a7890f25a893f65b5c0dad3f66d3c7439987871e2caf4f89a0a93"
+      },
+      "room_id": "architecture-room",
+      "status": "blocked_agent_position",
+      "turn_id": "architecture-room-turn-04-security-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "documentation-agent",
+      "command_id": "invoke_architecture-room-turn-05-documentation-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-05-documentation-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-05-documentation-agent.json",
+        "sha256": "24bd90286e3cdb1ac1fee5fcc895e9cf252bb3da3338caa2eade29afca998f8a"
+      },
+      "room_id": "architecture-room",
+      "status": "blocked_agent_position",
+      "turn_id": "architecture-room-turn-05-documentation-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "command_id": "invoke_story-room-turn-01-product-owner-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-01-product-owner-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-01-product-owner-agent.json",
+        "sha256": "5bbf6c1d8a1457eefe1f951e14a0deac263b7781e846ce49fec14ecc97c69fe7"
+      },
+      "room_id": "story-room",
+      "status": "blocked_agent_position",
+      "turn_id": "story-room-turn-01-product-owner-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "architect-devlead-agent",
+      "command_id": "invoke_story-room-turn-02-architect-devlead-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-02-architect-devlead-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-02-architect-devlead-agent.json",
+        "sha256": "64a3a374dafd71f2d25438e60bd7c1e8ba96b55513a6943222c63d1d00ebe9bf"
+      },
+      "room_id": "story-room",
+      "status": "blocked_agent_position",
+      "turn_id": "story-room-turn-02-architect-devlead-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "developer-runner-agent",
+      "command_id": "invoke_story-room-turn-03-developer-runner-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-03-developer-runner-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-03-developer-runner-agent.json",
+        "sha256": "ae25e50083b5ef4ad69081baeadef465d9f02e54bd288fa855ba8520758b07ee"
+      },
+      "room_id": "story-room",
+      "status": "blocked_agent_position",
+      "turn_id": "story-room-turn-03-developer-runner-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "test-agent",
+      "command_id": "invoke_story-room-turn-04-test-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-04-test-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-04-test-agent.json",
+        "sha256": "2db33e170732dae4460ea064d0dff85f78476d5c20b17580de67e09314b63a6a"
+      },
+      "room_id": "story-room",
+      "status": "blocked_agent_position",
+      "turn_id": "story-room-turn-04-test-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "documentation-agent",
+      "command_id": "invoke_story-room-turn-05-documentation-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-05-documentation-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-05-documentation-agent.json",
+        "sha256": "fe8beb04afcd4da73e1e09a7adae10c7b4d81af1826d1f9774ebd54e0c9518a8"
+      },
+      "room_id": "story-room",
+      "status": "blocked_agent_position",
+      "turn_id": "story-room-turn-05-documentation-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "test-agent",
+      "command_id": "invoke_qa-room-turn-01-test-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-01-test-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-01-test-agent.json",
+        "sha256": "a08e22a7e2e7cadd5732556ba9fbf6ee666b47b21eb844745151c7b653ea21bb"
+      },
+      "room_id": "qa-room",
+      "status": "blocked_agent_position",
+      "turn_id": "qa-room-turn-01-test-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "qa-automation-agent",
+      "command_id": "invoke_qa-room-turn-02-qa-automation-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-02-qa-automation-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-02-qa-automation-agent.json",
+        "sha256": "d97b95bba365621c46e32aae78af2e0350569d4bf84a69bf4850bbb57342582f"
+      },
+      "room_id": "qa-room",
+      "status": "blocked_agent_position",
+      "turn_id": "qa-room-turn-02-qa-automation-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "security-agent",
+      "command_id": "invoke_qa-room-turn-03-security-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-03-security-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-03-security-agent.json",
+        "sha256": "4590b70734595c327cd14495a1e8c15c22709384a2d6f4019bd3b48c455c194b"
+      },
+      "room_id": "qa-room",
+      "status": "blocked_agent_position",
+      "turn_id": "qa-room-turn-03-security-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "rgaa-agent",
+      "command_id": "invoke_qa-room-turn-04-rgaa-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-04-rgaa-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-04-rgaa-agent.json",
+        "sha256": "a370778010df68e69b2127d8bd08179903f1f71107eaebadb36ae31fd24c3168"
+      },
+      "room_id": "qa-room",
+      "status": "blocked_agent_position",
+      "turn_id": "qa-room-turn-04-rgaa-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    },
+    {
+      "agent_id": "readiness-agent",
+      "command_id": "invoke_qa-room-turn-05-readiness-agent",
+      "context_requests_ingested": 0,
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-05-readiness-agent.json",
+      "result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-05-readiness-agent.json",
+        "sha256": "453cc253097b0578334e48da8b77b91c503787302c0cbb25bdcf1a1f45f8dc91"
+      },
+      "room_id": "qa-room",
+      "status": "blocked_agent_position",
+      "turn_id": "qa-room-turn-05-readiness-agent",
+      "validation_blockers": [
+        "structured_json_position_missing"
+      ]
+    }
+  ],
+  "approval": {
+    "approval_ref": {
+      "path": "<external-approval-file>",
+      "sha256": "b80a28e03ca0daed742055aff886d2506a2cb7b26655fcf9fd9000a11853f5d4"
+    },
+    "approved": true,
+    "blockers": [],
+    "dry_run_only": false,
+    "raw_identity_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "raw_review_body_stored": false,
+    "valid": true
+  },
+  "command_results": [
+    {
+      "agent_id": "facilitator-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-01-facilitator-agent.json",
+      "execution_contract_sha256": "f564448c2cac514d6f1ed26292c2da9691b73b671976594ef44d3c99fe4d7da3",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_intake-room-turn-01-facilitator-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-01-facilitator-agent.md",
+      "prompt_sha256": "470c96515f2ebb0badc6c50e376fa04babbe3673734d9d6885abe44fa295cdaf",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "intake-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-01-facilitator-agent.json",
+        "sha256": "8c9af0aa834e4de1b91d2a2e2164fa4497c805154cc7d22f1ffd16f822d4295c"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "intake-room-turn-01-facilitator-agent"
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-02-product-owner-agent.json",
+      "execution_contract_sha256": "053457a954c0160695afbfecf212b191721f38a4ede5df383277fa90828ae6f5",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_intake-room-turn-02-product-owner-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-02-product-owner-agent.md",
+      "prompt_sha256": "dcda79268f57b6f5d7a91bdca591b5483396b10029dc1b42e51b937c17103df6",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "intake-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-02-product-owner-agent.json",
+        "sha256": "e65725352fb8822028472c1c7e568eef9d19a9eee114f27aef2b6c61d3a405db"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "intake-room-turn-02-product-owner-agent"
+    },
+    {
+      "agent_id": "triage-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-03-triage-agent.json",
+      "execution_contract_sha256": "93ceec67c4dfaa80b0e5a742501aa2c544ab528bbd748c638f7210fbfd22e642",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_intake-room-turn-03-triage-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-03-triage-agent.md",
+      "prompt_sha256": "784665d7535a592cf81f1ebab1f86eb628b9ee4dab4a5afaf8caa1b0d63c5a8f",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "intake-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-03-triage-agent.json",
+        "sha256": "3fdbcda8cd7911e4fa82ad141452ba1544c413721eb28dc36a8aa95aa36a1c0c"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "intake-room-turn-03-triage-agent"
+    },
+    {
+      "agent_id": "project-analyst-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-04-project-analyst-agent.json",
+      "execution_contract_sha256": "3c8d9c0efd1d43e618fe6843c475c9d2bb677b9181626db4cf1b5e9381dd7cf2",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_intake-room-turn-04-project-analyst-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-04-project-analyst-agent.md",
+      "prompt_sha256": "122b8d1bac8a7eb95a47fc4f134fddf01ce44a2af3ca105098542c2c014fb134",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "intake-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-04-project-analyst-agent.json",
+        "sha256": "c681dc548c3dcf82c34ffed7872c94b46e5699b5529a54c9cc6de5977cee6afb"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "intake-room-turn-04-project-analyst-agent"
+    },
+    {
+      "agent_id": "repo-knowledge-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/intake-room/intake-room-turn-05-repo-knowledge-agent.json",
+      "execution_contract_sha256": "71ef58642bc88e744a4ac78f9a05e59f95067a24f0c66a40ace7bd9d768d4179",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_intake-room-turn-05-repo-knowledge-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/intake-room/intake-room-turn-05-repo-knowledge-agent.md",
+      "prompt_sha256": "041bbf6ec41ff0bf13cdf6eefab64cede631b478d6cfe9c6b71063b2a67007ff",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "intake-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/intake-room/intake-room-turn-05-repo-knowledge-agent.json",
+        "sha256": "11a21787d75f187ea3ca0c8b7c888c5f00172fcfdcb9c4c0a7f55e30c52d978b"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "intake-room-turn-05-repo-knowledge-agent"
+    },
+    {
+      "agent_id": "facilitator-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-01-facilitator-agent.json",
+      "execution_contract_sha256": "adc7cbb05752872877dd35cf4defa5063f7160c1118951f1395cc26c5301b4aa",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_discovery-room-turn-01-facilitator-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/discovery-room/discovery-room-turn-01-facilitator-agent.md",
+      "prompt_sha256": "6f0093b0af7e2ccd716680a277a6c886e37682f0283dd567b976dfa46ce321ec",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "discovery-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-01-facilitator-agent.json",
+        "sha256": "8812929ee9ab17b654ca732f3b0f7647570e3f0dc74c3055f419d41deaa68a3c"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "discovery-room-turn-01-facilitator-agent"
+    },
+    {
+      "agent_id": "project-analyst-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-02-project-analyst-agent.json",
+      "execution_contract_sha256": "43085e43fadd85e2a336acf65efd4afb9c87fb4acc0e3b82e695d9f511c106a6",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_discovery-room-turn-02-project-analyst-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/discovery-room/discovery-room-turn-02-project-analyst-agent.md",
+      "prompt_sha256": "18cb2b3a7fa4fc82de8a21abf4595d5e9946740cc6777b72026fab8c0f7a58da",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "discovery-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-02-project-analyst-agent.json",
+        "sha256": "b2cb596ae75bfe42b9f5b4d24d25ac7aefdb0a466a0e0a612f3d9308b84b0e14"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "discovery-room-turn-02-project-analyst-agent"
+    },
+    {
+      "agent_id": "repo-knowledge-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-03-repo-knowledge-agent.json",
+      "execution_contract_sha256": "3f7215c7413d62aa4e452515b5a3da70167fb29de417dfb343cf607b5761a88e",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_discovery-room-turn-03-repo-knowledge-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/discovery-room/discovery-room-turn-03-repo-knowledge-agent.md",
+      "prompt_sha256": "6ca681d99b7c2afde960b69e3f3eea3df7a13b0959ef836e03297df5a91104cd",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "discovery-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-03-repo-knowledge-agent.json",
+        "sha256": "89ff3023e4863cdebd494ac7d948ddf35e228fe1c8dec6c1df877b2fd3485e4a"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "discovery-room-turn-03-repo-knowledge-agent"
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-04-product-owner-agent.json",
+      "execution_contract_sha256": "affc81a8b7922a65f7fd6dc622c534b6e81933106feb2a058b29ad7845f9f231",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_discovery-room-turn-04-product-owner-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/discovery-room/discovery-room-turn-04-product-owner-agent.md",
+      "prompt_sha256": "1704db906e74c3f721127ecde9049053d34c3c465ebaa898c9fe5c4993c19ea9",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "discovery-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-04-product-owner-agent.json",
+        "sha256": "d235ffdce25245a0f95af54f6db8e8daf377e95f32f64023871eb27450946269"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "discovery-room-turn-04-product-owner-agent"
+    },
+    {
+      "agent_id": "documentation-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/discovery-room/discovery-room-turn-05-documentation-agent.json",
+      "execution_contract_sha256": "de77d50de4840958f6d75b72477944922b51caafce5d8008649e9910c407754b",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_discovery-room-turn-05-documentation-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/discovery-room/discovery-room-turn-05-documentation-agent.md",
+      "prompt_sha256": "799cefade79378c4ae4781f7a37d55909498e6a9e6badadba2bb588691f7828c",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "discovery-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/discovery-room/discovery-room-turn-05-documentation-agent.json",
+        "sha256": "d4f32baac0fd3f09745a00f7dea00fbb3b69c091337132f75c124b17520932d4"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "discovery-room-turn-05-documentation-agent"
+    },
+    {
+      "agent_id": "architect-devlead-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+      "execution_contract_sha256": "828e9614a9a2be03ce629e2f2e867074a0085ed34ab94b52d1a73181c703bbce",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_architecture-room-turn-01-architect-devlead-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-01-architect-devlead-agent.md",
+      "prompt_sha256": "397d666daf9296d45d6a4b4fe97266e877512c805cb6c44d6351bf8748c30155",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "architecture-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-01-architect-devlead-agent.json",
+        "sha256": "2b028d245e6623ab072bd7796965c9fc76ceed2b29d38330daf2544d80f2c70a"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "architecture-room-turn-01-architect-devlead-agent"
+    },
+    {
+      "agent_id": "facilitator-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-02-facilitator-agent.json",
+      "execution_contract_sha256": "e4fa21231ae94529d1f8a67c8cb7e7906f848141bf928340917ec5b4416743b2",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_architecture-room-turn-02-facilitator-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-02-facilitator-agent.md",
+      "prompt_sha256": "0b533072df56134116c4115a5737b796eee67bc2a495ab25d2af21aa8ec7353f",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "architecture-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-02-facilitator-agent.json",
+        "sha256": "195375cad40c2d8d6aed0d2e9e7c1e390957496061711a8c7af468f4a83b9b8d"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "architecture-room-turn-02-facilitator-agent"
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-03-product-owner-agent.json",
+      "execution_contract_sha256": "b7944c48457954042a6cb3f9bdf5681b12ed115e6727bc5401bf70ba3c6caa68",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_architecture-room-turn-03-product-owner-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-03-product-owner-agent.md",
+      "prompt_sha256": "393f8c68bf3e013d8c3f209bd97b9b80ef6bf92ab9d6d3480b8a8fa6dbdef57b",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "architecture-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-03-product-owner-agent.json",
+        "sha256": "f8c7579093f577ede9d86cd1dbcb813cd41acb8a85913671df7f819f36c8b231"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "architecture-room-turn-03-product-owner-agent"
+    },
+    {
+      "agent_id": "security-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-04-security-agent.json",
+      "execution_contract_sha256": "929f7014341e8d7e854c0a85a45260185381e90b62bd48c4349714810423c22b",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_architecture-room-turn-04-security-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-04-security-agent.md",
+      "prompt_sha256": "ae11689cf47aad1426e86e918051621c4d4b3ec8753ece2e988ce18f662fe932",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "architecture-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-04-security-agent.json",
+        "sha256": "c83cf6ff331a7890f25a893f65b5c0dad3f66d3c7439987871e2caf4f89a0a93"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "architecture-room-turn-04-security-agent"
+    },
+    {
+      "agent_id": "documentation-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/architecture-room/architecture-room-turn-05-documentation-agent.json",
+      "execution_contract_sha256": "06cef23f79b990e30912a7dbbff652a9b0213ae4e8dc6844b2c5b9199d272d5d",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_architecture-room-turn-05-documentation-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/architecture-room/architecture-room-turn-05-documentation-agent.md",
+      "prompt_sha256": "ab236ee208dcacb5f000de8b85058225249cf5989379338a91b9a5e1d905f1c8",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "architecture-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/architecture-room/architecture-room-turn-05-documentation-agent.json",
+        "sha256": "24bd90286e3cdb1ac1fee5fcc895e9cf252bb3da3338caa2eade29afca998f8a"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "architecture-room-turn-05-documentation-agent"
+    },
+    {
+      "agent_id": "product-owner-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-01-product-owner-agent.json",
+      "execution_contract_sha256": "8e69291a901d99359eaeb9ba5a355d2834fb61ca0c10a3982277aa162eab20ad",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_story-room-turn-01-product-owner-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-01-product-owner-agent.md",
+      "prompt_sha256": "bd6c19f106bc53df63934a45cc4fd5c23bd2b7d05ddf4063b80ca95cebee2774",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "story-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-01-product-owner-agent.json",
+        "sha256": "5bbf6c1d8a1457eefe1f951e14a0deac263b7781e846ce49fec14ecc97c69fe7"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "story-room-turn-01-product-owner-agent"
+    },
+    {
+      "agent_id": "architect-devlead-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-02-architect-devlead-agent.json",
+      "execution_contract_sha256": "1cd4df2a44d33379818cc331a9a778eafc22f2a2d35b6fd76994aa6f260a87cd",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_story-room-turn-02-architect-devlead-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-02-architect-devlead-agent.md",
+      "prompt_sha256": "98c8c1059adb18aabc494515f3ec1021553f2afe55bfe8767aa07a03cbc34f1b",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "story-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-02-architect-devlead-agent.json",
+        "sha256": "64a3a374dafd71f2d25438e60bd7c1e8ba96b55513a6943222c63d1d00ebe9bf"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "story-room-turn-02-architect-devlead-agent"
+    },
+    {
+      "agent_id": "developer-runner-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-03-developer-runner-agent.json",
+      "execution_contract_sha256": "daa4dcc4682ee7a4944325eb3d81ec3d16d80277c7b830cb5828fcc20b149fcd",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_story-room-turn-03-developer-runner-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-03-developer-runner-agent.md",
+      "prompt_sha256": "32df89ee793ea180db0d4b978969d8a17cb40044e93510b8b9154ef9bde6f95e",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "story-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-03-developer-runner-agent.json",
+        "sha256": "ae25e50083b5ef4ad69081baeadef465d9f02e54bd288fa855ba8520758b07ee"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "story-room-turn-03-developer-runner-agent"
+    },
+    {
+      "agent_id": "test-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-04-test-agent.json",
+      "execution_contract_sha256": "467ff02c0f651372f578ef22b928b4327336f4f34d538f4d6599acd1103a028e",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_story-room-turn-04-test-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-04-test-agent.md",
+      "prompt_sha256": "52af18679a4be326e5931ed3502eb41d744049658fa6295500501cc90a6fc902",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "story-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-04-test-agent.json",
+        "sha256": "2db33e170732dae4460ea064d0dff85f78476d5c20b17580de67e09314b63a6a"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "story-room-turn-04-test-agent"
+    },
+    {
+      "agent_id": "documentation-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/story-room/story-room-turn-05-documentation-agent.json",
+      "execution_contract_sha256": "7a256fa2222c8fd644bd91672c16bde46e618817579b0dcd2b10b117fccb58bd",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_story-room-turn-05-documentation-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/story-room/story-room-turn-05-documentation-agent.md",
+      "prompt_sha256": "3150588e2820c5ed1f45fa530b3eb7d669d567cf7295dd537462083f802a833b",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "story-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/story-room/story-room-turn-05-documentation-agent.json",
+        "sha256": "fe8beb04afcd4da73e1e09a7adae10c7b4d81af1826d1f9774ebd54e0c9518a8"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "story-room-turn-05-documentation-agent"
+    },
+    {
+      "agent_id": "test-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-01-test-agent.json",
+      "execution_contract_sha256": "5ba273110d26cd0902da32a96a6d84c6330a2ae99aeb7064e03c38d0db9c31d1",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_qa-room-turn-01-test-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-01-test-agent.md",
+      "prompt_sha256": "93996d180fc007010a3e2e9f4eeda4b12454d38e0c6235ca8665c2b66dc09908",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "qa-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-01-test-agent.json",
+        "sha256": "a08e22a7e2e7cadd5732556ba9fbf6ee666b47b21eb844745151c7b653ea21bb"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "qa-room-turn-01-test-agent"
+    },
+    {
+      "agent_id": "qa-automation-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-02-qa-automation-agent.json",
+      "execution_contract_sha256": "a5173ff6d998343f5588c0dabb4682a19a6ab16ec707e53927b055991200305d",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_qa-room-turn-02-qa-automation-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-02-qa-automation-agent.md",
+      "prompt_sha256": "df275318560846c68c940cc465a83d543e6f867e114f4d1af9396e05ebfab011",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "qa-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-02-qa-automation-agent.json",
+        "sha256": "d97b95bba365621c46e32aae78af2e0350569d4bf84a69bf4850bbb57342582f"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "qa-room-turn-02-qa-automation-agent"
+    },
+    {
+      "agent_id": "security-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-03-security-agent.json",
+      "execution_contract_sha256": "15e659a1bdecd4e8841de476245704c223cdd4a243114258183bf3d824cbb031",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_qa-room-turn-03-security-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-03-security-agent.md",
+      "prompt_sha256": "7249aaa68f2ed22ce211ac239680b27b0e42a102af9526d9a1d158e82b97c64e",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "qa-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-03-security-agent.json",
+        "sha256": "4590b70734595c327cd14495a1e8c15c22709384a2d6f4019bd3b48c455c194b"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "qa-room-turn-03-security-agent"
+    },
+    {
+      "agent_id": "rgaa-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-04-rgaa-agent.json",
+      "execution_contract_sha256": "ebdb0545fac4824b9a58210997ea2a372926ca0179a4ef444058ed871ad92348",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_qa-room-turn-04-rgaa-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-04-rgaa-agent.md",
+      "prompt_sha256": "62b04632493e5fd093e492f06f87733f98fd9d38fda82dcd9b69947da3163858",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "qa-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-04-rgaa-agent.json",
+        "sha256": "a370778010df68e69b2127d8bd08179903f1f71107eaebadb36ae31fd24c3168"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "qa-room-turn-04-rgaa-agent"
+    },
+    {
+      "agent_id": "readiness-agent",
+      "agent_turn_count": 0,
+      "agent_turn_ids": [],
+      "eligible_for_execution": true,
+      "executed": true,
+      "execution_blockers": [],
+      "execution_contract_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-contracts/qa-room/qa-room-turn-05-readiness-agent.json",
+      "execution_contract_sha256": "80b82bf0f5d62a571d7c3ccae42115b0839c5f0010c6eb69a03a7e7a2965c062",
+      "execution_granularity": "single_agent_turn",
+      "id": "invoke_qa-room-turn-05-readiness-agent",
+      "mutation": "model_invocation",
+      "prompt_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/agent-turn-prompts/qa-room/qa-room-turn-05-readiness-agent.md",
+      "prompt_sha256": "a5812099d253a71d72824d5343ad58ee13e1c91bd6736df0b7f6834984ad4a8a",
+      "raw_execution_contract_stored": false,
+      "raw_model_output_stored": false,
+      "raw_prompt_stored": false,
+      "returncode": 1,
+      "room_id": "qa-room",
+      "runtime_result_ref": {
+        "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns/qa-room/qa-room-turn-05-readiness-agent.json",
+        "sha256": "453cc253097b0578334e48da8b77b91c503787302c0cbb25bdcf1a1f45f8dc91"
+      },
+      "stderr_bytes": 190,
+      "stderr_sha256": "7ef36903b574eb8c262f2d68db61a8637711e0005f5337723da706634ea722bb",
+      "stderr_stored": false,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_stored": false,
+      "structured_summary_ingestion_status": "blocked_agent_position",
+      "structured_summary_validation_blockers": [
+        "structured_json_position_missing"
+      ],
+      "turn_id": "qa-room-turn-05-readiness-agent"
+    }
+  ],
+  "context_request_ingestion": {
+    "enabled": true,
+    "ledger_ref": {
+      "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/context-request-ingestion.apply-room-runtime-adapter.live-approved-report.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw_context_stored": false,
+    "resolved_now": false,
+    "row_count": 0,
+    "secret_value_loading_allowed": false,
+    "status": "no_requests"
+  },
+  "created_at": "2026-06-23T20:23:27Z",
+  "execute_requested": true,
+  "execution_granularity": "agent-turns",
+  "github_mutation_allowed": false,
+  "live_model_confirmation_present": true,
+  "live_model_invoked": true,
+  "mode": "execute",
+  "plan_blockers": [],
+  "plan_status": "ready_for_human_runtime_approval",
+  "production_action_allowed": false,
+  "room_runtime_plan_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-adapter-plan.json",
+    "sha256": "34e3d7c678f8cb7f8df84e4eac5fa94c2645164b96e243806d6e3eaa5c4a0c34"
+  },
+  "room_runtime_results_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-results.apply-room-runtime-adapter.live-approved-report.json",
+    "sha256": "0f2fc466992adf07d59434cda1877a4975326e21dc3ba07752034e75465f4617"
+  },
+  "run_id": "g46-adorable-run-001",
+  "safety_gates": {
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "requires_execute_flag": true,
+    "requires_live_model_confirmation_flag": true,
+    "requires_plan_without_blockers": true,
+    "requires_valid_approval": true
+  },
+  "schema": "olympe-room-runtime-adapter-apply-report/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "executed_with_failures",
+  "structured_summary_ingestion": {
+    "enabled": true,
+    "per_agent_turn_results_dir": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report/agent-turns",
+    "per_room_results_dir": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/runtime-results/apply-room-runtime-adapter.live-approved-report",
+    "raw_execution_contract_stored": false,
+    "raw_model_output_stored": false,
+    "raw_prompt_stored": false,
+    "results_ref": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/room-runtime-results.apply-room-runtime-adapter.live-approved-report.json",
+    "status": "ingestion_blocked"
+  },
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

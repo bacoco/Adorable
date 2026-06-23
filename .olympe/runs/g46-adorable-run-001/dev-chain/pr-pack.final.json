@@ -1,0 +1,63 @@
+{
+  "branch": "olympe/g46-adorable-run-001",
+  "change_unit": {
+    "files_changed": [
+      "README.md"
+    ],
+    "title": "Update README.md through Olympe dev-chain"
+  },
+  "code_review_verdict": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json",
+    "self_approved": false,
+    "sha256": "9f45c47f9b93247776bb34a90d1d729a907a7fc85f7a35351cf6d98225c5050f",
+    "status": "approved"
+  },
+  "created_at": "2026-06-23T12:00:00Z",
+  "evidence_refs": [
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+    ".olympe/runs/g46-adorable-run-001/dev-chain/code-review.json"
+  ],
+  "github_repo": "freestyle-sh/adorable",
+  "pack_id": "PR-G46-ADORABLE-DEV-001",
+  "publish_plan": {
+    "merge": false,
+    "open_pr": false,
+    "push_branch": false,
+    "reason": "human publication gate not approved"
+  },
+  "qa_verdict": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+    "sha256": "887377d1af0597458ef97d01b2ba3c68757651b95dd246cd3d87947186c7a7f1",
+    "status": "passed"
+  },
+  "readiness": {
+    "merge_blockers": [],
+    "requires_human_publish": true,
+    "status": "ready"
+  },
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "source_runner_result": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+    "sha256": "69a974e8dc202934c36d4fd7d0c648010bcb37e18e621c87259d3ebbb0cbd5c7"
+  },
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "trace_id": "g46-adorable-run-001",
+  "working_repo": {
+    "configured_by_operator": true,
+    "create_live": false,
+    "full_name": "bacoco/adorable",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": false,
+    "planned_repo": null,
+    "purpose": "operator-controlled downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "bacoco",
+    "target_repo_name": "adorable"
+  },
+  "write_scope": "working_repo_only_until_human_upstream_approval"
+}

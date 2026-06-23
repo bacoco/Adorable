@@ -1,0 +1,32 @@
+{
+  "blocked_count": 0,
+  "created_at": "2026-06-23T20:24:35Z",
+  "deferred_count": 0,
+  "project_id": "g46-adorable",
+  "request_count": 0,
+  "resolution_ledger_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/context-resolution/context-request-resolution.live-room-runtime-report.jsonl",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "resolution_policy": {
+    "allowed_ref_prefixes": [
+      ".olympe/"
+    ],
+    "github_mutation_allowed": false,
+    "load_raw_context": false,
+    "missing_or_non_olympe_refs_deferred_or_blocked": true,
+    "production_action_allowed": false,
+    "secret_value_loading_allowed": false,
+    "source_repo_mutation_allowed": false,
+    "store_raw_context": false
+  },
+  "rows": [],
+  "run_id": "g46-adorable-run-001",
+  "satisfied_metadata_only_count": 0,
+  "schema": "olympe-context-request-resolution/v1",
+  "source_ingestion_ref": {
+    "path": ".olympe/runs/g46-adorable-run-001/room-runtime-adapter/context-request-ingestion.apply-room-runtime-adapter.live-approved-report.jsonl",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "status": "no_context_requests"
+}

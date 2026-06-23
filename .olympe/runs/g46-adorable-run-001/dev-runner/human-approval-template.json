@@ -1,0 +1,25 @@
+{
+  "allowed_actions": [
+    "execute_live_code_runner"
+  ],
+  "approval_reason": "",
+  "approved": false,
+  "approved_actions": [],
+  "approver_role": "",
+  "blocked_actions": [
+    "github_push",
+    "github_issue_or_pr",
+    "merge",
+    "production_action",
+    "mutate_source_repo"
+  ],
+  "dry_run_only": false,
+  "exact_report_name": "apply-dev-runner-adapter.live-approved-report.json",
+  "exact_runner_task_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-task.json",
+  "expires_at": "",
+  "operator_must_replace_before_execute": true,
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-human-dev-runner-approval/v1"
+}

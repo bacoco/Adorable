@@ -1,0 +1,61 @@
+{
+  "all_sensitive_actions_blocked": true,
+  "gates": [
+    {
+      "action": "create_private_repo",
+      "approved": false,
+      "automation_allowed": false,
+      "required": false
+    },
+    {
+      "action": "create_working_fork",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "push_branch",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "ensure_label",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "create_milestone",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "create_issue",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "create_working_pr",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "merge_pr",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    },
+    {
+      "action": "deploy_production",
+      "approved": false,
+      "automation_allowed": false,
+      "required": true
+    }
+  ],
+  "run_id": "g46-adorable-run-001",
+  "schema": "human-gates/v1"
+}

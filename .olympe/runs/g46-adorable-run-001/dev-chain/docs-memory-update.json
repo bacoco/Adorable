@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-06-23T12:00:00Z",
+  "docs_update_plan": [
+    {
+      "action": "append_after_human_publish",
+      "path": ".olympe/runbooks/operator-handoff.md"
+    }
+  ],
+  "memory_update_plan": [
+    {
+      "action": "created",
+      "path": ".olympe/runs/g46-adorable-run-001/dev-chain/dev-chain-run.json"
+    }
+  ],
+  "post_change_only": true,
+  "redaction": {
+    "credential_markers_detected": false,
+    "raw_prompt_stored": false
+  },
+  "source_kind": "pr-pack",
+  "source_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+  "source_sha256": "612a007a7fa2100777aabed101d2c55a1b00a57f5b249e5ad145665d723329ba",
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "trace_id": "g46-adorable-run-001",
+  "update_id": "DOCMEM-G46-ADORABLE-DEV-001"
+}

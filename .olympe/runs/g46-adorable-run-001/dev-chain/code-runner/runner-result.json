@@ -1,0 +1,126 @@
+{
+  "acceptance_mapping": [
+    {
+      "criterion": "README.md contains G46 Olympe downstream proof marker.",
+      "evidence": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch sha256:b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1; tests:grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "status": "met"
+    },
+    {
+      "criterion": "Only the bounded allowed file changes",
+      "evidence": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch sha256:b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1; tests:grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "status": "met"
+    },
+    {
+      "criterion": "Declared fixture test passes",
+      "evidence": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch sha256:b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1; tests:grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "status": "met"
+    }
+  ],
+  "assumptions": [
+    "Le workspace temporaire est detruit apres capture du diff."
+  ],
+  "commands_run": [
+    "python <g20_fixture_runtime> <workspace-redacted> <allowed-file> <content-redacted>",
+    "grep -F 'G46 Olympe downstream proof marker.' README.md"
+  ],
+  "cost_estimate": {
+    "amount": 0.0,
+    "basis": "local fixture or local OpenHands runtime",
+    "currency": "EUR"
+  },
+  "diff": {
+    "artifact": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+    "sha256": "b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1"
+  },
+  "diff_summary": "1 fichier(s) modifies dans le workspace isole: README.md.",
+  "files_changed": [
+    "README.md"
+  ],
+  "policy": {
+    "human_gate": "passed",
+    "implement_gate": "passed",
+    "task_loop": "Spec -> Test -> Implement -> Verify"
+  },
+  "proposed_next_steps": [],
+  "residual_risks": [
+    "Confinement limite: copie filesystem du workspace + scrub des secrets d environnement. Aucun isolement reseau (pas de garantie d absence d egress) ni cgroup CPU/memoire n est applique; l agent live tourne en mode headless avec --llm-approve."
+  ],
+  "runtime_observation": {
+    "action_event_count": 2,
+    "confinement": {
+      "network_isolation_enforced": false,
+      "note": "Isolation is limited to a workspace filesystem copy plus secret-env scrubbing. Network egress and CPU/memory cgroup limits are NOT enforced by this runner; the live agent runs headless with --llm-approve and can reach the network of the host.",
+      "process_cgroup_enforced": false,
+      "secret_env_scrubbed": true,
+      "workspace_filesystem_copy": true
+    },
+    "diff_sha256": "b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1",
+    "env_scrubbed_secret_var_count": 0,
+    "env_scrubbed_secret_var_names": [],
+    "error_count": 0,
+    "errors": [],
+    "exit_code": 0,
+    "live_openhands_required": false,
+    "observation_event_count": 2,
+    "process_record": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner-process-record.json",
+    "process_status": "completed",
+    "prompt_sha256": "9dbb6b61b15cdf4c7755284b080f08d27e646154ac047bff09dc6dfd31676f55",
+    "raw_prompt_stored": false,
+    "raw_stderr_stored": false,
+    "raw_stdout_stored": false,
+    "runtime": "openhands",
+    "runtime_mode": "fixture-no-live-openhands",
+    "startup_error_kind": null,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_json_event_count": 4,
+    "stdout_sha256": "0761c35273ded958705e4599ba71f16910a532a9e935883dbe2e498c693f86be",
+    "tool_names": [
+      "file_editor",
+      "finish"
+    ],
+    "workspace": {
+      "filesystem_isolated": true,
+      "isolated": true,
+      "isolation_kind": "filesystem-copy-only",
+      "local_paths_stored": false,
+      "network_isolated": false,
+      "path_redacted": true,
+      "process_sandboxed": false,
+      "source": "downstream-repo-checkout"
+    }
+  },
+  "scope": {
+    "allowed_files": [
+      "README.md"
+    ],
+    "forbidden_files": [
+      ".env",
+      ".env.*",
+      "secrets/**",
+      "*.pem",
+      "*.key",
+      ".olympe/**"
+    ],
+    "modified_forbidden": [],
+    "modified_outside_allowed": []
+  },
+  "security_notes": [
+    "Aucun secret, prompt brut, stdout/stderr brut ou chemin local absolu n est stocke.",
+    "Les variables d environnement porteuses de secrets (KEY/TOKEN/SECRET/PASSWORD/...) sont retirees avant le lancement de l agent; les sorties runtime et tests sont representees par sha256 et compteurs.",
+    "Le runner n applique PAS d isolement reseau ni de cgroup; les affirmations de type 'aucun egress' ne sont pas garanties par ce runner et doivent etre fournies par l infrastructure hote."
+  ],
+  "status": "ok",
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "tests_diagnostic": "",
+  "tests_run": [
+    {
+      "exit_code": 0,
+      "name": "grep -F 'G46 Olympe downstream proof marker.' README.md",
+      "raw_output_stored": false,
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "bf0787c4155e620d6006295702e4a822fc98424a0fb802970abcfa796b5a8822"
+    }
+  ],
+  "trace_id": "trace-code-runner-generic"
+}

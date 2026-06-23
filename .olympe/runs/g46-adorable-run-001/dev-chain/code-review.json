@@ -1,0 +1,42 @@
+{
+  "ai_review": {
+    "blocked_reasons": [],
+    "findings": [],
+    "model_family": "static-policy-fixture",
+    "recommendation": "approve"
+  },
+  "created_at": "2026-06-23T12:00:00Z",
+  "human_handoff": {
+    "decision_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/human-decision.json",
+    "decision_sha256": "9ebeb53f576257623bb255be7e5c96e1243d2120b4aabcdeddeb6d919e62b280",
+    "required": true,
+    "required_before_merge": true
+  },
+  "inputs": {
+    "diff_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/diff.patch",
+    "diff_sha256": "b6d2ff97bb3bf28b4ccc00168cab1be2c9b75ae75a7665c220f1e6cc4133dbd1",
+    "policy_metadata_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/policy-metadata.json",
+    "policy_metadata_sha256": "4b3a0244e7e7a9600cf3430c374e96777cf512e08ada62a79f0541db0b5e6aa1",
+    "qa_verdict_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/qa-verdict.json",
+    "qa_verdict_sha256": "887377d1af0597458ef97d01b2ba3c68757651b95dd246cd3d87947186c7a7f1",
+    "runner_result_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/code-runner/runner-result.json",
+    "runner_result_sha256": "69a974e8dc202934c36d4fd7d0c648010bcb37e18e621c87259d3ebbb0cbd5c7",
+    "test_evidence_ref": ".olympe/runs/g46-adorable-run-001/dev-chain/test-evidence.json",
+    "test_evidence_sha256": "dbabfbddc052c3c138f822da7bb09b73a4e8dbf88325e4b542cc13408ba96df9"
+  },
+  "redacted_proof": {
+    "credential_markers_detected": false,
+    "raw_identity_stored": false,
+    "raw_review_body_stored": false
+  },
+  "review_id": "CR-G46-ADORABLE-DEV-001",
+  "review_verdict": {
+    "decided_by": "policy",
+    "qa_evidence_present": true,
+    "qa_evidence_required": true,
+    "self_approved": false,
+    "status": "approved"
+  },
+  "task_id": "RT-G46-ADORABLE-DEV-001",
+  "trace_id": "g46-adorable-run-001"
+}

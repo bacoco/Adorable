@@ -1,0 +1,72 @@
+{
+  "blockers": [
+    "production_human_approval_missing"
+  ],
+  "branch": "olympe/g46-adorable-run-001",
+  "created_at": "2026-06-23T12:00:00Z",
+  "github_repo": "freestyle-sh/adorable",
+  "go_no_go_gates": [
+    {
+      "gate": "qa_passed",
+      "status": "passed"
+    },
+    {
+      "gate": "code_review_approved",
+      "status": "passed"
+    },
+    {
+      "gate": "working_pr_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "rollback_plan_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "monitoring_plan_ready",
+      "status": "passed"
+    },
+    {
+      "gate": "human_go_no_go",
+      "status": "blocked"
+    }
+  ],
+  "human_validation_required": true,
+  "merge_allowed": false,
+  "production_deploy_allowed": false,
+  "publication_plan": {
+    "path": ".olympe/runs/g46-adorable-run-001/publication/github-publication-plan.json",
+    "sha256": "a24e85e4225f4c5f73e7f3348cca69f7d131780d6148010a0a10fd2d6ebc89a1"
+  },
+  "release_candidate": {
+    "code_review_status": "approved",
+    "files_changed": [
+      "README.md"
+    ],
+    "qa_status": "passed",
+    "title": "Update README.md through Olympe dev-chain"
+  },
+  "release_publication_allowed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-release-plan/v1",
+  "source_pr_pack": {
+    "path": ".olympe/runs/g46-adorable-run-001/dev-chain/pr-pack.final.json",
+    "sha256": "7dc8ad6155ae3c3013f3bfa777eb0e6db3564213e840cc54629467188d797dbc"
+  },
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_without_production_approval",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  }
+}

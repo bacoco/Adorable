@@ -1,0 +1,36 @@
+{
+  "approval_template_ref": ".olympe/runs/g46-adorable-run-001/working-repo/human-approval-template.json",
+  "blockers": [
+    "working_repo_placeholder",
+    "fork_target_name_mismatch_for_github_fork"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "github_mutations_executed": false,
+  "live_mutations_executed": false,
+  "operator_next_steps": [
+    "configure an explicit fork/working repo if this plan is blocked by a placeholder",
+    "review human-approval-template.json",
+    "run apply-working-repo-adapter without --execute to confirm dry_run_ready_for_execute",
+    "only then add --execute and --i-understand-live-github-mutations for the approved working repo creation"
+  ],
+  "production_actions_executed": false,
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-working-repo-handoff/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "status": "blocked_working_repo_plan",
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  },
+  "working_repo_plan_ref": ".olympe/runs/g46-adorable-run-001/working-repo/working-repo-plan.json"
+}

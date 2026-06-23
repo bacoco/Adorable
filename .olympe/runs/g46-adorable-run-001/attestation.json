@@ -1,0 +1,93 @@
+{
+  "attestations": [
+    {
+      "claim": "argos-events",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/argos-events.jsonl",
+      "sha256": "f76c4a4b82be4bccfd2ac24ed1c44bd1df6b4f3a2d1f673b7200053e176dc16c"
+    },
+    {
+      "claim": "code-review",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/code-review.json",
+      "sha256": "5b2369f243d2e0038387d85839331ef667e77742a30f6bdf27808d08e410f843"
+    },
+    {
+      "claim": "docs-memory-update",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/docs-memory-update.json",
+      "sha256": "9ec6f7351969a68053460d75ea57e3fe9f5461760fa40976ce2394e1ff7bb676"
+    },
+    {
+      "claim": "github-memory-plan",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/github-memory-plan.json",
+      "sha256": "fcf3effebca5361835a0056ef85273753a583bb173e18a73afae9c2aed5734c3"
+    },
+    {
+      "claim": "human-gates",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/human-gates.json",
+      "sha256": "cbe182bb3ef933db43fd0b6731a815a0c2edb38cc98b0b4893d45fb80f50f599"
+    },
+    {
+      "claim": "onboarding-scan",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/onboarding-scan.json",
+      "sha256": "daedcd3599d81d29795f7bc5272651649d0d629fa9e8c5c9d6c223c9f763eafb"
+    },
+    {
+      "claim": "pr-pack",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/pr-pack.json",
+      "sha256": "5c022a986abe10dce3b09c2456b3ec6b286c2e3b006e1c256146240f3d2e9148"
+    },
+    {
+      "claim": "progressive-disclosure-log",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/progressive-disclosure-log.json",
+      "sha256": "040270bb52c0b382ecffad8cbef0304dfec7900b45e4c8deb66f8a99c360ed2a"
+    },
+    {
+      "claim": "project-card",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/project-card.json",
+      "sha256": "93ddbc2e153048f42cf8f73cbf4f579607cf015da389df247e9af4d70e7e8969"
+    },
+    {
+      "claim": "qa-verdict",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/qa-verdict.json",
+      "sha256": "295025d22c42020e63ea15b0d6d8488ca1a1b3458b08774eb3af79eb7391da30"
+    },
+    {
+      "claim": "room-openings",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/room-openings.json",
+      "sha256": "1ee1e965e985aa2e5aa7d26d0feb186dae82ab65f34e661033b2d2f94a6aad0d"
+    },
+    {
+      "claim": "run",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/run.json",
+      "sha256": "a2f276a6f0d9e6079369d5ee2355eb2b0a781c667ca7f597c88b7866fe0c485c"
+    },
+    {
+      "claim": "runner-task",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/runner-task.json",
+      "sha256": "536f360c18d5c489792dbeedfbaf5ffcdb4b05f675a53ec89276cf3f64b8df2d"
+    },
+    {
+      "claim": "spec-pack",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/spec-pack.json",
+      "sha256": "65eaba4518ad3ff1cc5eb823f3aff4c59d82280ee69502fdf0daf44dc0249b1f"
+    },
+    {
+      "claim": "story-slicing",
+      "evidence_uri": "examples/g46-first-real-downstream/adorable/story-slicing.yml",
+      "sha256": "70fc8f4961419e3e04207c6826baecc98d6ee4946f59873ddd275c1cb2700c8e"
+    }
+  ],
+  "governance_blocked": [
+    "github-mutation",
+    "pr-publication",
+    "merge",
+    "production-deploy"
+  ],
+  "governance_verified_scope": [],
+  "identity": "local-olympe-worktree",
+  "identityType": "local",
+  "signature": null,
+  "signature_required": false,
+  "specVersion": "1.0",
+  "subject": "g46-adorable-run-001",
+  "subjectType": "olympe-start-plan"
+}

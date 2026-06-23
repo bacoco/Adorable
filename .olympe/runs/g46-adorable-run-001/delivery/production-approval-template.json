@@ -1,0 +1,43 @@
+{
+  "approved": false,
+  "approved_actions": [
+    "production_go_no_go",
+    "deploy_production",
+    "rollback_production_if_needed"
+  ],
+  "blocked_actions": [
+    "deploy_without_human_approval",
+    "merge_without_human_approval",
+    "rollback_without_human_approval"
+  ],
+  "created_at": "2026-06-23T12:00:00Z",
+  "monitoring_plan_ref": ".olympe/runs/g46-adorable-run-001/delivery/monitoring-plan.json",
+  "operator_must_fill": [
+    "approved",
+    "approver_role",
+    "approval_reason",
+    "expires_at",
+    "exact_release_plan_ref"
+  ],
+  "raw_identity_stored": false,
+  "raw_review_body_stored": false,
+  "release_plan_ref": ".olympe/runs/g46-adorable-run-001/delivery/release-plan.json",
+  "rollback_plan_ref": ".olympe/runs/g46-adorable-run-001/delivery/rollback-plan.json",
+  "run_id": "g46-adorable-run-001",
+  "schema": "olympe-human-production-approval/v1",
+  "source_repo": "freestyle-sh/adorable",
+  "source_repo_mutation_allowed": false,
+  "working_repo": {
+    "configured_by_operator": false,
+    "create_live": false,
+    "full_name": "operator-or-olympe-workspace/adorable-olympe-work",
+    "kind": "fork",
+    "mutation_allowed": false,
+    "placeholder": true,
+    "purpose": "isolated downstream Olympe memory, branches, issues and PR handoff",
+    "source_repo": "freestyle-sh/adorable",
+    "source_repo_mutation_allowed": false,
+    "target_owner": "operator-or-olympe-workspace",
+    "target_repo_name": "adorable-olympe-work"
+  }
+}
